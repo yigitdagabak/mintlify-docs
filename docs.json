@@ -15,6 +15,19 @@
       "to": "#2A5565"
     }
   },
+  "topbarLinks": {
+    "color": "#1C3943"
+  },
+  "topbarCtaButton": {
+    "color": "#FFFFFF",
+    "background": "#1C3943"
+  },
+  "navigation": {
+    "color": "#1C3943"
+  },
+  "activeLinks": {
+    "color": "#1C3943"
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
