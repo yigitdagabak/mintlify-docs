@@ -4,8 +4,16 @@
   "name": "Demiurg",
   "colors": {
     "primary": "#1C3943",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "light": "#FFFFFF",
+    "dark": "#000000",
+    "background": {
+      "dark": "#1A1A1A",
+      "light": "#FFFFFF"
+    },
+    "anchors": {
+      "from": "#1C3943",
+      "to": "#2A5565"
+    }
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -96,6 +104,12 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
+    }
+  },
+  "typography": {
+    "color": {
+      "light": "#000000",
+      "dark": "#FFFFFF"
     }
   }
 }
