@@ -4,8 +4,8 @@
   "name": "Demiurg",
   "colors": {
     "primary": "#1C3943",
-    "light": "#FFFFFF",
-    "dark": "#000000"
+    "light": "#000000",
+    "dark": "#1C3943"
   },
   "favicon": "/favicon.svg",
   "navigation": {
