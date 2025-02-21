@@ -5,28 +5,7 @@
   "colors": {
     "primary": "#1C3943",
     "light": "#FFFFFF",
-    "dark": "#000000",
-    "background": {
-      "dark": "#1A1A1A",
-      "light": "#FFFFFF"
-    },
-    "anchors": {
-      "from": "#1C3943",
-      "to": "#2A5565"
-    }
-  },
-  "topbarLinks": {
-    "color": "#1C3943"
-  },
-  "topbarCtaButton": {
-    "color": "#FFFFFF",
-    "background": "#1C3943"
-  },
-  "navigation": {
-    "color": "#1C3943"
-  },
-  "activeLinks": {
-    "color": "#1C3943"
+    "dark": "#000000"
   },
   "favicon": "/favicon.svg",
   "navigation": {
@@ -117,12 +96,6 @@
       "x": "https://x.com/mintlify",
       "github": "https://github.com/mintlify",
       "linkedin": "https://linkedin.com/company/mintlify"
-    }
-  },
-  "typography": {
-    "color": {
-      "light": "#000000",
-      "dark": "#FFFFFF"
     }
   }
 }
