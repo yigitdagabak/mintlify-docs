@@ -9,160 +9,145 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "languages": [],
-    "versions": [],
-    "anchors": [],
-    "dropdowns": [],
-    "groups": [],
-    "pages": [],
     "tabs": [
       {
-        "label": "Guides",
-        "href": "#",
-        "languages": [],
-        "versions": [],
-        "anchors": [],
-        "dropdowns": [],
+        "tab": "Guides",
         "groups": [
           {
-            "label": "Get Started",
+            "group": "Get Started",
             "pages": [
-              { "label": "Introduction", "href": "/introduction" },
-              { "label": "Key Concepts", "href": "/key-concepts" }
-            ],
-            "openapi": {}
+              "introduction",
+              "key-concepts"
+            ]
           },
           {
-            "label": "Tutorials",
+            "group": "Tutorials",
             "pages": [
-              { "label": "Quick Start", "href": "/tutorials/quick-start" },
-              { "label": "Overview", "href": "/tutorials/overview" }
-            ],
-            "openapi": {}
+              "tutorials/quick-start",
+              "tutorials/overview"
+            ]
           },
           {
-            "label": "Playbook Creation",
-            "pages": [],
-            "openapi": {},
-            "groups": [
+            "group": "Playbook Creation",
+            "subgroups": [
               {
-                "label": "AI-Assisted",
+                "group": "AI-Assisted",
                 "pages": [
-                  { "label": "Overview", "href": "/ai/overview" },
-                  { "label": "Creating Playbooks", "href": "/ai/creating-playbooks" },
-                  { "label": "Customizing Playbooks", "href": "/ai/customizing-playbooks" },
-                  { "label": "Version Control", "href": "/ai/version-control" },
-                  { "label": "Prompting Guide", "href": "/ai/prompting-guide" }
-                ],
-                "openapi": {}
+                  "ai/overview",
+                  "ai/creating-playbooks",
+                  "ai/customizing-playbooks",
+                  "ai/version-control",
+                  "ai/prompting-guide"
+                ]
               },
               {
-                "label": "Manual",
+                "group": "Manual",
                 "pages": [
-                  { "label": "Creating Playbooks", "href": "/manual/creating-playbooks" },
-                  { "label": "Designing Playbooks", "href": "/manual/designing-playbooks" },
-                  { "label": "Testing Deployment", "href": "/manual/testing-deployment" }
-                ],
-                "openapi": {}
+                  "manual/creating-playbooks",
+                  "manual/designing-playbooks",
+                  "manual/testing-deployment"
+                ]
               }
             ]
           },
           {
-            "label": "Agents & Integrations",
+            "group": "Agents & Integrations",
             "pages": [
-              { "label": "Overview", "href": "/agents/overview" },
-              { "label": "Capabilities", "href": "/agents/capabilities" },
-              { "label": "Communication Channels", "href": "/agents/communication-channels" },
-              { "label": "Knowledge Base", "href": "/agents/knowledge-base" },
-              { "label": "Custom Tools", "href": "/agents/custom-tools" },
-              { "label": "External Services", "href": "/agents/external-services" }
-            ],
-            "openapi": {}
+              "agents/overview",
+              "agents/capabilities",
+              "agents/communication-channels",
+              "agents/knowledge-base",
+              "agents/custom-tools",
+              "agents/external-services"
+            ]
           },
           {
-            "label": "Use Cases",
+            "group": "Use Cases",
             "pages": [
-              { "label": "Customer Service", "href": "/solutions/customer-service" },
-              { "label": "Sales", "href": "/solutions/sales" },
-              { "label": "Document Processing", "href": "/solutions/document-processing" },
-              { "label": "Custom", "href": "/solutions/custom" }
-            ],
-            "openapi": {}
+              "solutions/customer-service",
+              "solutions/sales",
+              "solutions/document-processing",
+              "solutions/custom"
+            ]
           },
           {
-            "label": "Advanced Topics",
+            "group": "Advanced Topics",
             "pages": [
-              { "label": "Complex Playbooks", "href": "/advanced/complex-playbooks" },
-              { "label": "Performance", "href": "/advanced/performance" },
-              { "label": "Security", "href": "/advanced/security" },
-              { "label": "Monitoring", "href": "/advanced/monitoring" }
-            ],
-            "openapi": {}
+              "advanced/complex-playbooks",
+              "advanced/performance",
+              "advanced/security",
+              "advanced/monitoring"
+            ]
           },
           {
-            "label": "FAQ & Release Notes",
+            "group": "FAQ & Release Notes",
             "pages": [
-              { "label": "Common Issues", "href": "/faq/common-issues" },
-              { "label": "Overview", "href": "/release-notes/overview" }
-            ],
-            "openapi": {}
+              "faq/common-issues",
+              "release-notes/overview"
+            ]
           }
-        ],
-        "pages": [],
-        "openapi": {}
+        ]
       },
       {
-        "label": "API Reference",
-        "href": "#",
-        "languages": [],
-        "versions": [],
-        "anchors": [],
-        "dropdowns": [],
+        "tab": "API Reference",
         "groups": [
           {
-            "label": "Core",
+            "group": "Core",
             "pages": [
-              { "label": "Getting Started", "href": "/api/getting-started" },
-              { "label": "Authentication", "href": "/api/authentication" },
-              { "label": "Errors", "href": "/api/errors" },
-              { "label": "Rate Limits", "href": "/api/rate-limits" }
-            ],
-            "openapi": {}
+              "api/getting-started",
+              "api/authentication",
+              "api/errors",
+              "api/rate-limits"
+            ]
           },
           {
-            "label": "AI Features",
+            "group": "AI Features",
             "pages": [
-              { "label": "Generating Playbooks", "href": "/api/ai/generating-playbooks" },
-              { "label": "Modifying Playbooks", "href": "/api/ai/modifying-playbooks" },
-              { "label": "Version Control", "href": "/api/ai/version-control" }
-            ],
-            "openapi": {}
+              "api/ai/generating-playbooks",
+              "api/ai/modifying-playbooks",
+              "api/ai/version-control"
+            ]
           },
           {
-            "label": "Playbooks",
+            "group": "Playbooks",
             "pages": [
-              { "label": "Create", "href": "/api/playbooks/create" },
-              { "label": "Update", "href": "/api/playbooks/update" },
-              { "label": "Execute", "href": "/api/playbooks/execute" },
-              { "label": "Manage", "href": "/api/playbooks/manage" }
-            ],
-            "openapi": {}
+              "api/playbooks/create",
+              "api/playbooks/update",
+              "api/playbooks/execute",
+              "api/playbooks/manage"
+            ]
           },
           {
-            "label": "Agents & Integrations",
+            "group": "Agents & Integrations",
             "pages": [
-              { "label": "Manage", "href": "/api/agents/manage" },
-              { "label": "Communication", "href": "/api/agents/communication" },
-              { "label": "Knowledge", "href": "/api/agents/knowledge" },
-              { "label": "Integrations", "href": "/api/agents/integrations" }
-            ],
-            "openapi": {}
+              "api/agents/manage",
+              "api/agents/communication",
+              "api/agents/knowledge",
+              "api/agents/integrations"
+            ]
           }
-        ],
-        "pages": [],
-        "openapi": {}
+        ]
       }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Community",
+          "href": "https://demiurg.community",
+          "icon": "people-group"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://demiurg.blog",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/demiurg",
+          "icon": "github"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/demiurg-light.svg",
