@@ -1,5 +1,85 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Quick Start Guide'
+description: 'Create your first agent and playbook in minutes'
 ---
 
+<Note>
+  This guide will help you create a simple customer support agent that can handle basic inquiries.
+</Note>
+
+## Step 1: Create an Agent
+
+<Steps>
+  <Step title="Navigate to Agent Dashboard">
+    From the main dashboard, click the "Create Agent" button.
+  </Step>
+  
+  <Step title="Configure Basic Settings">
+    <CardGroup cols={2}>
+      <Card title="Essential Details" icon="gear">
+        - Name: "Support Assistant"
+        - Email: Enter agent's email
+        - Phone (optional): Add phone number
+      </Card>
+      <Card title="AI Tools" icon="robot">
+        - Select AI models (ChatGPT/Claude)
+        - Set response guidelines
+        - Configure knowledge base
+      </Card>
+    </CardGroup>
+  </Step>
+  
+  <Step title="Set Up Communications">
+    Choose which channels your agent will use:
+    - Email integration
+    - WhatsApp
+    - Other messaging channels
+  </Step>
+</Steps>
+
+## Step 2: Create Your First Playbook
+
+<Steps>
+  <Step title="Open Playbook Editor">
+    Click "New Playbook" in your agent's dashboard.
+  </Step>
+  
+  <Step title="Use AI or Start Writing">
+    You have two options:
+    
+    <CardGroup cols={2}>
+      <Card title="Let AI Create" icon="wand-magic-sparkles">
+        - Click 'generate' in the editor
+        - Describe what you want the agent to do
+        - Review and customize the generated playbook
+      </Card>
+      <Card title="Write Manually" icon="pen">
+        - Add Listen block for incoming messages
+        - Add Generate block for responses
+        - Write instructions in natural language
+      </Card>
+    </CardGroup>
+  </Step>
+  
+  <Step title="Test Your Playbook">
+    Use the preview feature to test:
+    - Send test messages
+    - Check agent responses
+    - Verify behavior
+  </Step>
+</Steps>
+
+## Example Playbook
+
+Here's a simple customer support playbook:
+
+```text
+Listen for incoming customer emails
+
+Generate response:
+- Analyze customer inquiry
+- If urgent, mark as high priority
+- Send acknowledgment within 1 minute
+- If simple question, provide answer
+- If complex, route to human agent
+- Always maintain professional tone

@@ -4,130 +4,130 @@ description: 'Welcome to Demiurg - AI-powered playbook automation platform'
 ---
 
 <img
- className="block dark:hidden"
- src="/images/hero-light.png"
- alt="Demiurg Hero Light"
+  className="block dark:hidden"
+  src="/images/hero-light.png"
+  alt="Demiurg Hero Light"
 />
 <img
- className="hidden dark:block"
- src="/images/hero-dark.png"
- alt="Demiurg Hero Dark"
+  className="hidden dark:block"
+  src="/images/hero-dark.png"
+  alt="Demiurg Hero Dark"
 />
 
-<Note>
- Create intelligent agents and automate processes with natural language playbooks. Demiurg AI helps you write and modify playbooks instantly while agents handle execution with their built-in tools and knowledge.
-</Note>
+## Platform Overview
 
-## Core Platform Features
+Demiurg consists of two main interfaces: the Agent Dashboard for managing your automated agents, and the Playbook Editor with integrated AI assistance.
 
 <CardGroup cols={2}>
- <Card title="Intelligent Agents" icon="robot">
-   Customizable automated workers with:
-   - Built-in AI tools (ChatGPT, Claude)
-   - Communication channels (email, phone)
-   - Domain knowledge and instructions
-   - Custom integrations
- </Card>
- <Card title="Natural Language Playbooks" icon="book-open">
-   Guide your agents using plain language with:
-   - Demiurg AI assistance
-   - Side-by-side version comparison
-   - Real-time generation and updates
-   - Instant previews
- </Card>
+  <Card title="Agent Dashboard" icon="gauge">
+    A central hub where you:
+    - Create and manage agents
+    - Assign playbooks to agents
+    - Monitor active conversations
+    - Track performance metrics
+  </Card>
+  <Card title="Playbook Editor" icon="pen-to-square">
+    TipTap-based editor where you:
+    - Write playbooks in natural language
+    - Get real-time AI assistance
+    - Use specialized blocks (Listen, Generate)
+    - Preview and test playbooks
+  </Card>
 </CardGroup>
 
-## Agent Capabilities
+## Agent Dashboard
 
-<CardGroup cols={3}>
- <Card title="AI Integration" icon="brain">
-   - ChatGPT
-   - Claude
-   - Custom LLMs
-   - Model configurations
- </Card>
- <Card title="Communication" icon="message">
-   - Email integration
-   - Phone/SMS
-   - WhatsApp
-   - Custom channels
- </Card>
- <Card title="Knowledge" icon="database">
-   - Domain expertise
-   - Instructions
-   - Business rules
-   - Custom data
- </Card>
+<Frame>
+  <img src="/images/agent-dashboard.png" alt="Agent Dashboard" />
+</Frame>
+
+Each agent in your dashboard can:
+- Handle specific types of tasks (Support, Sales, etc.)
+- Run one or multiple playbooks
+- Track active and resolved conversations
+- Monitor performance metrics
+
+<CardGroup cols={2}>
+  <Card title="Agent Types" icon="users">
+    Create specialized agents for:
+    - Customer Support
+    - Sales Operations
+    - Technical Support
+    - Custom use cases
+  </Card>
+  <Card title="Monitoring" icon="chart-line">
+    Track key metrics:
+    - Active conversations
+    - Resolved cases
+    - Response times
+    - Success rates
+  </Card>
 </CardGroup>
 
-## Playbook Creation
+## Playbook Editor
+
+<Frame>
+  <img src="/images/playbook-editor.png" alt="Playbook Editor with AI" />
+</Frame>
+
+The editor combines natural language writing with powerful automation blocks:
+
+<CardGroup cols={2}>
+  <Card title="Editor Features" icon="pen">
+    - TipTap-based interface
+    - Natural language writing
+    - Specialized blocks
+    - Real-time preview
+  </Card>
+  <Card title="Demiurg AI" icon="robot">
+    AI assistant in the right panel:
+    - Generates complete playbooks
+    - Shows version comparisons
+    - Modifies existing content
+    - Provides suggestions
+  </Card>
+</CardGroup>
+
+## Block Types
+
+<CardGroup cols={2}>
+  <Card title="Listen Blocks" icon="ear-listen">
+    Configure your agent to listen for:
+    - Incoming messages
+    - Events
+    - Triggers
+  </Card>
+  <Card title="Generate Blocks" icon="sparkles">
+    Process events using AI:
+    - Custom responses 
+    - Data analysis
+    - Decision making
+  </Card>
+</CardGroup>
+
+## Getting Started
 
 <Steps>
- <Step title="Describe Your Needs">
-   Tell Demiurg AI what you want to automate in the editor
-   
-   <Frame>
-     <img src="/images/editor-interface.png" alt="Editor Interface" />
-   </Frame>
- </Step>
- 
- <Step title="Review Side by Side">
-   Compare current and AI-generated playbooks in split view
-   
-   <Frame>
-     <img src="/images/side-by-side.png" alt="Version Comparison" />
-   </Frame>
- </Step>
- 
- <Step title="Configure Agent">
-   Set up your agent with the necessary tools and knowledge
-   
-   <Frame>
-     <img src="/images/agent-config.png" alt="Agent Configuration" />
-   </Frame>
- </Step>
+  <Step title="Create an Agent">
+    Choose an agent type and configure its settings
+  </Step>
+  
+  <Step title="Write a Playbook">
+    Use the editor to create instructions for your agent
+  </Step>
+  
+  <Step title="Assign and Monitor">
+    Connect the playbook to your agent and track performance
+  </Step>
 </Steps>
 
-## Key Features
-
-<AccordionGroup>
- <Accordion title="Agent Configuration" icon="gear">
-   Create specialized agents with:
-   - Communication details (email, phone)
-   - AI tool integrations
-   - Domain knowledge
-   - Custom integrations
- </Accordion>
- 
- <Accordion title="AI-Powered Creation" icon="wand-magic-sparkles">
-   Let Demiurg AI in the editor's right panel:
-   - Generate complete playbooks
-   - Show version comparisons
-   - Update existing content
- </Accordion>
- 
- <Accordion title="Execution & Monitoring" icon="gauge">
-   Track agent performance and playbook execution through the dashboard
- </Accordion>
-</AccordionGroup>
-
-## Get Started
+## Next Steps
 
 <CardGroup cols={2}>
- <Card title="Create Agent" icon="robot" href="/agents/overview">
-   Configure your first intelligent agent
- </Card>
- <Card title="Write Playbook" icon="pen" href="/tutorials/quick-start">
-   Create a playbook with Demiurg AI
- </Card>
+  <Card title="Create Agent" icon="user-plus" href="/agents/overview">
+    Set up your first automated agent
+  </Card>
+  <Card title="Write Playbook" icon="pen" href="/playbooks/creating">
+    Create your first playbook
+  </Card>
 </CardGroup>
-
-## Learn More
-
-<Card>
- Dive deeper into:
- - [Agent Configuration](/agents/overview)
- - [AI Tools Integration](/agents/capabilities)
- - [Communication Setup](/agents/communication-channels)
- - [Playbook Creation](/ai/creating-playbooks)
-</Card>
