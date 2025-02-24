@@ -17,19 +17,36 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quickstart",
-              "development"
+              "platform-overview",
+              "first-steps"
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Core Concepts",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "core/agents",
+              "core/playbooks",
+              "core/templates",
+              "core/integrations"
+            ]
+          },
+          {
+            "group": "Practical Guides",
+            "pages": [
+              "guides/creating-agents",
+              "guides/configuring-playbooks",
+              "guides/using-templates",
+              "guides/setting-up-integrations",
+              "guides/best-practices"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/customer-service",
+              "examples/sales-automation",
+              "examples/document-processing",
+              "examples/custom-solutions"
             ]
           }
         ]
@@ -38,17 +55,37 @@
         "tab": "API Reference",
         "groups": [
           {
-            "group": "API Documentation",
+            "group": "Getting Started",
             "pages": [
-              "api-reference/introduction"
+              "api-reference/introduction",
+              "api-reference/authentication",
+              "api-reference/rate-limits"
             ]
           },
           {
-            "group": "Endpoint Examples",
+            "group": "Agent API",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete"
+              "api-reference/agents/create",
+              "api-reference/agents/update",
+              "api-reference/agents/list",
+              "api-reference/agents/delete"
+            ]
+          },
+          {
+            "group": "Playbook API",
+            "pages": [
+              "api-reference/playbooks/create",
+              "api-reference/playbooks/execute",
+              "api-reference/playbooks/templates",
+              "api-reference/playbooks/manage"
+            ]
+          },
+          {
+            "group": "Integration API",
+            "pages": [
+              "api-reference/integrations/communication",
+              "api-reference/integrations/tools",
+              "api-reference/integrations/custom"
             ]
           }
         ]
@@ -57,19 +94,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
           "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
+          "href": "https://demiurg.community",
+          "icon": "people-group"
         },
         {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://demiurg.blog",
           "icon": "newspaper"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/demiurg",
+          "icon": "github"
         }
       ]
     }
@@ -82,20 +119,24 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@demiurg.io"
+      },
+      {
+        "label": "Status",
+        "href": "https://status.demiurg.io"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.demiurg.io"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/demiurg",
+      "github": "https://github.com/demiurg",
+      "linkedin": "https://linkedin.com/company/demiurg"
     }
   }
 }
