@@ -1,134 +1,157 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",  // Making sure this is exactly "maple"
+  "theme": "maple",
   "name": "Demiurg",
+  "colors": {
+    "primary": "#1C3943",
+    "light": "#598a9c",
+    "dark": "#1C3943"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction", 
+              "key-concepts"
+            ]
+          },
+          {
+            "group": "Tutorials",
+            "pages": [
+              "tutorials/quick-start",
+              "tutorials/overview" 
+            ]
+          },
+          {
+            "group": "Playbook Creation",
+            "pages": [
+              "playbooks/overview",
+              {
+                "group": "AI-Assisted",
+                "pages": [
+                  "ai/overview",
+                  "ai/creating-playbooks",
+                  "ai/customizing-playbooks", 
+                  "ai/version-control",
+                  "ai/prompting-guide"
+                ]
+              },
+              {
+                "group": "Manual",
+                "pages": [
+                  "manual/creating-playbooks",
+                  "manual/designing-playbooks",
+                  "manual/testing-deployment"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Agents & Integrations",
+            "pages": [
+              "agents/overview",
+              "agents/capabilities",
+              "agents/communication-channels",
+              "agents/knowledge-base",
+              "agents/custom-tools",
+              "agents/external-services"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "solutions/customer-service",
+              "solutions/sales",
+              "solutions/document-processing",
+              "solutions/custom"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "advanced/complex-playbooks",
+              "advanced/performance",
+              "advanced/security", 
+              "advanced/monitoring"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "api/getting-started",
+              "api/authentication",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Endpoints",
+            "pages": [
+              "api/playbooks",
+              "api/agents", 
+              "api/integrations"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Community",
+          "href": "https://demiurg.community",
+          "icon": "people-group"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://demiurg.blog",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/demiurg",
+          "icon": "github"
+        }
+      ]
+    }
+  },
   "logo": {
     "light": "/logo/demiurg-light.svg",
     "dark": "/logo/demiurg-dark.svg",
     "width": "140px",
     "height": "40px"
   },
-  "favicon": "/favicon.svg",
-  "colors": {
-    "primary": "#1C3943",
-    "light": "#598a9c",
-    "dark": "#1C3943"
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@demiurg.io"
+      },
+      {
+        "label": "Status",
+        "href": "https://status.demiurg.io"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.demiurg.io"
+    }
   },
-  "topbarLinks": [
-    {
-      "name": "Support",
-      "url": "mailto:support@demiurg.io"
+  "footer": {
+    "socials": {
+      "x": "https://x.com/DemiurgAI",
+      "github": "https://github.com/demiurg",
+      "linkedin": "https://linkedin.com/company/demiurg"
     }
-  ],
-  "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://app.demiurg.io"
-  },
-  "anchors": [
-    {
-      "name": "Community",
-      "icon": "people-group",
-      "url": "https://demiurg.community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://demiurg.blog"
-    },
-    {
-      "name": "GitHub",
-      "icon": "github",
-      "url": "https://github.com/demiurg"
-    }
-  ],
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction",
-        "key-concepts"
-      ]
-    },
-    {
-      "group": "Tutorials",
-      "pages": [
-        "tutorials/quick-start",
-        "tutorials/overview"
-      ]
-    },
-    {
-      "group": "Playbook Creation",
-      "pages": [
-        "playbooks/overview",
-        {
-          "group": "AI-Assisted",
-          "pages": [
-            "ai/overview",
-            "ai/creating-playbooks",
-            "ai/customizing-playbooks",
-            "ai/version-control",
-            "ai/prompting-guide"
-          ]
-        },
-        {
-          "group": "Manual",
-          "pages": [
-            "manual/creating-playbooks",
-            "manual/designing-playbooks",
-            "manual/testing-deployment"
-          ]
-        }
-      ]
-    },
-    {
-      "group": "Agents & Integrations",
-      "pages": [
-        "agents/overview",
-        "agents/capabilities",
-        "agents/communication-channels",
-        "agents/knowledge-base",
-        "agents/custom-tools",
-        "agents/external-services"
-      ]
-    },
-    {
-      "group": "Use Cases",
-      "pages": [
-        "solutions/customer-service",
-        "solutions/sales",
-        "solutions/document-processing",
-        "solutions/custom"
-      ]
-    },
-    {
-      "group": "Advanced Topics",
-      "pages": [
-        "advanced/complex-playbooks",
-        "advanced/performance",
-        "advanced/security",
-        "advanced/monitoring"
-      ]
-    },
-    {
-      "group": "API Reference",
-      "pages": [
-        "api/getting-started",
-        "api/authentication",
-        "api/errors",
-        {
-          "group": "Endpoints",
-          "pages": [
-            "api/playbooks",
-            "api/agents",
-            "api/integrations"
-          ]
-        }
-      ]
-    }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/DemiurgAI",
-    "github": "https://github.com/demiurg",
-    "linkedin": "https://linkedin.com/company/demiurg"
   }
 }
