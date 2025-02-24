@@ -17,16 +17,37 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "quick-start",
               "key-concepts"
             ]
           },
           {
-            "group": "Playbooks",
+            "group": "Tutorials",
             "pages": [
-              "playbooks/creating",
-              "playbooks/designing",
-              "playbooks/testing"
+              "tutorials/quick-start",
+              "tutorials/overview"
+            ]
+          },
+          {
+            "group": "Playbook Creation",
+            "subgroups": [
+              {
+                "group": "AI-Assisted",
+                "pages": [
+                  "ai/overview",
+                  "ai/creating-playbooks",
+                  "ai/customizing-playbooks",
+                  "ai/version-control",
+                  "ai/prompting-guide"
+                ]
+              },
+              {
+                "group": "Manual",
+                "pages": [
+                  "manual/creating-playbooks",
+                  "manual/designing-playbooks",
+                  "manual/testing-deployment"
+                ]
+              }
             ]
           },
           {
@@ -41,7 +62,7 @@
             ]
           },
           {
-            "group": "Solutions",
+            "group": "Use Cases",
             "pages": [
               "solutions/customer-service",
               "solutions/sales",
@@ -52,39 +73,57 @@
           {
             "group": "Advanced Topics",
             "pages": [
-              "advanced/complex-workflows",
+              "advanced/complex-playbooks",
               "advanced/performance",
               "advanced/security",
               "advanced/monitoring"
+            ]
+          },
+          {
+            "group": "FAQ & Release Notes",
+            "pages": [
+              "faq/common-issues",
+              "release-notes/overview"
             ]
           }
         ]
       },
       {
-        "tab": "Demiurg AI",
+        "tab": "API Reference",
         "groups": [
           {
-            "group": "Overview",
+            "group": "Core",
             "pages": [
-              "ai/introduction",
-              "ai/capabilities",
-              "ai/best-practices"
+              "api/getting-started",
+              "api/authentication",
+              "api/errors",
+              "api/rate-limits"
             ]
           },
           {
-            "group": "Using Demiurg AI",
+            "group": "AI Features",
             "pages": [
-              "ai/generating-playbooks",
-              "ai/revising-playbooks",
-              "ai/version-comparison"
+              "api/ai/generating-playbooks",
+              "api/ai/modifying-playbooks",
+              "api/ai/version-control"
             ]
           },
           {
-            "group": "Examples",
+            "group": "Playbooks",
             "pages": [
-              "ai/example-generation",
-              "ai/example-revision",
-              "ai/example-complex"
+              "api/playbooks/create",
+              "api/playbooks/update",
+              "api/playbooks/execute",
+              "api/playbooks/manage"
+            ]
+          },
+          {
+            "group": "Agents & Integrations",
+            "pages": [
+              "api/agents/manage",
+              "api/agents/communication",
+              "api/agents/knowledge",
+              "api/agents/integrations"
             ]
           }
         ]
