@@ -112,9 +112,9 @@
     }
   },
   "logo": {
-    "light": "/logo/demiurg-light.svg",
-    "dark": "/logo/demiurg-dark.svg",    
-    "width": "140px",                    
+    "light": "https://mintlify.s3.us-west-1.amazonaws.com/demiurg/logo/demiurg-light.svg",
+    "dark": "https://mintlify.s3.us-west-1.amazonaws.com/demiurg/logo/demiurg-dark.svg",
+    "width": "140px",
     "height": "40px"  
   },
   "navbar": {
