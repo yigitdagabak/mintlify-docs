@@ -1,5 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",  // Making sure this is exactly "maple"
   "name": "Demiurg",
   "logo": {
     "light": "/logo/demiurg-light.svg",
