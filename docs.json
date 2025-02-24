@@ -17,75 +17,74 @@
             "group": "Get Started",
             "pages": [
               "introduction",
-              "platform-overview",
-              "first-steps"
+              "quick-start",
+              "key-concepts"
             ]
           },
           {
-            "group": "Core Concepts",
+            "group": "Playbooks",
             "pages": [
-              "core/agents",
-              "core/playbooks",
-              "core/templates",
-              "core/integrations"
+              "playbooks/creating",
+              "playbooks/designing",
+              "playbooks/testing"
             ]
           },
           {
-            "group": "Practical Guides",
+            "group": "Agents & Integrations",
             "pages": [
-              "guides/creating-agents",
-              "guides/configuring-playbooks",
-              "guides/using-templates",
-              "guides/setting-up-integrations",
-              "guides/best-practices"
+              "agents/overview",
+              "agents/capabilities",
+              "agents/communication-channels",
+              "agents/knowledge-base",
+              "agents/custom-tools",
+              "agents/external-services"
             ]
           },
           {
-            "group": "Examples",
+            "group": "Solutions",
             "pages": [
-              "examples/customer-service",
-              "examples/sales-automation",
-              "examples/document-processing",
-              "examples/custom-solutions"
+              "solutions/customer-service",
+              "solutions/sales",
+              "solutions/document-processing",
+              "solutions/custom"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "advanced/complex-workflows",
+              "advanced/performance",
+              "advanced/security",
+              "advanced/monitoring"
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Demiurg AI",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Overview",
             "pages": [
-              "api-reference/introduction",
-              "api-reference/authentication",
-              "api-reference/rate-limits"
+              "ai/introduction",
+              "ai/capabilities",
+              "ai/best-practices"
             ]
           },
           {
-            "group": "Agent API",
+            "group": "Using Demiurg AI",
             "pages": [
-              "api-reference/agents/create",
-              "api-reference/agents/update",
-              "api-reference/agents/list",
-              "api-reference/agents/delete"
+              "ai/generating-playbooks",
+              "ai/revising-playbooks",
+              "ai/version-comparison"
             ]
           },
           {
-            "group": "Playbook API",
+            "group": "Examples",
             "pages": [
-              "api-reference/playbooks/create",
-              "api-reference/playbooks/execute",
-              "api-reference/playbooks/templates",
-              "api-reference/playbooks/manage"
-            ]
-          },
-          {
-            "group": "Integration API",
-            "pages": [
-              "api-reference/integrations/communication",
-              "api-reference/integrations/tools",
-              "api-reference/integrations/custom"
+              "ai/example-generation",
+              "ai/example-revision",
+              "ai/example-complex"
             ]
           }
         ]
@@ -113,7 +112,9 @@
   },
   "logo": {
     "light": "/logo/demiurg-light.svg",
-    "dark": "/logo/demiurg-dark.svg" 
+    "dark": "/logo/demiurg-dark.svg",
+    "width": "140px",
+    "height": "40px"
   },
   "navbar": {
     "links": [
