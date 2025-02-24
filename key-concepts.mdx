@@ -3,122 +3,135 @@ title: "Key Concepts"
 description: "Essential building blocks and fundamental terms in Demiurg"
 ---
 
-Demiurg revolves around a few core concepts that empower you to build and manage automated processes with ease.
-
-<CardGroup cols={2}>
- <Card title="Playbooks" icon="book-open">
-   The cornerstone of Demiurg, containing instructions written in natural language:
-   - Write steps in plain English
-   - Reuse across multiple agents
-   - Get real-time AI assistance
- </Card>
- 
- <Card title="Agents" icon="robot">
-   Automated workers that execute your playbooks:
-   - Run workflow instructions
-   - Connect with integrations
-   - Report metrics to dashboard
- </Card>
-</CardGroup>
-
 ## Core Components
 
-<Steps>
- <Step title="Editor Interface">
-   <Card>
-     Our TipTap-based editor where you:
-     - Write playbooks in natural language
-     - Get real-time AI suggestions
-     - Preview and test workflows
-   </Card>
- </Step>
-
- <Step title="AI Assistant">
-   <Card>
-     Integrated AI help that offers:
-     - Automatic content generation
-     - Optimization suggestions
-     - Real-time guidance
-   </Card>
- </Step>
-
- <Step title="Agent Dashboard">
-   <Card>
-     Central command center for:
-     - Monitoring performance
-     - Managing configurations
-     - Viewing analytics
-   </Card>
- </Step>
-</Steps>
-
-## Integration Capabilities
-
-<CardGroup cols={3}>
- <Card title="Communication" icon="message">
-   - Email systems
-   - Chat platforms
-   - Social media
-   - Custom channels
- </Card>
- 
- <Card title="Data Sources" icon="database">
-   - External APIs
-   - Databases
-   - Spreadsheets
-   - File systems
- </Card>
- 
- <Card title="Custom Tools" icon="wrench">
-   - Custom scripts
-   - Third-party tools
-   - Internal systems
-   - Extended features
- </Card>
+<CardGroup cols={2}>
+  <Card title="Playbook Editor" icon="pen-to-square">
+    The main interface where you:
+    - Write in natural language
+    - Edit playbook content
+    - Preview changes
+  </Card>
+  <Card title="Demiurg AI" icon="robot">
+    Your AI assistant in the right panel that:
+    - Generates complete playbooks
+    - Shows side-by-side comparisons
+    - Updates existing content
+  </Card>
 </CardGroup>
 
-## AI Features
-
-<AccordionGroup>
- <Accordion title="Content Generation" icon="wand-magic-sparkles">
-   - Create new playbooks from descriptions
-   - Generate workflow sections
-   - Expand existing content
-   - Add error handling
- </Accordion>
- 
- <Accordion title="Optimization" icon="chart-line">
-   - Improve existing workflows
-   - Identify bottlenecks
-   - Suggest enhancements
-   - Optimize performance
- </Accordion>
- 
- <Accordion title="Real-time Help" icon="circle-question">
-   - Syntax assistance
-   - Best practices
-   - Example snippets
-   - Contextual tips
- </Accordion>
-</AccordionGroup>
-
-## Getting Started
+## Agents
 
 <CardGroup cols={2}>
- <Card title="AI-Assisted Creation" icon="magic" href="/ai/creating-playbooks">
-   Let AI help you build your first playbook
- </Card>
- <Card title="Manual Creation" icon="pencil" href="/manual/creating-playbooks">
-   Create custom playbooks with full control
- </Card>
+  <Card title="Core Configuration" icon="gear">
+    Essential agent settings:
+    - Environment variables
+    - Base instructions
+    - Domain knowledge
+    - Communication details (email, phone)
+  </Card>
+  <Card title="AI Tools" icon="robot">
+    Integrated AI capabilities:
+    - ChatGPT
+    - Claude
+    - Custom LLMs
+    - AI model configurations
+  </Card>
 </CardGroup>
 
-## Learn More
+<CardGroup cols={2}>
+  <Card title="Communication" icon="message">
+    Available channels:
+    - Email integration
+    - Phone/SMS
+    - WhatsApp
+    - Custom channels
+  </Card>
+  <Card title="Integrations" icon="plug">
+    Connect with external tools:
+    - CRM systems
+    - Databases
+    - APIs
+    - Custom services
+  </Card>
+</CardGroup>
 
-<Card>
- Explore these resources to deepen your understanding:
- - [Detailed Playbook Guide](/playbooks/overview)
- - [Agent Configuration](/agents/overview)
- - [Integration Setup](/agents/custom-tools)
- - [Common Questions](/faq/common-issues)
-</Card>
+## Playbooks
+
+<Frame>
+  <img src="/images/playbook-example.png" alt="Playbook Example" />
+</Frame>
+
+<CardGroup cols={2}>
+  <Card title="Natural Language" icon="language">
+    Write playbooks like you're explaining to a person:
+    - Clear instructions
+    - Simple steps
+    - Human-readable format
+  </Card>
+  <Card title="AI Generation" icon="wand-magic-sparkles">
+    Let AI create playbooks from your descriptions:
+    - Complete automation flows
+    - Error handling included
+    - Best practices built-in
+  </Card>
+</CardGroup>
+
+## AI Capabilities
+
+<AccordionGroup>
+  <Accordion title="Generate Playbooks" icon="plus">
+    Tell Demiurg AI what you want to automate, and it will create a complete playbook with all necessary steps and error handling.
+  </Accordion>
+  
+  <Accordion title="Compare Versions" icon="code-compare">
+    See your current playbook and AI-generated changes side by side in the editor, making it easy to review and accept updates.
+  </Accordion>
+  
+  <Accordion title="Modify Content" icon="pen">
+    Ask AI to update specific parts of your playbook using natural language instructions.
+  </Accordion>
+</AccordionGroup>
+
+## Agent Configuration
+
+<Steps>
+  <Step title="Basic Setup">
+    Configure essential settings:
+    - Email address
+    - Phone number
+    - Environment variables
+    - Base instructions
+  </Step>
+  
+  <Step title="Knowledge Setup">
+    Define agent knowledge:
+    - Domain expertise
+    - Response guidelines
+    - Business rules
+    - Custom data
+  </Step>
+  
+  <Step title="Integration Setup">
+    Connect necessary tools:
+    - AI models (ChatGPT, Claude)
+    - Communication channels
+    - External services
+    - Custom integrations
+  </Step>
+  
+  <Step title="Deploy">
+    Assign playbooks and activate the agent
+  </Step>
+</Steps>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Configure Agent" icon="gear" href="/agents/overview">
+    Set up your first agent
+  </Card>
+  <Card title="Create Playbook" icon="pen" href="/playbooks/creating">
+    Create playbooks for your agent
+  </Card>
+</CardGroup>
