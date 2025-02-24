@@ -114,8 +114,8 @@
   "logo": {
     "light": "/logo/demiurg-light.svg",
     "dark": "/logo/demiurg-dark.svg",
-    "width": "200px",  // Increased from default
-    "height": "48px"  
+    "width": "32px",
+    "height": "32px"  
   },
   "navbar": {
     "links": [
