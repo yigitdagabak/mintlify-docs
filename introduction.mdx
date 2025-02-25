@@ -4,213 +4,314 @@ description: 'Welcome to Demiurg - AI-powered playbook automation platform'
 ---
 
 <img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Demiurg Hero Light"
+ className="block dark:hidden"
+ src="/images/hero-light.png"
+ alt="Demiurg Hero Light"
 />
 <img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Demiurg Hero Dark"
+ className="hidden dark:block"
+ src="/images/hero-dark.png"
+ alt="Demiurg Hero Dark"
 />
 
 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-8 border-l-4 border-blue-500">
-  <p className="font-medium">Demiurg helps you create AI-powered automation through a natural language editor with integrated AI assistance.</p>
+ <p className="font-medium">Demiurg helps you create AI-powered automation through a natural language editor with integrated AI assistance.</p>
 </div>
 
-## Meet Demiurg
+## The Demiurg Hierarchy
 
-<CardGroup cols={3}>
-  <Card title="Agents" icon="robot" className="border-t-4 border-t-blue-500">
-    Virtual assistants with their own identity and capabilities that execute your playbooks
-  </Card>
-  <Card title="Playbooks" icon="book-open" className="border-t-4 border-t-green-500">
-    Collections of pages that define what your agents can do and how they respond
-  </Card>
-  <Card title="Pages" icon="file-code" className="border-t-4 border-t-purple-500">
-    Individual workflows built with specialized blocks using natural language
-  </Card>
-</CardGroup>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+ <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+   <h3 className="text-xl font-bold mb-2 flex items-center text-blue-600 dark:text-blue-400">
+     <div className="w-8 h-8 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-full mr-2">1</div>
+     Agents
+   </h3>
+   <p className="mb-3">Virtual assistants with their own identity, communication channels, and tools.</p>
+   <div className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider mb-2">Agent includes</div>
+   <ul className="space-y-1 text-sm">
+     <li className="flex items-center">
+       <span className="mr-2">📧</span> Email and communication
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">🧠</span> Knowledge base
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">🔧</span> AI tools (ChatGPT, Claude)
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">🔌</span> Custom integrations
+     </li>
+   </ul>
+ </div>
+ 
+ <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+   <h3 className="text-xl font-bold mb-2 flex items-center text-green-600 dark:text-green-400">
+     <div className="w-8 h-8 flex items-center justify-center bg-green-100 dark:bg-green-900 rounded-full mr-2">2</div>
+     Playbooks
+   </h3>
+   <p className="mb-3">Collections of related pages that define agent capabilities for specific functions.</p>
+   <div className="text-xs font-medium text-green-700 dark:text-green-300 uppercase tracking-wider mb-2">Playbook includes</div>
+   <ul className="space-y-1 text-sm">
+     <li className="flex items-center">
+       <span className="mr-2">📄</span> Multiple pages
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">📋</span> Organizational structure
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">⚙️</span> Configuration settings
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">🔔</span> Notification preferences
+     </li>
+   </ul>
+ </div>
+ 
+ <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+   <h3 className="text-xl font-bold mb-2 flex items-center text-purple-600 dark:text-purple-400">
+     <div className="w-8 h-8 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full mr-2">3</div>
+     Pages
+   </h3>
+   <p className="mb-3">Individual workflows built with specialized blocks that define specific automations.</p>
+   <div className="text-xs font-medium text-purple-700 dark:text-purple-300 uppercase tracking-wider mb-2">Page includes</div>
+   <ul className="space-y-1 text-sm">
+     <li className="flex items-center">
+       <span className="mr-2">👂</span> Listen blocks
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">✨</span> Generate blocks
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">📝</span> Natural language instructions
+     </li>
+     <li className="flex items-center">
+       <span className="mr-2">🔄</span> Logic and decision flows
+     </li>
+   </ul>
+ </div>
+</div>
+
+## Main Interfaces
+
+The Demiurg platform consists of two primary interfaces that you'll work with:
+
+<Tabs>
+ <Tab title="Agent Dashboard">
+   <Frame>
+     <img src="/images/agent-dashboard.png" alt="Agent Dashboard" className="rounded-lg" />
+   </Frame>
+   
+   <div className="mt-4">
+     <p>The <strong>Agent Dashboard</strong> is your command center where you:</p>
+     <ul className="list-disc list-inside space-y-1 mt-2">
+       <li>View and manage all your agents</li>
+       <li>Monitor active conversations and resolved items</li>
+       <li>See performance metrics in real-time</li>
+       <li>Manage playbooks assigned to each agent</li>
+       <li>Create new agents and playbooks</li>
+     </ul>
+   </div>
+ </Tab>
+ 
+ <Tab title="Page Editor">
+   <Frame>
+     <img src="/images/page-editor.png" alt="Page Editor" className="rounded-lg" />
+   </Frame>
+   
+   <div className="mt-4">
+     <p>The <strong>Page Editor</strong> is where you create and modify pages:</p>
+     <ul className="list-disc list-inside space-y-1 mt-2">
+       <li>Built on TipTap and Next.js</li>
+       <li>Write in natural language</li>
+       <li>Add specialized blocks with the slash command</li>
+       <li>Get AI assistance in the right panel</li>
+       <li>Preview and test your pages</li>
+     </ul>
+   </div>
+ </Tab>
+</Tabs>
+
+With these two interfaces, you can create, manage, and monitor your entire automation workflow - from designing pages with the editor to deploying them through agents on the dashboard.
 
 ## Platform Highlights
 
 <Tabs>
-  <Tab title="Agent Dashboard">
-    <Frame>
-      <img src="/images/agent-dashboard.png" alt="Agent Dashboard" className="rounded-lg" />
-    </Frame>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-        <h3 className="font-bold mb-2">Monitor Performance</h3>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Active conversations</li>
-          <li>Resolved cases</li>
-          <li>Response metrics</li>
-          <li>Real-time status</li>
-        </ul>
-      </div>
-      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-        <h3 className="font-bold mb-2">Manage Agents</h3>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Create specialized agents</li>
-          <li>Assign playbooks</li>
-          <li>Configure tools & integrations</li>
-          <li>Set communication channels</li>
-        </ul>
-      </div>
-    </div>
-  </Tab>
-  
-  <Tab title="Playbook Editor">
-    <Frame>
-      <img src="/images/playbook-editor.png" alt="Playbook Editor" className="rounded-lg" />
-    </Frame>
-    
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-        <h3 className="font-bold mb-2">Natural Language Interface</h3>
-        <ul className="list-disc list-inside space-y-1">
-          <li>TipTap-based editor</li>
-          <li>Write in plain language</li>
-          <li>Use specialized blocks</li>
-          <li>Real-time preview</li>
-        </ul>
-      </div>
-      <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-        <h3 className="font-bold mb-2">Demiurg AI</h3>
-        <ul className="list-disc list-inside space-y-1">
-          <li>Generate complete playbooks</li>
-          <li>See side-by-side comparisons</li>
-          <li>Get real-time suggestions</li>
-          <li>Customize AI output</li>
-        </ul>
-      </div>
-    </div>
-  </Tab>
-  
-  <Tab title="Building Blocks">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-      <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-        <h3 className="font-bold flex items-center mb-3">
-          <span className="mr-2 text-xl">👂</span> Listen Blocks
-        </h3>
-        <p className="mb-3">Configure what triggers your automation:</p>
-        <div className="space-y-2">
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Incoming emails</div>
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">WhatsApp messages</div>
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Form submissions</div>
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Scheduled events</div>
-        </div>
-      </div>
-      
-      <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-        <h3 className="font-bold flex items-center mb-3">
-          <span className="mr-2 text-xl">✨</span> Generate Blocks
-        </h3>
-        <p className="mb-3">Process information with AI:</p>
-        <div className="space-y-2">
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Create personalized responses</div>
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Analyze and categorize content</div>
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Make routing decisions</div>
-          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Extract and process data</div>
-        </div>
-      </div>
-    </div>
-    
-    <Frame className="mt-6">
-      <img src="/images/blocks-example.png" alt="Building Blocks Example" className="rounded-lg" />
-    </Frame>
-  </Tab>
+ <Tab title="Agent Dashboard">
+   <Frame>
+     <img src="/images/agent-dashboard.png" alt="Agent Dashboard" className="rounded-lg" />
+   </Frame>
+   
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+     <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+       <h3 className="font-bold mb-2">Monitor Performance</h3>
+       <ul className="list-disc list-inside space-y-1">
+         <li>Active conversations</li>
+         <li>Resolved cases</li>
+         <li>Response metrics</li>
+         <li>Real-time status</li>
+       </ul>
+     </div>
+     <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+       <h3 className="font-bold mb-2">Manage Agents</h3>
+       <ul className="list-disc list-inside space-y-1">
+         <li>Create specialized agents</li>
+         <li>Assign playbooks</li>
+         <li>Configure tools & integrations</li>
+         <li>Set communication channels</li>
+       </ul>
+     </div>
+   </div>
+ </Tab>
+ 
+ <Tab title="Playbook Editor">
+   <Frame>
+     <img src="/images/playbook-editor.png" alt="Playbook Editor" className="rounded-lg" />
+   </Frame>
+   
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+     <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+       <h3 className="font-bold mb-2">Natural Language Interface</h3>
+       <ul className="list-disc list-inside space-y-1">
+         <li>TipTap-based editor</li>
+         <li>Write in plain language</li>
+         <li>Use specialized blocks</li>
+         <li>Real-time preview</li>
+       </ul>
+     </div>
+     <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+       <h3 className="font-bold mb-2">Demiurg AI</h3>
+       <ul className="list-disc list-inside space-y-1">
+         <li>Generate complete playbooks</li>
+         <li>See side-by-side comparisons</li>
+         <li>Get real-time suggestions</li>
+         <li>Customize AI output</li>
+       </ul>
+     </div>
+   </div>
+ </Tab>
+ 
+ <Tab title="Building Blocks">
+   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+     <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+       <h3 className="font-bold flex items-center mb-3">
+         <span className="mr-2 text-xl">👂</span> Listen Blocks
+       </h3>
+       <p className="mb-3">Configure what triggers your automation:</p>
+       <div className="space-y-2">
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Incoming emails</div>
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">WhatsApp messages</div>
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Form submissions</div>
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Scheduled events</div>
+       </div>
+     </div>
+     
+     <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+       <h3 className="font-bold flex items-center mb-3">
+         <span className="mr-2 text-xl">✨</span> Generate Blocks
+       </h3>
+       <p className="mb-3">Process information with AI:</p>
+       <div className="space-y-2">
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Create personalized responses</div>
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Analyze and categorize content</div>
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Make routing decisions</div>
+         <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Extract and process data</div>
+       </div>
+     </div>
+   </div>
+   
+   <Frame className="mt-6">
+     <img src="/images/blocks-example.png" alt="Building Blocks Example" className="rounded-lg" />
+   </Frame>
+ </Tab>
 </Tabs>
 
 ## Common Use Cases
 
 <CardGroup cols={3}>
-  <Card title="Customer Support" icon="headset">
-    <div className="space-y-2 mt-2">
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Ticket routing</div>
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Response automation</div>
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Follow-up management</div>
-    </div>
-  </Card>
-  <Card title="Sales Automation" icon="shopping-cart">
-    <div className="space-y-2 mt-2">
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Lead qualification</div>
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Meeting scheduling</div>
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Proposal generation</div>
-    </div>
-  </Card>
-  <Card title="Document Processing" icon="file-lines">
-    <div className="space-y-2 mt-2">
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Information extraction</div>
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Content categorization</div>
-      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Summary generation</div>
-    </div>
-  </Card>
+ <Card title="Customer Support" icon="headset">
+   <div className="space-y-2 mt-2">
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Ticket routing</div>
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Response automation</div>
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Follow-up management</div>
+   </div>
+ </Card>
+ <Card title="Sales Automation" icon="shopping-cart">
+   <div className="space-y-2 mt-2">
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Lead qualification</div>
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Meeting scheduling</div>
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Proposal generation</div>
+   </div>
+ </Card>
+ <Card title="Document Processing" icon="file-lines">
+   <div className="space-y-2 mt-2">
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Information extraction</div>
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Content categorization</div>
+     <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Summary generation</div>
+   </div>
+ </Card>
 </CardGroup>
 
 ## Getting Started
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg shadow-sm">
-    <div className="text-3xl mb-2">1️⃣</div>
-    <h3 className="text-lg font-bold mb-1">Create an Agent</h3>
-    <p className="text-sm mb-3">Set up your first virtual assistant</p>
-    <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline">Get started →</a>
-  </div>
-  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg shadow-sm">
-    <div className="text-3xl mb-2">2️⃣</div>
-    <h3 className="text-lg font-bold mb-1">Create Playbooks</h3>
-    <p className="text-sm mb-3">Build automation with or without AI</p>
-    <a href="/playbooks/overview" className="text-green-600 dark:text-green-400 text-sm font-medium hover:underline">Learn more →</a>
-  </div>
-  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg shadow-sm">
-    <div className="text-3xl mb-2">3️⃣</div>
-    <h3 className="text-lg font-bold mb-1">Deploy & Monitor</h3>
-    <p className="text-sm mb-3">Launch and track performance</p>
-    <a href="/advanced/monitoring" className="text-purple-600 dark:text-purple-400 text-sm font-medium hover:underline">View details →</a>
-  </div>
+ <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg shadow-sm">
+   <div className="text-3xl mb-2">1️⃣</div>
+   <h3 className="text-lg font-bold mb-1">Create an Agent</h3>
+   <p className="text-sm mb-3">Set up your first virtual assistant</p>
+   <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline">Get started →</a>
+ </div>
+ <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg shadow-sm">
+   <div className="text-3xl mb-2">2️⃣</div>
+   <h3 className="text-lg font-bold mb-1">Create Playbooks</h3>
+   <p className="text-sm mb-3">Build automation with or without AI</p>
+   <a href="/playbooks/overview" className="text-green-600 dark:text-green-400 text-sm font-medium hover:underline">Learn more →</a>
+ </div>
+ <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg shadow-sm">
+   <div className="text-3xl mb-2">3️⃣</div>
+   <h3 className="text-lg font-bold mb-1">Deploy & Monitor</h3>
+   <p className="text-sm mb-3">Launch and track performance</p>
+   <a href="/advanced/monitoring" className="text-purple-600 dark:text-purple-400 text-sm font-medium hover:underline">View details →</a>
+ </div>
 </div>
 
 ## Why Demiurg?
 
 <CardGroup cols={2}>
-  <Card>
-    <div className="border-l-4 border-orange-500 pl-4">
-      <h3 className="font-bold mb-2">Natural Language Automation</h3>
-      <p>Create complex automations using simple, natural language without coding skills.</p>
-    </div>
-  </Card>
-  <Card>
-    <div className="border-l-4 border-pink-500 pl-4">
-      <h3 className="font-bold mb-2">AI-Powered Creation</h3>
-      <p>Let Demiurg AI generate complete playbooks from your descriptions, with side-by-side comparisons.</p>
-    </div>
-  </Card>
-  <Card>
-    <div className="border-l-4 border-indigo-500 pl-4">
-      <h3 className="font-bold mb-2">Versatile Agents</h3>
-      <p>Configure agents with specialized knowledge, tools, and communication channels.</p>
-    </div>
-  </Card>
-  <Card>
-    <div className="border-l-4 border-emerald-500 pl-4">
-      <h3 className="font-bold mb-2">Ready to Scale</h3>
-      <p>From small tasks to enterprise-grade workflows, Demiurg grows with your needs.</p>
-    </div>
-  </Card>
+ <Card>
+   <div className="border-l-4 border-orange-500 pl-4">
+     <h3 className="font-bold mb-2">Natural Language Automation</h3>
+     <p>Create complex automations using simple, natural language without coding skills.</p>
+   </div>
+ </Card>
+ <Card>
+   <div className="border-l-4 border-pink-500 pl-4">
+     <h3 className="font-bold mb-2">AI-Powered Creation</h3>
+     <p>Let Demiurg AI generate complete playbooks from your descriptions, with side-by-side comparisons.</p>
+   </div>
+ </Card>
+ <Card>
+   <div className="border-l-4 border-indigo-500 pl-4">
+     <h3 className="font-bold mb-2">Versatile Agents</h3>
+     <p>Configure agents with specialized knowledge, tools, and communication channels.</p>
+   </div>
+ </Card>
+ <Card>
+   <div className="border-l-4 border-emerald-500 pl-4">
+     <h3 className="font-bold mb-2">Ready to Scale</h3>
+     <p>From small tasks to enterprise-grade workflows, Demiurg grows with your needs.</p>
+   </div>
+ </Card>
 </CardGroup>
 
 <div className="mt-8">
-  <h2 className="mb-4">Next Steps</h2>
-  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700">
-    <div className="flex items-center">
-      <div className="text-2xl mr-3">🚀</div>
-      <div>
-        <h3 className="font-bold">Ready to dive in?</h3>
-        <p className="text-sm mt-1">Follow our <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 hover:underline">quick start guide</a> to create your first agent in minutes.</p>
-      </div>
-    </div>
-  </div>
+ <h2 className="mb-4">Next Steps</h2>
+ <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700">
+   <div className="flex items-center">
+     <div className="text-2xl mr-3">🚀</div>
+     <div>
+       <h3 className="font-bold">Ready to dive in?</h3>
+       <p className="text-sm mt-1">Follow our <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 hover:underline">quick start guide</a> to create your first agent in minutes.</p>
+     </div>
+   </div>
+ </div>
 </div>
