@@ -1,85 +1,321 @@
 ---
 title: 'Quick Start Guide'
-description: 'Create your first agent and playbook in minutes'
+description: 'Create your first automated solution with Demiurg'
 ---
 
+<Frame>
+  <img 
+    src="/images/quick-start-hero.png" 
+    alt="Demiurg Quick Start" 
+    className="rounded-lg shadow-lg"
+  />
+</Frame>
+
 <Note>
-  This guide will help you create a simple customer support agent that can handle basic inquiries.
+  This guide will walk you through creating your first automation by understanding the relationship between agents, playbooks, and pages.
 </Note>
 
-## Step 1: Create an Agent
+## The Demiurg Hierarchy
 
-<Steps>
-  <Step title="Navigate to Agent Dashboard">
-    From the main dashboard, click the "Create Agent" button.
-  </Step>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold mb-2 flex items-center">
+      <div className="w-8 h-8 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-full mr-2">1</div>
+      Agents
+    </h3>
+    <p>AI assistants with their own identity, communication channels, and tools</p>
+  </div>
+  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold mb-2 flex items-center">
+      <div className="w-8 h-8 flex items-center justify-center bg-green-100 dark:bg-green-900 rounded-full mr-2">2</div>
+      Playbooks
+    </h3>
+    <p>Collections of related pages assigned to agents for specific functions</p>
+  </div>
+  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold mb-2 flex items-center">
+      <div className="w-8 h-8 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full mr-2">3</div>
+      Pages
+    </h3>
+    <p>Individual workflows built with blocks that define specific automations</p>
+  </div>
+</div>
+
+<Tabs>
+  <Tab title="Step 1: Create an Agent">
+    <Frame>
+      <img src="/images/create-agent.png" alt="Agent Creation Interface" className="rounded-lg" />
+    </Frame>
+
+    <Steps>
+      <Step title="Navigate to Agents">
+        Go to the main dashboard and click the <strong>Create Agent</strong> button.
+      </Step>
+      
+      <Step title="Set Agent Identity">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
+          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Basic Information</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Give your agent a descriptive name</li>
+              <li>Select its primary purpose</li>
+              <li>Add a helpful description</li>
+            </ul>
+          </div>
+          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Communication</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Assign an email address</li>
+              <li>Set up phone number (optional)</li>
+              <li>Configure additional channels</li>
+            </ul>
+          </div>
+        </div>
+      </Step>
+      
+      <Step title="Configure AI Tools">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Select Models</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Choose AI models (ChatGPT, Claude)</li>
+              <li>Set response parameters</li>
+              <li>Configure system prompts</li>
+            </ul>
+          </div>
+          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Knowledge</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Upload relevant documents</li>
+              <li>Define domain knowledge</li>
+              <li>Set response guidelines</li>
+            </ul>
+          </div>
+        </div>
+      </Step>
+    </Steps>
+  </Tab>
   
-  <Step title="Configure Basic Settings">
-    <CardGroup cols={2}>
-      <Card title="Essential Details" icon="gear">
-        - Name: "Support Assistant"
-        - Email: Enter agent's email
-        - Phone (optional): Add phone number
-      </Card>
-      <Card title="AI Tools" icon="robot">
-        - Select AI models (ChatGPT/Claude)
-        - Set response guidelines
-        - Configure knowledge base
-      </Card>
-    </CardGroup>
-  </Step>
+  <Tab title="Step 2: Create a Playbook">
+    <Frame>
+      <img src="/images/playbook-creation.png" alt="Playbook Interface" className="rounded-lg" />
+    </Frame>
+
+    <Steps>
+      <Step title="Start with Templates or Create New">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
+          <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Template Options</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Customer Support</li>
+              <li>Sales Automation</li>
+              <li>Marketing Workflows</li>
+              <li>Document Processing</li>
+            </ul>
+          </div>
+          <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Custom Playbook</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>Click "New Playbook"</li>
+              <li>Name it descriptively</li>
+              <li>Add purpose details</li>
+              <li>Start from scratch</li>
+            </ul>
+          </div>
+        </div>
+      </Step>
+      
+      <Step title="Configure Playbook Settings">
+        <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg my-2">
+          <h4 className="font-semibold mb-2">Key Settings</h4>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+            <div className="bg-white dark:bg-slate-800 p-2 rounded">Execution priority</div>
+            <div className="bg-white dark:bg-slate-800 p-2 rounded">Access controls</div>
+            <div className="bg-white dark:bg-slate-800 p-2 rounded">Notification rules</div>
+            <div className="bg-white dark:bg-slate-800 p-2 rounded">Monitoring options</div>
+          </div>
+        </div>
+      </Step>
+    </Steps>
+  </Tab>
   
-  <Step title="Set Up Communications">
-    Choose which channels your agent will use:
-    - Email integration
-    - WhatsApp
-    - Other messaging channels
-  </Step>
-</Steps>
+  <Tab title="Step 3: Build Pages">
+    <Frame>
+      <img src="/images/page-editor.png" alt="Page Editor" className="rounded-lg" />
+    </Frame>
 
-## Step 2: Create Your First Playbook
+    <Steps>
+      <Step title="Add Pages to Playbook">
+        <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg my-2">
+          <p>In your playbook, click <strong>"Add Page"</strong> to create new workflow or select an existing template page to customize.</p>
+        </div>
+      </Step>
+      
+      <Step title="Use Blocks to Define Logic">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Listen Blocks</h4>
+            <div className="space-y-2">
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">📥</span> Email received
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">📝</span> Form submission
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">⏰</span> Schedule trigger
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">🔔</span> Custom events
+              </div>
+            </div>
+          </div>
+          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Generate Blocks</h4>
+            <div className="space-y-2">
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">💬</span> Create responses
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">🔀</span> Make decisions
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">🔄</span> Process data
+              </div>
+              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
+                <span className="mr-2">📊</span> Analyze information
+              </div>
+            </div>
+          </div>
+        </div>
+      </Step>
+      
+      <Step title="Use Demiurg AI to Build Pages">
+        <Frame>
+          <img src="/images/ai-assistant.png" alt="AI Assistant" className="rounded-lg" />
+        </Frame>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Generate with AI</h4>
+            <div className="bg-white dark:bg-slate-800 p-3 rounded-lg border border-purple-200 dark:border-purple-900 mb-2">
+              <p className="text-sm italic">"Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."</p>
+            </div>
+            <p className="text-sm">Click "generate" in the right panel and describe what you want to build</p>
+          </div>
+          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+            <h4 className="font-semibold mb-2">Review & Refine</h4>
+            <ul className="list-disc list-inside space-y-1">
+              <li>View side-by-side comparison</li>
+              <li>Accept AI suggestions</li>
+              <li>Make manual adjustments</li>
+              <li>Request specific changes</li>
+            </ul>
+          </div>
+        </div>
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
-<Steps>
-  <Step title="Open Playbook Editor">
-    Click "New Playbook" in your agent's dashboard.
-  </Step>
+## Complete Example: Customer Support Agent
+
+<Frame className="mb-6">
+  <img src="/images/complete-example.png" alt="Complete Example" className="rounded-lg" />
+</Frame>
+
+<CardGroup cols={1}>
+  <Card>
+    <div className="border-l-4 border-blue-500 pl-4">
+      <h3 className="text-lg font-bold mb-2">Agent: Support Assistant</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+          <strong>Email:</strong> support@company.com
+        </div>
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+          <strong>AI:</strong> ChatGPT + Claude
+        </div>
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+          <strong>Knowledge:</strong> Product docs
+        </div>
+        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+          <strong>Channels:</strong> Email + Chat
+        </div>
+      </div>
+    </div>
+  </Card>
   
-  <Step title="Use AI or Start Writing">
-    You have two options:
-    
-    <CardGroup cols={2}>
-      <Card title="Let AI Create" icon="wand-magic-sparkles">
-        - Click 'generate' in the editor
-        - Describe what you want the agent to do
-        - Review and customize the generated playbook
-      </Card>
-      <Card title="Write Manually" icon="pen">
-        - Add Listen block for incoming messages
-        - Add Generate block for responses
-        - Write instructions in natural language
-      </Card>
-    </CardGroup>
-  </Step>
+  <Card>
+    <div className="border-l-4 border-green-500 pl-4">
+      <h3 className="text-lg font-bold mb-2">Playbook: Support Inquiries</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
+        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+          <strong>Purpose:</strong> Handle questions
+        </div>
+        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+          <strong>Pages:</strong> 3 active flows
+        </div>
+        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+          <strong>Status:</strong> Active
+        </div>
+        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+          <strong>Priority:</strong> High
+        </div>
+      </div>
+    </div>
+  </Card>
   
-  <Step title="Test Your Playbook">
-    Use the preview feature to test:
-    - Send test messages
-    - Check agent responses
-    - Verify behavior
-  </Step>
-</Steps>
+  <Card>
+    <div className="border-l-4 border-purple-500 pl-4">
+      <h3 className="text-lg font-bold mb-2">Page: Email Triage</h3>
+      <div className="space-y-2">
+        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+          <strong>Listen Block:</strong> New email received at support@company.com
+        </div>
+        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+          <strong>Generate Block:</strong> Analyze email content, categorize by urgency and topic
+        </div>
+        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+          <strong>Generate Block:</strong> Create appropriate response based on category
+        </div>
+        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+          <strong>Generate Block:</strong> Decide if escalation needed, route accordingly
+        </div>
+      </div>
+    </div>
+  </Card>
+</CardGroup>
 
-## Example Playbook
+## Next Steps
 
-Here's a simple customer support playbook:
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg shadow-md">
+    <div className="text-3xl mb-2">💡</div>
+    <h3 className="text-lg font-bold mb-1">Expand Your Agent</h3>
+    <p className="text-sm mb-3">Add more capabilities with additional playbooks and pages</p>
+    <a href="/pages/overview" className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline">Learn more →</a>
+  </div>
+  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg shadow-md">
+    <div className="text-3xl mb-2">🔌</div>
+    <h3 className="text-lg font-bold mb-1">Add Integrations</h3>
+    <p className="text-sm mb-3">Connect to your existing tools and services</p>
+    <a href="/agents/integrations/custom-services" className="text-green-600 dark:text-green-400 text-sm font-medium hover:underline">View options →</a>
+  </div>
+  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg shadow-md">
+    <div className="text-3xl mb-2">📚</div>
+    <h3 className="text-lg font-bold mb-1">Explore Templates</h3>
+    <p className="text-sm mb-3">Browse our library of pre-built solutions</p>
+    <a href="/examples/customer-service" className="text-purple-600 dark:text-purple-400 text-sm font-medium hover:underline">See templates →</a>
+  </div>
+</div>
 
-```text
-Listen for incoming customer emails
-
-Generate response:
-- Analyze customer inquiry
-- If urgent, mark as high priority
-- Send acknowledgment within 1 minute
-- If simple question, provide answer
-- If complex, route to human agent
-- Always maintain professional tone
+<Check>
+  <div className="font-medium">Key Points to Remember:</div>
+  <ul className="list-disc list-inside mt-2">
+    <li><strong>Agents</strong> are the identity and interface your users interact with</li>
+    <li><strong>Playbooks</strong> define sets of capabilities assigned to an agent</li>
+    <li><strong>Pages</strong> contain the actual workflow logic built with blocks</li>
+    <li>Use <strong>Demiurg AI</strong> to quickly build sophisticated pages</li>
+    <li>Start with <strong>templates</strong> to get up and running faster</li>
+  </ul>
+</Check>
