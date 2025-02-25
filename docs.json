@@ -7,7 +7,7 @@
     "light": "#598a9c",
     "dark": "#1C3943"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "/favicon.png",
   "navigation": {
     "tabs": [
       {
@@ -143,8 +143,8 @@
   "logo": {
     "light": "/logo/demiurg-light.svg",
     "dark": "/logo/demiurg-dark.svg",
-    "width": "140px",
-    "height": "40px"
+    "width": "200px",
+    "height": "56px"
   },
   "navbar": {
     "links": [
