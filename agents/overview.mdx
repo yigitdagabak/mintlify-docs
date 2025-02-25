@@ -1,5 +1,413 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Agents Overview'
+description: 'Understanding agents, their functionality, and how to manage them'
 ---
 
+<Frame>
+  <img 
+    src="/images/agents-hero.png" 
+    alt="Demiurg Agents Overview" 
+    className="rounded-lg shadow-sm"
+  />
+</Frame>
+
+<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] my-6">
+  <p className="text-slate-600 dark:text-slate-300">Agents are the core entities in Demiurg that interact with users across various channels. This guide covers all you need to know about creating and managing agents.</p>
+</div>
+
+## What are Agents?
+
+<div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6">
+  <p className="text-slate-600 dark:text-slate-300">
+    Agents are AI-powered assistants that act as virtual team members capable of handling specific tasks and workflows. Each agent has its own identity, communication channels, knowledge base, and capabilities defined by the playbooks assigned to them.
+  </p>
+  
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+    <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+      <span className="text-[#1C3943] dark:text-white font-medium block mb-1">Autonomous</span>
+      <span className="text-slate-600 dark:text-slate-300">Operate 24/7 with minimal supervision</span>
+    </div>
+    <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+      <span className="text-[#1C3943] dark:text-white font-medium block mb-1">Personalized</span>
+      <span className="text-slate-600 dark:text-slate-300">Custom identity and behavior for each use case</span>
+    </div>
+    <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+      <span className="text-[#1C3943] dark:text-white font-medium block mb-1">Contextual</span>
+      <span className="text-slate-600 dark:text-slate-300">Understand and remember conversation history</span>
+    </div>
+  </div>
+</div>
+
+## Agent Components
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <h3 className="text-xl font-medium mb-3 flex items-center text-[#1C3943] dark:text-white">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-2 text-sm text-[#598a9c]">1</div>
+      Identity
+    </h3>
+    <p className="mb-3 text-slate-600 dark:text-slate-300">
+      Each agent has a unique profile that defines how it appears to users.
+    </p>
+    <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      <li>Name and avatar</li>
+      <li>Role and purpose</li>
+      <li>Communication style</li>
+      <li>Signature and sign-off format</li>
+    </ul>
+  </div>
+  
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <h3 className="text-xl font-medium mb-3 flex items-center text-[#1C3943] dark:text-white">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-2 text-sm text-[#598a9c]">2</div>
+      Communication
+    </h3>
+    <p className="mb-3 text-slate-600 dark:text-slate-300">
+      Configure how your agent interacts with users through various channels.
+    </p>
+    <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      <li>Email address configurations</li>
+      <li>Messaging platform connections</li>
+      <li>Phone and SMS capabilities</li>
+      <li>Web widget integrations</li>
+    </ul>
+  </div>
+  
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <h3 className="text-xl font-medium mb-3 flex items-center text-[#1C3943] dark:text-white">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-2 text-sm text-[#598a9c]">3</div>
+      AI Configuration
+    </h3>
+    <p className="mb-3 text-slate-600 dark:text-slate-300">
+      Define the AI capabilities and models that power your agent.
+    </p>
+    <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      <li>AI model selection (ChatGPT, Claude)</li>
+      <li>Response parameters</li>
+      <li>System prompt configuration</li>
+      <li>Model fine-tuning options</li>
+    </ul>
+  </div>
+  
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <h3 className="text-xl font-medium mb-3 flex items-center text-[#1C3943] dark:text-white">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-2 text-sm text-[#598a9c]">4</div>
+      Knowledge Base
+    </h3>
+    <p className="mb-3 text-slate-600 dark:text-slate-300">
+      Provide your agent with the information it needs to effectively assist users.
+    </p>
+    <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      <li>Document repositories</li>
+      <li>Training materials</li>
+      <li>FAQs and guidelines</li>
+      <li>Custom knowledge embedding</li>
+    </ul>
+  </div>
+</div>
+
+## Creating Your First Agent
+
+<div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6">
+  <h3 className="font-medium mb-4 text-[#1C3943] dark:text-white">Quick Start Steps</h3>
+  
+  <div className="space-y-3">
+    <div className="flex items-start">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">1</div>
+      <div>
+        <p className="font-medium text-[#1C3943] dark:text-white">Navigate to the Agents Dashboard</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">From your main dashboard, select "Agents" in the left sidebar.</p>
+      </div>
+    </div>
+    
+    <div className="flex items-start">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">2</div>
+      <div>
+        <p className="font-medium text-[#1C3943] dark:text-white">Click "Create Agent"</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Use the button in the top right corner to start the agent creation process.</p>
+      </div>
+    </div>
+    
+    <div className="flex items-start">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">3</div>
+      <div>
+        <p className="font-medium text-[#1C3943] dark:text-white">Configure Basic Details</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Set your agent's name, purpose, and basic identity information.</p>
+      </div>
+    </div>
+    
+    <div className="flex items-start">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">4</div>
+      <div>
+        <p className="font-medium text-[#1C3943] dark:text-white">Set Up Communication Channels</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Configure email and messaging options for your agent.</p>
+      </div>
+    </div>
+    
+    <div className="flex items-start">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">5</div>
+      <div>
+        <p className="font-medium text-[#1C3943] dark:text-white">Assign Playbooks</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Select the playbooks that define your agent's capabilities.</p>
+      </div>
+    </div>
+    
+    <div className="flex items-start">
+      <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">6</div>
+      <div>
+        <p className="font-medium text-[#1C3943] dark:text-white">Review and Launch</p>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Verify your agent configuration and activate it to start handling tasks.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Common Agent Types
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <div className="text-2xl mb-2">👨‍💼</div>
+    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Customer Support</h3>
+    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Handle inquiries, resolve issues, and provide assistance to customers.</p>
+    <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-xs text-slate-600 dark:text-slate-300">
+      Popular for: SaaS companies, e-commerce, service businesses
+    </div>
+  </div>
+  
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <div className="text-2xl mb-2">🤝</div>
+    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Sales Assistant</h3>
+    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Qualify leads, schedule demos, and assist with the sales process.</p>
+    <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-xs text-slate-600 dark:text-slate-300">
+      Popular for: B2B companies, real estate, financial services
+    </div>
+  </div>
+  
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <div className="text-2xl mb-2">📝</div>
+    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Document Processor</h3>
+    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Extract, categorize, and process information from various documents.</p>
+    <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-xs text-slate-600 dark:text-slate-300">
+      Popular for: Legal firms, healthcare, HR departments
+    </div>
+  </div>
+</div>
+
+## Agent Dashboard
+
+<Frame>
+  <img src="/images/agent-dashboard-detailed.png" alt="Agent Dashboard Interface" className="rounded-lg" />
+</Frame>
+
+<div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mt-4 mb-6">
+  <h3 className="font-medium mb-3 text-[#1C3943] dark:text-white">Key Dashboard Features</h3>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div>
+      <ul className="space-y-2 text-slate-600 dark:text-slate-300">
+        <li className="flex items-start">
+          <span className="text-[#598a9c] mr-2">•</span> 
+          <span><span className="text-[#1C3943] dark:text-white font-medium">Active Conversations:</span> View and manage current interactions</span>
+        </li>
+        <li className="flex items-start">
+          <span className="text-[#598a9c] mr-2">•</span> 
+          <span><span className="text-[#1C3943] dark:text-white font-medium">Performance Metrics:</span> Track response times and resolution rates</span>
+        </li>
+        <li className="flex items-start">
+          <span className="text-[#598a9c] mr-2">•</span> 
+          <span><span className="text-[#1C3943] dark:text-white font-medium">Escalations:</span> Review items that require human attention</span>
+        </li>
+      </ul>
+    </div>
+    
+    <div>
+      <ul className="space-y-2 text-slate-600 dark:text-slate-300">
+        <li className="flex items-start">
+          <span className="text-[#598a9c] mr-2">•</span> 
+          <span><span className="text-[#1C3943] dark:text-white font-medium">Playbook Management:</span> Assign and update agent capabilities</span>
+        </li>
+        <li className="flex items-start">
+          <span className="text-[#598a9c] mr-2">•</span> 
+          <span><span className="text-[#1C3943] dark:text-white font-medium">Knowledge Updates:</span> Maintain the agent's information sources</span>
+        </li>
+        <li className="flex items-start">
+          <span className="text-[#598a9c] mr-2">•</span> 
+          <span><span className="text-[#1C3943] dark:text-white font-medium">Configuration:</span> Adjust settings and integration details</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+## Managing Agents
+
+<Tabs>
+  <Tab title="Monitoring">
+    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mt-4">
+      <p className="mb-3 text-slate-600 dark:text-slate-300">
+        Keep track of your agent's performance and activity to ensure optimal operation.
+      </p>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="space-y-2">
+          <h4 className="font-medium text-[#1C3943] dark:text-white">Key Metrics to Track</h4>
+          <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+            <li>Response time averages</li>
+            <li>Resolution rates</li>
+            <li>User satisfaction scores</li>
+            <li>Escalation frequency</li>
+            <li>Channel usage statistics</li>
+          </ul>
+        </div>
+        
+        <div className="space-y-2">
+          <h4 className="font-medium text-[#1C3943] dark:text-white">Monitoring Tools</h4>
+          <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+            <li>Real-time activity dashboard</li>
+            <li>Conversation logs and history</li>
+            <li>Performance reports</li>
+            <li>Alert configurations</li>
+            <li>Quality assurance tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Maintenance">
+    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mt-4">
+      <p className="mb-3 text-slate-600 dark:text-slate-300">
+        Regular maintenance ensures your agents continue to perform at their best.
+      </p>
+      
+      <div className="space-y-4">
+        <div>
+          <h4 className="font-medium text-[#1C3943] dark:text-white mb-2">Knowledge Base Updates</h4>
+          <p className="text-sm text-slate-600 dark:text-slate-300">
+            Keep your agent's information current by regularly updating the knowledge base with new documents, FAQs, and training materials.
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="font-medium text-[#1C3943] dark:text-white mb-2">Response Quality Review</h4>
+          <p className="text-sm text-slate-600 dark:text-slate-300">
+            Periodically review agent responses to identify areas for improvement and refine communication patterns.
+          </p>
+        </div>
+        
+        <div>
+          <h4 className="font-medium text-[#1C3943] dark:text-white mb-2">Playbook Optimization</h4>
+          <p className="text-sm text-slate-600 dark:text-slate-300">
+            Analyze playbook performance and adjust workflows to improve efficiency and effectiveness.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Scaling">
+    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mt-4">
+      <p className="mb-3 text-slate-600 dark:text-slate-300">
+        As your needs grow, you can scale your agent operations in several ways.
+      </p>
+      
+      <div className="space-y-3">
+        <div className="flex items-start">
+          <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">1</div>
+          <div>
+            <p className="font-medium text-[#1C3943] dark:text-white">Multiple Specialized Agents</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">Create dedicated agents for different departments, products, or service areas.</p>
+          </div>
+        </div>
+        
+        <div className="flex items-start">
+          <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">2</div>
+          <div>
+            <p className="font-medium text-[#1C3943] dark:text-white">Enhanced AI Capabilities</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">Upgrade to more advanced AI models and configurations as volume increases.</p>
+          </div>
+        </div>
+        
+        <div className="flex items-start">
+          <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">3</div>
+          <div>
+            <p className="font-medium text-[#1C3943] dark:text-white">Team Collaboration</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">Implement human-in-the-loop workflows for complex scenarios requiring expert input.</p>
+          </div>
+        </div>
+        
+        <div className="flex items-start">
+          <div className="w-6 h-6 flex items-center justify-center bg-[#598a9c]/10 rounded mr-3 text-sm text-[#598a9c]">4</div>
+          <div>
+            <p className="font-medium text-[#1C3943] dark:text-white">Cross-Channel Expansion</p>
+            <p className="text-sm text-slate-600 dark:text-slate-300">Extend agent availability across additional communication platforms and entry points.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Tab>
+</Tabs>
+
+## Best Practices
+
+<div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6">
+  <h3 className="font-medium mb-4 text-[#1C3943] dark:text-white">Tips for Effective Agent Design</h3>
+  
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <div className="border-l-2 border-[#1C3943] pl-4 mb-4">
+        <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Clear Identity</h4>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Define a consistent, purpose-driven identity that aligns with your brand and resonates with users.</p>
+      </div>
+      
+      <div className="border-l-2 border-[#1C3943] pl-4 mb-4">
+        <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Comprehensive Knowledge</h4>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Provide thorough information and training materials to enable accurate and helpful responses.</p>
+      </div>
+      
+      <div className="border-l-2 border-[#1C3943] pl-4">
+        <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Focused Scope</h4>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Design agents with well-defined responsibilities rather than attempting to handle too many diverse tasks.</p>
+      </div>
+    </div>
+    
+    <div>
+      <div className="border-l-2 border-[#1C3943] pl-4 mb-4">
+        <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Escalation Paths</h4>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Create clear pathways for complex issues to be routed to human team members when necessary.</p>
+      </div>
+      
+      <div className="border-l-2 border-[#1C3943] pl-4 mb-4">
+        <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Ongoing Refinement</h4>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Regularly review agent performance and user feedback to make continuous improvements.</p>
+      </div>
+      
+      <div className="border-l-2 border-[#1C3943] pl-4">
+        <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Communication Style</h4>
+        <p className="text-sm text-slate-600 dark:text-slate-300">Craft a tone and communication approach that suits your audience and business context.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Next Steps
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <Card title="Configure Your Agent" icon="gear" href="/agents/configuration">
+    <div className="text-slate-600 dark:text-slate-300">
+      Dive into detailed agent settings and customization options
+    </div>
+  </Card>
+  
+  <Card title="Build a Knowledge Base" icon="brain" href="/agents/knowledge-base">
+    <div className="text-slate-600 dark:text-slate-300">
+      Learn how to create an effective knowledge foundation for your agent
+    </div>
+  </Card>
+  
+  <Card title="Set Up Integrations" icon="plug" href="/agents/integrations/overview">
+    <div className="text-slate-600 dark:text-slate-300">
+      Connect your agent to communication channels and external services
+    </div>
+  </Card>
+</div>
