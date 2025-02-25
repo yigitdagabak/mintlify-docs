@@ -7,13 +7,13 @@ description: 'Create your first automated solution with Demiurg'
   <img 
     src="/images/quick-start-hero.png" 
     alt="Demiurg Quick Start" 
-    className="rounded-lg shadow-lg"
+    className="rounded-lg shadow-sm"
   />
 </Frame>
 
-<Note>
-  This guide will walk you through creating your first automation by building an agent, creating a playbook, and designing pages.
-</Note>
+<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] my-6">
+  <p className="text-slate-600 dark:text-slate-300">This guide will walk you through creating your first automation by building an agent, creating a playbook, and designing pages.</p>
+</div>
 
 ## Step 1: Create an Agent
 
@@ -23,22 +23,24 @@ description: 'Create your first automated solution with Demiurg'
 
 <Steps>
   <Step title="Navigate to Agent Dashboard">
-    From the main dashboard, click the <strong>Create Agent</strong> button in the top right corner.
+    <p className="text-slate-600 dark:text-slate-300">
+      From the main dashboard, click the <strong>Create Agent</strong> button in the top right corner.
+    </p>
   </Step>
   
   <Step title="Configure Basic Settings">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Identity</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Identity</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>Name your agent (e.g., "Support Assistant")</li>
           <li>Add a description of its purpose</li>
           <li>Select agent type (support, sales, etc.)</li>
         </ul>
       </div>
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Communication</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Communication</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>Set up email address</li>
           <li>Add phone number (optional)</li>
           <li>Configure messaging channels</li>
@@ -49,17 +51,17 @@ description: 'Create your first automated solution with Demiurg'
   
   <Step title="Set Up AI Tools">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">AI Models</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">AI Models</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>Select AI providers (ChatGPT, Claude)</li>
           <li>Configure response parameters</li>
           <li>Set up system instructions</li>
         </ul>
       </div>
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Knowledge Base</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Knowledge Base</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>Upload reference documents</li>
           <li>Add domain-specific knowledge</li>
           <li>Set response guidelines</li>
@@ -78,17 +80,17 @@ description: 'Create your first automated solution with Demiurg'
 <Steps>
   <Step title="Choose Template or Create New">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Use Template</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Use Template</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>Browse available templates</li>
           <li>Select one matching your needs</li>
           <li>Customize as needed</li>
         </ul>
       </div>
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Start Fresh</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Start Fresh</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>Click "New Playbook"</li>
           <li>Name your playbook</li>
           <li>Set up from scratch</li>
@@ -98,13 +100,13 @@ description: 'Create your first automated solution with Demiurg'
   </Step>
   
   <Step title="Configure Settings">
-    <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700 my-2">
-      <h4 className="font-semibold mb-2">Key Playbook Settings</h4>
+    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-2">
+      <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Key Playbook Settings</h4>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Priority level</div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Access controls</div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Notifications</div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Monitoring</div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Priority level</div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Access controls</div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Notifications</div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Monitoring</div>
       </div>
     </div>
   </Step>
@@ -118,44 +120,44 @@ description: 'Create your first automated solution with Demiurg'
 
 <Steps>
   <Step title="Add Pages to Playbook">
-    <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700 my-2">
-      <p>In your playbook, click <strong>"Add Page"</strong> to create a new workflow or edit an existing template page.</p>
+    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-2">
+      <p className="text-slate-600 dark:text-slate-300">In your playbook, click <strong>"Add Page"</strong> to create a new workflow or edit an existing template page.</p>
     </div>
   </Step>
   
   <Step title="Build with Blocks">
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Listen Blocks</h4>
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Listen Blocks</h4>
         <div className="space-y-2">
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">📥</span> Email received
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">📥</span> <span className="text-slate-600 dark:text-slate-300">Email received</span>
           </div>
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">📝</span> Form submission
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">📝</span> <span className="text-slate-600 dark:text-slate-300">Form submission</span>
           </div>
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">⏰</span> Schedule trigger
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">⏰</span> <span className="text-slate-600 dark:text-slate-300">Schedule trigger</span>
           </div>
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">🔔</span> Custom events
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">🔔</span> <span className="text-slate-600 dark:text-slate-300">Custom events</span>
           </div>
         </div>
       </div>
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Generate Blocks</h4>
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Generate Blocks</h4>
         <div className="space-y-2">
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">💬</span> Create responses
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">💬</span> <span className="text-slate-600 dark:text-slate-300">Create responses</span>
           </div>
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">🔀</span> Make decisions
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">🔀</span> <span className="text-slate-600 dark:text-slate-300">Make decisions</span>
           </div>
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">🔄</span> Process data
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">🔄</span> <span className="text-slate-600 dark:text-slate-300">Process data</span>
           </div>
-          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
-            <span className="mr-2">📊</span> Analyze information
+          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
+            <span className="mr-2">📊</span> <span className="text-slate-600 dark:text-slate-300">Analyze information</span>
           </div>
         </div>
       </div>
@@ -168,16 +170,16 @@ description: 'Create your first automated solution with Demiurg'
     </Frame>
     
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Generate with AI</h4>
-        <div className="p-3 rounded-lg border border-gray-200 dark:border-gray-700 mb-2">
-          <p className="text-sm italic">"Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."</p>
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Generate with AI</h4>
+        <div className="p-3 rounded bg-slate-50 dark:bg-slate-800 mb-2">
+          <p className="text-sm italic text-slate-600 dark:text-slate-300">"Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."</p>
         </div>
-        <p className="text-sm">Click "generate" in the right panel and describe what you want to build</p>
+        <p className="text-sm text-slate-500 dark:text-slate-400">Click "generate" in the right panel and describe what you want to build</p>
       </div>
-      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-        <h4 className="font-semibold mb-2">Review & Refine</h4>
-        <ul className="list-disc list-inside space-y-1">
+      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Review & Refine</h4>
+        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
           <li>View side-by-side comparison</li>
           <li>Accept AI suggestions</li>
           <li>Make manual adjustments</li>
@@ -196,60 +198,60 @@ description: 'Create your first automated solution with Demiurg'
 
 <CardGroup cols={1}>
   <Card>
-    <div className="border-l-4 border-[#1C3943] pl-4">
-      <h3 className="text-lg font-bold mb-2">Agent: Support Assistant</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Email:</strong> support@company.com
+    <div className="border-l-2 border-[#1C3943] pl-4">
+      <h3 className="text-lg font-medium mb-2 text-[#1C3943] dark:text-white">Agent: Support Assistant</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Email:</span> <span className="text-slate-600 dark:text-slate-300">support@company.com</span>
         </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>AI:</strong> ChatGPT + Claude
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">AI:</span> <span className="text-slate-600 dark:text-slate-300">ChatGPT + Claude</span>
         </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Knowledge:</strong> Product docs
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Knowledge:</span> <span className="text-slate-600 dark:text-slate-300">Product docs</span>
         </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Channels:</strong> Email + Chat
-        </div>
-      </div>
-    </div>
-  </Card>
-  
-  <Card>
-    <div className="border-l-4 border-[#598a9c] pl-4">
-      <h3 className="text-lg font-bold mb-2">Playbook: Support Inquiries</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Purpose:</strong> Handle questions
-        </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Pages:</strong> 3 active flows
-        </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Status:</strong> Active
-        </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
-          <strong>Priority:</strong> High
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Channels:</span> <span className="text-slate-600 dark:text-slate-300">Email + Chat</span>
         </div>
       </div>
     </div>
   </Card>
   
   <Card>
-    <div className="border-l-4 border-[#1C3943] pl-4">
-      <h3 className="text-lg font-bold mb-2">Page: Email Triage</h3>
+    <div className="border-l-2 border-[#598a9c] pl-4">
+      <h3 className="text-lg font-medium mb-2 text-[#1C3943] dark:text-white">Playbook: Support Inquiries</h3>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Purpose:</span> <span className="text-slate-600 dark:text-slate-300">Handle questions</span>
+        </div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Pages:</span> <span className="text-slate-600 dark:text-slate-300">3 active flows</span>
+        </div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Status:</span> <span className="text-slate-600 dark:text-slate-300">Active</span>
+        </div>
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Priority:</span> <span className="text-slate-600 dark:text-slate-300">High</span>
+        </div>
+      </div>
+    </div>
+  </Card>
+  
+  <Card>
+    <div className="border-l-2 border-[#1C3943] pl-4">
+      <h3 className="text-lg font-medium mb-2 text-[#1C3943] dark:text-white">Page: Email Triage</h3>
       <div className="space-y-2">
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
-          <strong>Listen Block:</strong> New email received at support@company.com
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Listen Block:</span> <span className="text-slate-600 dark:text-slate-300">New email received at support@company.com</span>
         </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
-          <strong>Generate Block:</strong> Analyze email content, categorize by urgency and topic
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Generate Block:</span> <span className="text-slate-600 dark:text-slate-300">Analyze email content, categorize by urgency and topic</span>
         </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
-          <strong>Generate Block:</strong> Create appropriate response based on category
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Generate Block:</span> <span className="text-slate-600 dark:text-slate-300">Create appropriate response based on category</span>
         </div>
-        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
-          <strong>Generate Block:</strong> Decide if escalation needed, route accordingly
+        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
+          <span className="text-[#1C3943] dark:text-white font-medium">Generate Block:</span> <span className="text-slate-600 dark:text-slate-300">Decide if escalation needed, route accordingly</span>
         </div>
       </div>
     </div>
@@ -259,33 +261,33 @@ description: 'Create your first automated solution with Demiurg'
 ## Next Steps
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-  <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-    <div className="text-3xl mb-2">💡</div>
-    <h3 className="text-lg font-bold mb-1">Expand Your Agent</h3>
-    <p className="text-sm mb-3">Add more capabilities with additional playbooks and pages</p>
-    <a href="/pages/overview" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">Learn more →</a>
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <div className="text-2xl mb-2">💡</div>
+    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Expand Your Agent</h3>
+    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Add more capabilities with additional playbooks and pages</p>
+    <a href="/pages/overview" className="text-[#598a9c] text-sm font-medium hover:underline">Learn more →</a>
   </div>
-  <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-    <div className="text-3xl mb-2">🔌</div>
-    <h3 className="text-lg font-bold mb-1">Add Integrations</h3>
-    <p className="text-sm mb-3">Connect to your existing tools and services</p>
-    <a href="/agents/external-services" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">View options →</a>
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <div className="text-2xl mb-2">🔌</div>
+    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Add Integrations</h3>
+    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Connect to your existing tools and services</p>
+    <a href="/agents/external-services" className="text-[#598a9c] text-sm font-medium hover:underline">View options →</a>
   </div>
-  <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
-    <div className="text-3xl mb-2">📚</div>
-    <h3 className="text-lg font-bold mb-1">Explore Templates</h3>
-    <p className="text-sm mb-3">Browse our library of pre-built solutions</p>
-    <a href="/solutions/customer-service" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">See templates →</a>
+  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+    <div className="text-2xl mb-2">📚</div>
+    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Explore Templates</h3>
+    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Browse our library of pre-built solutions</p>
+    <a href="/solutions/customer-service" className="text-[#598a9c] text-sm font-medium hover:underline">See templates →</a>
   </div>
 </div>
 
-<Check>
-  <div className="font-medium">Key Points to Remember:</div>
-  <ul className="list-disc list-inside mt-2">
-    <li><strong>Agents</strong> are the identity and interface your users interact with</li>
-    <li><strong>Playbooks</strong> define sets of capabilities assigned to an agent</li>
-    <li><strong>Pages</strong> contain the actual workflow logic built with blocks</li>
-    <li>Use <strong>Demiurg AI</strong> to quickly build sophisticated pages</li>
-    <li>Start with <strong>templates</strong> to get up and running faster</li>
+<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] my-6">
+  <div className="font-medium text-[#1C3943] dark:text-white mb-2">Key Points to Remember:</div>
+  <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <li><span className="text-[#1C3943] dark:text-white font-medium">Agents</span> are the identity and interface your users interact with</li>
+    <li><span className="text-[#1C3943] dark:text-white font-medium">Playbooks</span> define sets of capabilities assigned to an agent</li>
+    <li><span className="text-[#1C3943] dark:text-white font-medium">Pages</span> contain the actual workflow logic built with blocks</li>
+    <li>Use <span className="text-[#1C3943] dark:text-white font-medium">Demiurg AI</span> to quickly build sophisticated pages</li>
+    <li>Start with <span className="text-[#1C3943] dark:text-white font-medium">templates</span> to get up and running faster</li>
   </ul>
-</Check>
+</div>
