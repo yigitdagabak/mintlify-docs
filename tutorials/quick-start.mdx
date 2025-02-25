@@ -12,213 +12,183 @@ description: 'Create your first automated solution with Demiurg'
 </Frame>
 
 <Note>
-  This guide will walk you through creating your first automation by understanding the relationship between agents, playbooks, and pages.
+  This guide will walk you through creating your first automation by building an agent, creating a playbook, and designing pages.
 </Note>
 
-## The Demiurg Hierarchy
+## Step 1: Create an Agent
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
-    <h3 className="text-xl font-bold mb-2 flex items-center">
-      <div className="w-8 h-8 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-full mr-2">1</div>
-      Agents
-    </h3>
-    <p>AI assistants with their own identity, communication channels, and tools</p>
-  </div>
-  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
-    <h3 className="text-xl font-bold mb-2 flex items-center">
-      <div className="w-8 h-8 flex items-center justify-center bg-green-100 dark:bg-green-900 rounded-full mr-2">2</div>
-      Playbooks
-    </h3>
-    <p>Collections of related pages assigned to agents for specific functions</p>
-  </div>
-  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-md border border-slate-200 dark:border-slate-700">
-    <h3 className="text-xl font-bold mb-2 flex items-center">
-      <div className="w-8 h-8 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full mr-2">3</div>
-      Pages
-    </h3>
-    <p>Individual workflows built with blocks that define specific automations</p>
-  </div>
-</div>
+<Frame>
+  <img src="/images/create-agent.png" alt="Agent Creation Interface" className="rounded-lg" />
+</Frame>
 
-<Tabs>
-  <Tab title="Step 1: Create an Agent">
-    <Frame>
-      <img src="/images/create-agent.png" alt="Agent Creation Interface" className="rounded-lg" />
-    </Frame>
-
-    <Steps>
-      <Step title="Navigate to Agents">
-        Go to the main dashboard and click the <strong>Create Agent</strong> button.
-      </Step>
-      
-      <Step title="Set Agent Identity">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Basic Information</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Give your agent a descriptive name</li>
-              <li>Select its primary purpose</li>
-              <li>Add a helpful description</li>
-            </ul>
-          </div>
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Communication</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Assign an email address</li>
-              <li>Set up phone number (optional)</li>
-              <li>Configure additional channels</li>
-            </ul>
-          </div>
-        </div>
-      </Step>
-      
-      <Step title="Configure AI Tools">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Select Models</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Choose AI models (ChatGPT, Claude)</li>
-              <li>Set response parameters</li>
-              <li>Configure system prompts</li>
-            </ul>
-          </div>
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Knowledge</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Upload relevant documents</li>
-              <li>Define domain knowledge</li>
-              <li>Set response guidelines</li>
-            </ul>
-          </div>
-        </div>
-      </Step>
-    </Steps>
-  </Tab>
+<Steps>
+  <Step title="Navigate to Agent Dashboard">
+    From the main dashboard, click the <strong>Create Agent</strong> button in the top right corner.
+  </Step>
   
-  <Tab title="Step 2: Create a Playbook">
-    <Frame>
-      <img src="/images/playbook-creation.png" alt="Playbook Interface" className="rounded-lg" />
-    </Frame>
-
-    <Steps>
-      <Step title="Start with Templates or Create New">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
-          <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Template Options</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Customer Support</li>
-              <li>Sales Automation</li>
-              <li>Marketing Workflows</li>
-              <li>Document Processing</li>
-            </ul>
-          </div>
-          <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Custom Playbook</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>Click "New Playbook"</li>
-              <li>Name it descriptively</li>
-              <li>Add purpose details</li>
-              <li>Start from scratch</li>
-            </ul>
-          </div>
-        </div>
-      </Step>
-      
-      <Step title="Configure Playbook Settings">
-        <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg my-2">
-          <h4 className="font-semibold mb-2">Key Settings</h4>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-            <div className="bg-white dark:bg-slate-800 p-2 rounded">Execution priority</div>
-            <div className="bg-white dark:bg-slate-800 p-2 rounded">Access controls</div>
-            <div className="bg-white dark:bg-slate-800 p-2 rounded">Notification rules</div>
-            <div className="bg-white dark:bg-slate-800 p-2 rounded">Monitoring options</div>
-          </div>
-        </div>
-      </Step>
-    </Steps>
-  </Tab>
+  <Step title="Configure Basic Settings">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Identity</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Name your agent (e.g., "Support Assistant")</li>
+          <li>Add a description of its purpose</li>
+          <li>Select agent type (support, sales, etc.)</li>
+        </ul>
+      </div>
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Communication</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Set up email address</li>
+          <li>Add phone number (optional)</li>
+          <li>Configure messaging channels</li>
+        </ul>
+      </div>
+    </div>
+  </Step>
   
-  <Tab title="Step 3: Build Pages">
+  <Step title="Set Up AI Tools">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">AI Models</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Select AI providers (ChatGPT, Claude)</li>
+          <li>Configure response parameters</li>
+          <li>Set up system instructions</li>
+        </ul>
+      </div>
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Knowledge Base</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Upload reference documents</li>
+          <li>Add domain-specific knowledge</li>
+          <li>Set response guidelines</li>
+        </ul>
+      </div>
+    </div>
+  </Step>
+</Steps>
+
+## Step 2: Create a Playbook
+
+<Frame>
+  <img src="/images/playbook-creation.png" alt="Playbook Interface" className="rounded-lg" />
+</Frame>
+
+<Steps>
+  <Step title="Choose Template or Create New">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Use Template</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Browse available templates</li>
+          <li>Select one matching your needs</li>
+          <li>Customize as needed</li>
+        </ul>
+      </div>
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Start Fresh</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Click "New Playbook"</li>
+          <li>Name your playbook</li>
+          <li>Set up from scratch</li>
+        </ul>
+      </div>
+    </div>
+  </Step>
+  
+  <Step title="Configure Settings">
+    <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700 my-2">
+      <h4 className="font-semibold mb-2">Key Playbook Settings</h4>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Priority level</div>
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Access controls</div>
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Notifications</div>
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">Monitoring</div>
+      </div>
+    </div>
+  </Step>
+</Steps>
+
+## Step 3: Create Pages
+
+<Frame>
+  <img src="/images/page-editor.png" alt="Page Editor" className="rounded-lg" />
+</Frame>
+
+<Steps>
+  <Step title="Add Pages to Playbook">
+    <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700 my-2">
+      <p>In your playbook, click <strong>"Add Page"</strong> to create a new workflow or edit an existing template page.</p>
+    </div>
+  </Step>
+  
+  <Step title="Build with Blocks">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Listen Blocks</h4>
+        <div className="space-y-2">
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">📥</span> Email received
+          </div>
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">📝</span> Form submission
+          </div>
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">⏰</span> Schedule trigger
+          </div>
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">🔔</span> Custom events
+          </div>
+        </div>
+      </div>
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Generate Blocks</h4>
+        <div className="space-y-2">
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">💬</span> Create responses
+          </div>
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">🔀</span> Make decisions
+          </div>
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">🔄</span> Process data
+          </div>
+          <div className="p-2 rounded border border-gray-200 dark:border-gray-700 flex items-center">
+            <span className="mr-2">📊</span> Analyze information
+          </div>
+        </div>
+      </div>
+    </div>
+  </Step>
+  
+  <Step title="Use Demiurg AI">
     <Frame>
-      <img src="/images/page-editor.png" alt="Page Editor" className="rounded-lg" />
+      <img src="/images/ai-assistant.png" alt="AI Assistant" className="rounded-lg" />
     </Frame>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Generate with AI</h4>
+        <div className="p-3 rounded-lg border border-gray-200 dark:border-gray-700 mb-2">
+          <p className="text-sm italic">"Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."</p>
+        </div>
+        <p className="text-sm">Click "generate" in the right panel and describe what you want to build</p>
+      </div>
+      <div className="p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+        <h4 className="font-semibold mb-2">Review & Refine</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>View side-by-side comparison</li>
+          <li>Accept AI suggestions</li>
+          <li>Make manual adjustments</li>
+          <li>Request specific changes</li>
+        </ul>
+      </div>
+    </div>
+  </Step>
+</Steps>
 
-    <Steps>
-      <Step title="Add Pages to Playbook">
-        <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg my-2">
-          <p>In your playbook, click <strong>"Add Page"</strong> to create new workflow or select an existing template page to customize.</p>
-        </div>
-      </Step>
-      
-      <Step title="Use Blocks to Define Logic">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Listen Blocks</h4>
-            <div className="space-y-2">
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">📥</span> Email received
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">📝</span> Form submission
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">⏰</span> Schedule trigger
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">🔔</span> Custom events
-              </div>
-            </div>
-          </div>
-          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Generate Blocks</h4>
-            <div className="space-y-2">
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">💬</span> Create responses
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">🔀</span> Make decisions
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">🔄</span> Process data
-              </div>
-              <div className="bg-white dark:bg-slate-800 p-2 rounded flex items-center">
-                <span className="mr-2">📊</span> Analyze information
-              </div>
-            </div>
-          </div>
-        </div>
-      </Step>
-      
-      <Step title="Use Demiurg AI to Build Pages">
-        <Frame>
-          <img src="/images/ai-assistant.png" alt="AI Assistant" className="rounded-lg" />
-        </Frame>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Generate with AI</h4>
-            <div className="bg-white dark:bg-slate-800 p-3 rounded-lg border border-purple-200 dark:border-purple-900 mb-2">
-              <p className="text-sm italic">"Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."</p>
-            </div>
-            <p className="text-sm">Click "generate" in the right panel and describe what you want to build</p>
-          </div>
-          <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-            <h4 className="font-semibold mb-2">Review & Refine</h4>
-            <ul className="list-disc list-inside space-y-1">
-              <li>View side-by-side comparison</li>
-              <li>Accept AI suggestions</li>
-              <li>Make manual adjustments</li>
-              <li>Request specific changes</li>
-            </ul>
-          </div>
-        </div>
-      </Step>
-    </Steps>
-  </Tab>
-</Tabs>
-
-## Complete Example: Customer Support Agent
+## Example: Customer Support Agent
 
 <Frame className="mb-6">
   <img src="/images/complete-example.png" alt="Complete Example" className="rounded-lg" />
@@ -226,19 +196,19 @@ description: 'Create your first automated solution with Demiurg'
 
 <CardGroup cols={1}>
   <Card>
-    <div className="border-l-4 border-blue-500 pl-4">
+    <div className="border-l-4 border-[#1C3943] pl-4">
       <h3 className="text-lg font-bold mb-2">Agent: Support Assistant</h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
-        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Email:</strong> support@company.com
         </div>
-        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>AI:</strong> ChatGPT + Claude
         </div>
-        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Knowledge:</strong> Product docs
         </div>
-        <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Channels:</strong> Email + Chat
         </div>
       </div>
@@ -246,19 +216,19 @@ description: 'Create your first automated solution with Demiurg'
   </Card>
   
   <Card>
-    <div className="border-l-4 border-green-500 pl-4">
+    <div className="border-l-4 border-[#598a9c] pl-4">
       <h3 className="text-lg font-bold mb-2">Playbook: Support Inquiries</h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
-        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Purpose:</strong> Handle questions
         </div>
-        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Pages:</strong> 3 active flows
         </div>
-        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Status:</strong> Active
         </div>
-        <div className="bg-green-50 dark:bg-green-900/20 p-2 rounded">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700">
           <strong>Priority:</strong> High
         </div>
       </div>
@@ -266,19 +236,19 @@ description: 'Create your first automated solution with Demiurg'
   </Card>
   
   <Card>
-    <div className="border-l-4 border-purple-500 pl-4">
+    <div className="border-l-4 border-[#1C3943] pl-4">
       <h3 className="text-lg font-bold mb-2">Page: Email Triage</h3>
       <div className="space-y-2">
-        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
           <strong>Listen Block:</strong> New email received at support@company.com
         </div>
-        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
           <strong>Generate Block:</strong> Analyze email content, categorize by urgency and topic
         </div>
-        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
           <strong>Generate Block:</strong> Create appropriate response based on category
         </div>
-        <div className="bg-purple-50 dark:bg-purple-900/20 p-2 rounded text-sm">
+        <div className="p-2 rounded border border-gray-200 dark:border-gray-700 text-sm">
           <strong>Generate Block:</strong> Decide if escalation needed, route accordingly
         </div>
       </div>
@@ -289,23 +259,23 @@ description: 'Create your first automated solution with Demiurg'
 ## Next Steps
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg shadow-md">
+  <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
     <div className="text-3xl mb-2">💡</div>
     <h3 className="text-lg font-bold mb-1">Expand Your Agent</h3>
     <p className="text-sm mb-3">Add more capabilities with additional playbooks and pages</p>
-    <a href="/pages/overview" className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline">Learn more →</a>
+    <a href="/pages/overview" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">Learn more →</a>
   </div>
-  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg shadow-md">
+  <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
     <div className="text-3xl mb-2">🔌</div>
     <h3 className="text-lg font-bold mb-1">Add Integrations</h3>
     <p className="text-sm mb-3">Connect to your existing tools and services</p>
-    <a href="/agents/integrations/custom-services" className="text-green-600 dark:text-green-400 text-sm font-medium hover:underline">View options →</a>
+    <a href="/agents/external-services" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">View options →</a>
   </div>
-  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg shadow-md">
+  <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-700">
     <div className="text-3xl mb-2">📚</div>
     <h3 className="text-lg font-bold mb-1">Explore Templates</h3>
     <p className="text-sm mb-3">Browse our library of pre-built solutions</p>
-    <a href="/examples/customer-service" className="text-purple-600 dark:text-purple-400 text-sm font-medium hover:underline">See templates →</a>
+    <a href="/solutions/customer-service" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">See templates →</a>
   </div>
 </div>
 
