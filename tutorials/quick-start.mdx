@@ -3,17 +3,9 @@ title: 'Quick Start Guide'
 description: 'Create your first automated solution with Demiurg'
 ---
 
-<Frame>
-  <img 
-    src="/images/quick-start-hero.png" 
-    alt="Demiurg Quick Start" 
-    className="rounded-lg shadow-sm"
-  />
-</Frame>
-
-<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] my-6">
-  <p className="text-slate-600 dark:text-slate-300">This guide will walk you through creating your first automation by building an agent, creating a playbook, and designing pages.</p>
-</div>
+<Tip>
+  In less than 15 minutes, you'll have a working Demiurg agent that can handle automated workflows. This guide walks you through building your first agent, creating a playbook, and designing automation pages.
+</Tip>
 
 ## Step 1: Create an Agent
 
@@ -23,51 +15,45 @@ description: 'Create your first automated solution with Demiurg'
 
 <Steps>
   <Step title="Navigate to Agent Dashboard">
-    <p className="text-slate-600 dark:text-slate-300">
-      From the main dashboard, click the <strong>Create Agent</strong> button in the top right corner.
-    </p>
+    From the main dashboard, click the **Create Agent** button in the top right corner.
   </Step>
   
   <Step title="Configure Basic Settings">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Identity</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <CardGroup cols={2}>
+      <Card title="Identity">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Name your agent (e.g., "Support Assistant")</li>
           <li>Add a description of its purpose</li>
           <li>Select agent type (support, sales, etc.)</li>
         </ul>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Communication</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      </Card>
+      <Card title="Communication">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Set up email address</li>
           <li>Add phone number (optional)</li>
           <li>Configure messaging channels</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Step>
   
   <Step title="Set Up AI Tools">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">AI Models</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <CardGroup cols={2}>
+      <Card title="AI Models">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Select AI providers (ChatGPT, Claude)</li>
           <li>Configure response parameters</li>
           <li>Set up system instructions</li>
         </ul>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Knowledge Base</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      </Card>
+      <Card title="Knowledge Base">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Upload reference documents</li>
           <li>Add domain-specific knowledge</li>
           <li>Set response guidelines</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Step>
 </Steps>
 
@@ -79,36 +65,33 @@ description: 'Create your first automated solution with Demiurg'
 
 <Steps>
   <Step title="Choose Template or Create New">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2 mb-4">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Use Template</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <CardGroup cols={2}>
+      <Card title="Use Template">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Browse available templates</li>
           <li>Select one matching your needs</li>
           <li>Customize as needed</li>
         </ul>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Start Fresh</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      </Card>
+      <Card title="Start Fresh">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Click "New Playbook"</li>
           <li>Name your playbook</li>
           <li>Set up from scratch</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Step>
   
   <Step title="Configure Settings">
-    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-2">
-      <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Key Playbook Settings</h4>
+    <Card title="Key Playbook Settings">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Priority level</div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Access controls</div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Notifications</div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm text-slate-600 dark:text-slate-300">Monitoring</div>
+        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Priority level</div>
+        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Access controls</div>
+        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Notifications</div>
+        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Monitoring</div>
       </div>
-    </div>
+    </Card>
   </Step>
 </Steps>
 
@@ -120,48 +103,44 @@ description: 'Create your first automated solution with Demiurg'
 
 <Steps>
   <Step title="Add Pages to Playbook">
-    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 my-2">
-      <p className="text-slate-600 dark:text-slate-300">In your playbook, click <strong>"Add Page"</strong> to create a new workflow or edit an existing template page.</p>
-    </div>
+    In your playbook, click **"Add Page"** to create a new workflow or edit an existing template page.
   </Step>
   
   <Step title="Build with Blocks">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Listen Blocks</h4>
+    <CardGroup cols={2}>
+      <Card title="Listen Blocks">
         <div className="space-y-2">
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">📥</span> <span className="text-slate-600 dark:text-slate-300">Email received</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">📥</span> Email received
           </div>
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">📝</span> <span className="text-slate-600 dark:text-slate-300">Form submission</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">📝</span> Form submission
           </div>
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">⏰</span> <span className="text-slate-600 dark:text-slate-300">Schedule trigger</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">⏰</span> Schedule trigger
           </div>
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">🔔</span> <span className="text-slate-600 dark:text-slate-300">Custom events</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">🔔</span> Custom events
           </div>
         </div>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Generate Blocks</h4>
+      </Card>
+      <Card title="Generate Blocks">
         <div className="space-y-2">
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">💬</span> <span className="text-slate-600 dark:text-slate-300">Create responses</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">💬</span> Create responses
           </div>
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">🔀</span> <span className="text-slate-600 dark:text-slate-300">Make decisions</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">🔀</span> Make decisions
           </div>
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">🔄</span> <span className="text-slate-600 dark:text-slate-300">Process data</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">🔄</span> Process data
           </div>
-          <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-            <span className="mr-2">📊</span> <span className="text-slate-600 dark:text-slate-300">Analyze information</span>
+          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+            <span className="mr-2">📊</span> Analyze information
           </div>
         </div>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Step>
   
   <Step title="Use Demiurg AI">
@@ -169,24 +148,22 @@ description: 'Create your first automated solution with Demiurg'
       <img src="/images/ai-assistant.png" alt="AI Assistant" className="rounded-lg" />
     </Frame>
     
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Generate with AI</h4>
-        <div className="p-3 rounded bg-slate-50 dark:bg-slate-800 mb-2">
-          <p className="text-sm italic text-slate-600 dark:text-slate-300">"Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."</p>
+    <CardGroup cols={2}>
+      <Card title="Generate with AI">
+        <div className="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2 text-sm italic">
+          "Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."
         </div>
-        <p className="text-sm text-slate-500 dark:text-slate-400">Click "generate" in the right panel and describe what you want to build</p>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Review & Refine</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+        <p className="text-sm text-gray-500">Click "generate" in the right panel and describe what you want to build</p>
+      </Card>
+      <Card title="Review & Refine">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>View side-by-side comparison</li>
           <li>Accept AI suggestions</li>
           <li>Make manual adjustments</li>
           <li>Request specific changes</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Step>
 </Steps>
 
@@ -196,98 +173,90 @@ description: 'Create your first automated solution with Demiurg'
   <img src="/images/complete-example.png" alt="Complete Example" className="rounded-lg" />
 </Frame>
 
-<CardGroup cols={1}>
-  <Card>
-    <div className="border-l-2 border-[#1C3943] pl-4">
-      <h3 className="text-lg font-medium mb-2 text-[#1C3943] dark:text-white">Agent: Support Assistant</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Email:</span> <span className="text-slate-600 dark:text-slate-300">support@company.com</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">AI:</span> <span className="text-slate-600 dark:text-slate-300">ChatGPT + Claude</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Knowledge:</span> <span className="text-slate-600 dark:text-slate-300">Product docs</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Channels:</span> <span className="text-slate-600 dark:text-slate-300">Email + Chat</span>
-        </div>
-      </div>
+<Accordion title="Agent: Support Assistant">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Email:** support@company.com
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **AI:** ChatGPT + Claude
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Knowledge:** Product docs
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Channels:** Email + Chat
+    </div>
+  </div>
+</Accordion>
+
+<Accordion title="Playbook: Support Inquiries">
+  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Purpose:** Handle questions
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Pages:** 3 active flows
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Status:** Active
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Priority:** High
+    </div>
+  </div>
+</Accordion>
+
+<Accordion title="Page: Email Triage">
+  <div className="space-y-2">
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Listen Block:** New email received at support@company.com
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Generate Block:** Analyze email content, categorize by urgency and topic
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Generate Block:** Create appropriate response based on category
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      **Generate Block:** Decide if escalation needed, route accordingly
+    </div>
+  </div>
+</Accordion>
+
+## Next Steps
+
+<CardGroup cols={3}>
+  <Card title="Expand Your Agent" icon="lightbulb" href="/pages/overview">
+    Add more capabilities with additional playbooks and pages
+    
+    <div className="mt-2">
+      <a href="/pages/overview" className="text-blue-500 text-sm hover:underline">Learn more →</a>
     </div>
   </Card>
-  
-  <Card>
-    <div className="border-l-2 border-[#598a9c] pl-4">
-      <h3 className="text-lg font-medium mb-2 text-[#1C3943] dark:text-white">Playbook: Support Inquiries</h3>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Purpose:</span> <span className="text-slate-600 dark:text-slate-300">Handle questions</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Pages:</span> <span className="text-slate-600 dark:text-slate-300">3 active flows</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Status:</span> <span className="text-slate-600 dark:text-slate-300">Active</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Priority:</span> <span className="text-slate-600 dark:text-slate-300">High</span>
-        </div>
-      </div>
+  <Card title="Add Integrations" icon="plug" href="/agents/external-services">
+    Connect to your existing tools and services
+    
+    <div className="mt-2">
+      <a href="/agents/external-services" className="text-blue-500 text-sm hover:underline">View options →</a>
     </div>
   </Card>
-  
-  <Card>
-    <div className="border-l-2 border-[#1C3943] pl-4">
-      <h3 className="text-lg font-medium mb-2 text-[#1C3943] dark:text-white">Page: Email Triage</h3>
-      <div className="space-y-2">
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Listen Block:</span> <span className="text-slate-600 dark:text-slate-300">New email received at support@company.com</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Generate Block:</span> <span className="text-slate-600 dark:text-slate-300">Analyze email content, categorize by urgency and topic</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Generate Block:</span> <span className="text-slate-600 dark:text-slate-300">Create appropriate response based on category</span>
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm">
-          <span className="text-[#1C3943] dark:text-white font-medium">Generate Block:</span> <span className="text-slate-600 dark:text-slate-300">Decide if escalation needed, route accordingly</span>
-        </div>
-      </div>
+  <Card title="Explore Templates" icon="book-open" href="/solutions/customer-service">
+    Browse our library of pre-built solutions
+    
+    <div className="mt-2">
+      <a href="/solutions/customer-service" className="text-blue-500 text-sm hover:underline">See templates →</a>
     </div>
   </Card>
 </CardGroup>
 
-## Next Steps
-
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-    <div className="text-2xl mb-2">💡</div>
-    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Expand Your Agent</h3>
-    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Add more capabilities with additional playbooks and pages</p>
-    <a href="/pages/overview" className="text-[#598a9c] text-sm font-medium hover:underline">Learn more →</a>
-  </div>
-  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-    <div className="text-2xl mb-2">🔌</div>
-    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Add Integrations</h3>
-    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Connect to your existing tools and services</p>
-    <a href="/agents/external-services" className="text-[#598a9c] text-sm font-medium hover:underline">View options →</a>
-  </div>
-  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-    <div className="text-2xl mb-2">📚</div>
-    <h3 className="text-lg font-medium mb-1 text-[#1C3943] dark:text-white">Explore Templates</h3>
-    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Browse our library of pre-built solutions</p>
-    <a href="/solutions/customer-service" className="text-[#598a9c] text-sm font-medium hover:underline">See templates →</a>
-  </div>
-</div>
-
-<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] my-6">
-  <div className="font-medium text-[#1C3943] dark:text-white mb-2">Key Points to Remember:</div>
-  <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
-    <li><span className="text-[#1C3943] dark:text-white font-medium">Agents</span> are the identity and interface your users interact with</li>
-    <li><span className="text-[#1C3943] dark:text-white font-medium">Playbooks</span> define sets of capabilities assigned to an agent</li>
-    <li><span className="text-[#1C3943] dark:text-white font-medium">Pages</span> contain the actual workflow logic built with blocks</li>
-    <li>Use <span className="text-[#1C3943] dark:text-white font-medium">Demiurg AI</span> to quickly build sophisticated pages</li>
-    <li>Start with <span className="text-[#1C3943] dark:text-white font-medium">templates</span> to get up and running faster</li>
+<Check>
+  <div className="font-medium mb-2">Key Points to Remember:</div>
+  <ul className="list-disc list-inside space-y-1">
+    <li>**Agents** are the identity and interface your users interact with</li>
+    <li>**Playbooks** define sets of capabilities assigned to an agent</li>
+    <li>**Pages** contain the actual workflow logic built with blocks</li>
+    <li>Use **Demiurg AI** to quickly build sophisticated pages</li>
+    <li>Start with **templates** to get up and running faster</li>
   </ul>
-</div>
+</Check>

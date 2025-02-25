@@ -3,9 +3,9 @@ title: "Key Concepts"
 description: "Essential building blocks and fundamental terms in Demiurg"
 ---
 
-<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] mb-6">
-  <p className="text-slate-600 dark:text-slate-300">This guide explores core Demiurg components in detail, building on the concepts introduced in the <a href="/introduction" className="text-[#598a9c] hover:underline">Introduction</a>.</p>
-</div>
+<Note>
+  This guide explores core Demiurg components in detail, building on the concepts introduced in the [Introduction](/introduction).
+</Note>
 
 ## Agents in Detail
 
@@ -15,72 +15,66 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 
 <Tabs>
   <Tab title="Identity">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Basic Information</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <CardGroup cols={2}>
+      <Card title="Basic Information">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Name and purpose</li>
           <li>Role definition</li>
           <li>Agent type (support, sales, etc.)</li>
           <li>Description and capabilities</li>
         </ul>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Communication</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      </Card>
+      <Card title="Communication">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Email address</li>
           <li>Phone number</li>
           <li>WhatsApp connection</li>
           <li>Other messaging channels</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Tab>
   
   <Tab title="AI & Knowledge">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">AI Tools</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <CardGroup cols={2}>
+      <Card title="AI Tools">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>ChatGPT integration</li>
           <li>Claude integration</li>
           <li>Model parameters</li>
           <li>Response configuration</li>
         </ul>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Knowledge Base</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      </Card>
+      <Card title="Knowledge Base">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Domain knowledge</li>
           <li>Reference documents</li>
           <li>Response guidelines</li>
           <li>Training information</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Tab>
   
   <Tab title="Integrations">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Communication Tools</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <CardGroup cols={2}>
+      <Card title="Communication Tools">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>Email providers</li>
           <li>SMS gateways</li>
           <li>Messaging platforms</li>
           <li>Voice services</li>
         </ul>
-      </div>
-      <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-        <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">External Services</h4>
-        <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+      </Card>
+      <Card title="External Services">
+        <ul className="list-disc list-inside space-y-1 mt-2">
           <li>CRM systems</li>
           <li>Ticketing platforms</li>
           <li>Database connections</li>
           <li>Custom API integrations</li>
         </ul>
-      </div>
-    </div>
+      </Card>
+    </CardGroup>
   </Tab>
 </Tabs>
 
@@ -90,75 +84,72 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   <img src="/images/playbook-detail.png" alt="Playbook Details" className="rounded-lg" />
 </Frame>
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4 mb-6">
-  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-    <h4 className="font-medium mb-2 flex items-center text-[#1C3943] dark:text-white">
-      <span className="mr-2">📚</span> Organization
-    </h4>
-    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Playbooks organize related pages into logical groups for specific functions.</p>
-    <div className="text-xs px-3 py-2 rounded bg-slate-50 dark:bg-slate-800">Example: Support Playbook containing onboarding, FAQs, and escalation pages</div>
-  </div>
+<CardGroup cols={3}>
+  <Card>
+    <div className="flex items-center gap-2 mb-2">
+      <span>📚</span>
+      <h4 className="font-medium">Organization</h4>
+    </div>
+    <p className="text-sm mb-3">Playbooks organize related pages into logical groups for specific functions.</p>
+    <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">Example: Support Playbook containing onboarding, FAQs, and escalation pages</div>
+  </Card>
   
-  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-    <h4 className="font-medium mb-2 flex items-center text-[#1C3943] dark:text-white">
-      <span className="mr-2">🔄</span> Reusability
-    </h4>
-    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">The same playbook can be assigned to multiple agents or reused across scenarios.</p>
-    <div className="text-xs px-3 py-2 rounded bg-slate-50 dark:bg-slate-800">Example: A sales playbook assigned to multiple regional sales agents</div>
-  </div>
+  <Card>
+    <div className="flex items-center gap-2 mb-2">
+      <span>🔄</span>
+      <h4 className="font-medium">Reusability</h4>
+    </div>
+    <p className="text-sm mb-3">The same playbook can be assigned to multiple agents or reused across scenarios.</p>
+    <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">Example: A sales playbook assigned to multiple regional sales agents</div>
+  </Card>
   
-  <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-    <h4 className="font-medium mb-2 flex items-center text-[#1C3943] dark:text-white">
-      <span className="mr-2">⚙️</span> Configuration
-    </h4>
-    <p className="text-sm mb-3 text-slate-600 dark:text-slate-300">Playbooks have their own settings that affect how they execute.</p>
-    <div className="text-xs px-3 py-2 rounded bg-slate-50 dark:bg-slate-800">Example: Priority levels, execution rules, and notification settings</div>
-  </div>
-</div>
+  <Card>
+    <div className="flex items-center gap-2 mb-2">
+      <span>⚙️</span>
+      <h4 className="font-medium">Configuration</h4>
+    </div>
+    <p className="text-sm mb-3">Playbooks have their own settings that affect how they execute.</p>
+    <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">Example: Priority levels, execution rules, and notification settings</div>
+  </Card>
+</CardGroup>
 
 ## Pages & Blocks in Action
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-  <div>
-    <h3 className="font-medium mb-3 text-[#1C3943] dark:text-white">Listen Block Examples</h3>
-    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-      <div className="space-y-2">
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">📩</span> Email received at support@company.com
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">📱</span> WhatsApp message with keywords "help" or "support"
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">🕒</span> Every Monday at 9am, send weekly report
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">📝</span> New form submission on website contact form
-        </div>
+<CardGroup cols={2}>
+  <Card title="Listen Block Examples">
+    <div className="space-y-2">
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">📩</span> Email received at support@company.com
+      </div>
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">📱</span> WhatsApp message with keywords "help" or "support"
+      </div>
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">🕒</span> Every Monday at 9am, send weekly report
+      </div>
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">📝</span> New form submission on website contact form
       </div>
     </div>
-  </div>
+  </Card>
   
-  <div>
-    <h3 className="font-medium mb-3 text-[#1C3943] dark:text-white">Generate Block Examples</h3>
-    <div className="p-5 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
-      <div className="space-y-2">
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">💬</span> Generate personalized response based on customer history
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">🔍</span> Analyze message sentiment and categorize as positive/neutral/negative
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">🔀</span> Route to appropriate department based on content analysis
-        </div>
-        <div className="px-3 py-2 rounded bg-slate-50 dark:bg-slate-800 text-sm flex items-center">
-          <span className="mr-2">📊</span> Extract key data points and update customer record
-        </div>
+  <Card title="Generate Block Examples">
+    <div className="space-y-2">
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">💬</span> Generate personalized response based on customer history
+      </div>
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">🔍</span> Analyze message sentiment and categorize as positive/neutral/negative
+      </div>
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">🔀</span> Route to appropriate department based on content analysis
+      </div>
+      <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
+        <span className="mr-2">📊</span> Extract key data points and update customer record
       </div>
     </div>
-  </div>
-</div>
+  </Card>
+</CardGroup>
 
 <Frame>
   <img src="/images/page-blocks.png" alt="Page Blocks in Action" className="rounded-lg" />
@@ -166,92 +157,79 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 
 ## AI Assistant Features
 
-<div className="p-6 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6">
-  <h3 className="font-medium text-lg mb-4 text-[#1C3943] dark:text-white">Advanced AI Capabilities</h3>
-  
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div className="p-4 rounded bg-slate-50 dark:bg-slate-800">
-      <h4 className="font-medium mb-2 text-[#598a9c]">Content Generation</h4>
-      <ul className="text-sm pl-5 list-disc text-slate-600 dark:text-slate-300">
+<Card title="Advanced AI Capabilities">
+  <CardGroup cols={2}>
+    <Card>
+      <h4 className="font-medium mb-2">Content Generation</h4>
+      <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Understands natural language descriptions</li>
         <li>Creates complex, multi-stage workflows</li>
         <li>Includes error handling automatically</li>
         <li>Follows organizational best practices</li>
       </ul>
-    </div>
+    </Card>
     
-    <div className="p-4 rounded bg-slate-50 dark:bg-slate-800">
-      <h4 className="font-medium mb-2 text-[#598a9c]">Version Management</h4>
-      <ul className="text-sm pl-5 list-disc text-slate-600 dark:text-slate-300">
+    <Card>
+      <h4 className="font-medium mb-2">Version Management</h4>
+      <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Clear side-by-side comparison</li>
         <li>Highlights changes and additions</li>
         <li>Explains rationale for modifications</li>
         <li>Lets you selectively accept changes</li>
       </ul>
-    </div>
-  </div>
-</div>
+    </Card>
+  </CardGroup>
+</Card>
 
 ## Putting It All Together
 
-<div className="p-6 rounded-md bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 mb-6">
-  <h3 className="font-medium mb-4 text-[#1C3943] dark:text-white">Complete Example: Customer Support Solution</h3>
-  
+<Card title="Complete Example: Customer Support Solution">
   <div className="space-y-4">
-    <div className="border-l-2 border-[#1C3943] pl-4">
-      <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Agent: Support Assistant</h4>
-      <div className="text-sm text-slate-600 dark:text-slate-300">Handles customer inquiries with email support@company.com</div>
-    </div>
+    <Accordion title="Agent: Support Assistant">
+      <p>Handles customer inquiries with email support@company.com</p>
+    </Accordion>
     
-    <div className="border-l-2 border-[#1C3943] pl-4">
-      <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Playbook: Customer Support</h4>
-      <div className="text-sm text-slate-600 dark:text-slate-300">Collection of pages for handling different support scenarios</div>
-    </div>
+    <Accordion title="Playbook: Customer Support">
+      <p>Collection of pages for handling different support scenarios</p>
+    </Accordion>
     
-    <div className="border-l-2 border-[#1C3943] pl-4">
-      <h4 className="font-medium mb-1 text-[#1C3943] dark:text-white">Page: Ticket Triage</h4>
-      <div className="text-sm text-slate-600 dark:text-slate-300">Automated workflow with blocks:</div>
-      <ul className="list-disc pl-5 text-xs mt-1 space-y-1 text-slate-600 dark:text-slate-300">
+    <Accordion title="Page: Ticket Triage">
+      <p>Automated workflow with blocks:</p>
+      <ul className="list-disc list-inside space-y-1 mt-2">
         <li><strong>Listen Block</strong>: Trigger on new email to support@company.com</li>
         <li><strong>Generate Block</strong>: Analyze email content and categorize by urgency/type</li>
         <li><strong>Generate Block</strong>: Create appropriate response based on category</li>
         <li><strong>Generate Block</strong>: Route ticket to right department or escalate if needed</li>
       </ul>
-    </div>
+    </Accordion>
   </div>
-</div>
+</Card>
 
 ## Key Relationships
 
-<div className="p-4 rounded-md bg-white dark:bg-transparent border-l-2 border-[#1C3943] mb-6">
-  <h4 className="font-medium mb-2 text-[#1C3943] dark:text-white">Component Relationships</h4>
-  <ul className="space-y-1 pl-5 list-disc text-slate-600 dark:text-slate-300">
+<Info>
+  <h4 className="font-medium mb-2">Component Relationships</h4>
+  <ul className="list-disc list-inside space-y-1 mt-2">
     <li>Agents are assigned one or more Playbooks</li>
     <li>Playbooks contain multiple Pages</li>
     <li>Pages are built with Listen and Generate blocks</li>
     <li>Each agent can have unique knowledge, tools, and configurations</li>
     <li>Pages can be shared across multiple Playbooks</li>
   </ul>
-</div>
+</Info>
 
 ## Next Steps
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+<CardGroup cols={3}>
   <Card title="Create Your First Agent" icon="robot" href="/tutorials/quick-start">
-    <div className="text-slate-600 dark:text-slate-300">
-      Follow our step-by-step guide to build your first automation
-    </div>
+    Follow our step-by-step guide to build your first automation
   </Card>
   
   <Card title="Explore Templates" icon="copy" href="/solutions/customer-service">
-    <div className="text-slate-600 dark:text-slate-300">
-      Browse pre-built solutions for common use cases
-    </div>
+    Browse pre-built solutions for common use cases
   </Card>
   
   <Card title="Advanced Techniques" icon="wand-magic-sparkles" href="/advanced/complex-workflows">
-    <div className="text-slate-600 dark:text-slate-300">
-      Learn sophisticated automation patterns
-    </div>
+    Learn sophisticated automation patterns
   </Card>
-</div>
+</CardGroup>
