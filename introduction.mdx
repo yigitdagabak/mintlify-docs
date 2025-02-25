@@ -14,120 +14,203 @@ description: 'Welcome to Demiurg - AI-powered playbook automation platform'
   alt="Demiurg Hero Dark"
 />
 
-## Platform Overview
+<div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-8 border-l-4 border-blue-500">
+  <p className="font-medium">Demiurg helps you create AI-powered automation through a natural language editor with integrated AI assistance.</p>
+</div>
 
-Demiurg consists of two main interfaces: the Agent Dashboard for managing your automated agents, and the Playbook Editor with integrated AI assistance.
+## Meet Demiurg
 
-<CardGroup cols={2}>
-  <Card title="Agent Dashboard" icon="gauge">
-    A central hub where you:
-    - Create and manage agents
-    - Assign playbooks to agents
-    - Monitor active conversations
-    - Track performance metrics
+<CardGroup cols={3}>
+  <Card title="Agents" icon="robot" className="border-t-4 border-t-blue-500">
+    Virtual assistants with their own identity and capabilities that execute your playbooks
   </Card>
-  <Card title="Playbook Editor" icon="pen-to-square">
-    TipTap-based editor where you:
-    - Write playbooks in natural language
-    - Get real-time AI assistance
-    - Use specialized blocks (Listen, Generate)
-    - Preview and test playbooks
+  <Card title="Playbooks" icon="book-open" className="border-t-4 border-t-green-500">
+    Collections of pages that define what your agents can do and how they respond
+  </Card>
+  <Card title="Pages" icon="file-code" className="border-t-4 border-t-purple-500">
+    Individual workflows built with specialized blocks using natural language
   </Card>
 </CardGroup>
 
-## Agent Dashboard
+## Platform Highlights
 
-<Frame>
-  <img src="/images/agent-dashboard.png" alt="Agent Dashboard" />
-</Frame>
+<Tabs>
+  <Tab title="Agent Dashboard">
+    <Frame>
+      <img src="/images/agent-dashboard.png" alt="Agent Dashboard" className="rounded-lg" />
+    </Frame>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+        <h3 className="font-bold mb-2">Monitor Performance</h3>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Active conversations</li>
+          <li>Resolved cases</li>
+          <li>Response metrics</li>
+          <li>Real-time status</li>
+        </ul>
+      </div>
+      <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+        <h3 className="font-bold mb-2">Manage Agents</h3>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Create specialized agents</li>
+          <li>Assign playbooks</li>
+          <li>Configure tools & integrations</li>
+          <li>Set communication channels</li>
+        </ul>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Playbook Editor">
+    <Frame>
+      <img src="/images/playbook-editor.png" alt="Playbook Editor" className="rounded-lg" />
+    </Frame>
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+      <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+        <h3 className="font-bold mb-2">Natural Language Interface</h3>
+        <ul className="list-disc list-inside space-y-1">
+          <li>TipTap-based editor</li>
+          <li>Write in plain language</li>
+          <li>Use specialized blocks</li>
+          <li>Real-time preview</li>
+        </ul>
+      </div>
+      <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
+        <h3 className="font-bold mb-2">Demiurg AI</h3>
+        <ul className="list-disc list-inside space-y-1">
+          <li>Generate complete playbooks</li>
+          <li>See side-by-side comparisons</li>
+          <li>Get real-time suggestions</li>
+          <li>Customize AI output</li>
+        </ul>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Building Blocks">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+      <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+        <h3 className="font-bold flex items-center mb-3">
+          <span className="mr-2 text-xl">👂</span> Listen Blocks
+        </h3>
+        <p className="mb-3">Configure what triggers your automation:</p>
+        <div className="space-y-2">
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Incoming emails</div>
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">WhatsApp messages</div>
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Form submissions</div>
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Scheduled events</div>
+        </div>
+      </div>
+      
+      <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+        <h3 className="font-bold flex items-center mb-3">
+          <span className="mr-2 text-xl">✨</span> Generate Blocks
+        </h3>
+        <p className="mb-3">Process information with AI:</p>
+        <div className="space-y-2">
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Create personalized responses</div>
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Analyze and categorize content</div>
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Make routing decisions</div>
+          <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Extract and process data</div>
+        </div>
+      </div>
+    </div>
+    
+    <Frame className="mt-6">
+      <img src="/images/blocks-example.png" alt="Building Blocks Example" className="rounded-lg" />
+    </Frame>
+  </Tab>
+</Tabs>
 
-Each agent in your dashboard can:
-- Handle specific types of tasks (Support, Sales, etc.)
-- Run one or multiple playbooks
-- Track active and resolved conversations
-- Monitor performance metrics
+## Common Use Cases
 
-<CardGroup cols={2}>
-  <Card title="Agent Types" icon="users">
-    Create specialized agents for:
-    - Customer Support
-    - Sales Operations
-    - Technical Support
-    - Custom use cases
+<CardGroup cols={3}>
+  <Card title="Customer Support" icon="headset">
+    <div className="space-y-2 mt-2">
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Ticket routing</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Response automation</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Follow-up management</div>
+    </div>
   </Card>
-  <Card title="Monitoring" icon="chart-line">
-    Track key metrics:
-    - Active conversations
-    - Resolved cases
-    - Response times
-    - Success rates
+  <Card title="Sales Automation" icon="shopping-cart">
+    <div className="space-y-2 mt-2">
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Lead qualification</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Meeting scheduling</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Proposal generation</div>
+    </div>
   </Card>
-</CardGroup>
-
-## Playbook Editor
-
-<Frame>
-  <img src="/images/playbook-editor.png" alt="Playbook Editor with AI" />
-</Frame>
-
-The editor combines natural language writing with powerful automation blocks:
-
-<CardGroup cols={2}>
-  <Card title="Editor Features" icon="pen">
-    - TipTap-based interface
-    - Natural language writing
-    - Specialized blocks
-    - Real-time preview
-  </Card>
-  <Card title="Demiurg AI" icon="robot">
-    AI assistant in the right panel:
-    - Generates complete playbooks
-    - Shows version comparisons
-    - Modifies existing content
-    - Provides suggestions
-  </Card>
-</CardGroup>
-
-## Block Types
-
-<CardGroup cols={2}>
-  <Card title="Listen Blocks" icon="ear-listen">
-    Configure your agent to listen for:
-    - Incoming messages
-    - Events
-    - Triggers
-  </Card>
-  <Card title="Generate Blocks" icon="sparkles">
-    Process events using AI:
-    - Custom responses 
-    - Data analysis
-    - Decision making
+  <Card title="Document Processing" icon="file-lines">
+    <div className="space-y-2 mt-2">
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Information extraction</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Content categorization</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Summary generation</div>
+    </div>
   </Card>
 </CardGroup>
 
 ## Getting Started
 
-<Steps>
-  <Step title="Create an Agent">
-    Choose an agent type and configure its settings
-  </Step>
-  
-  <Step title="Write a Playbook">
-    Use the editor to create instructions for your agent
-  </Step>
-  
-  <Step title="Assign and Monitor">
-    Connect the playbook to your agent and track performance
-  </Step>
-</Steps>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
+  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg shadow-sm">
+    <div className="text-3xl mb-2">1️⃣</div>
+    <h3 className="text-lg font-bold mb-1">Create an Agent</h3>
+    <p className="text-sm mb-3">Set up your first virtual assistant</p>
+    <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline">Get started →</a>
+  </div>
+  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg shadow-sm">
+    <div className="text-3xl mb-2">2️⃣</div>
+    <h3 className="text-lg font-bold mb-1">Create Playbooks</h3>
+    <p className="text-sm mb-3">Build automation with or without AI</p>
+    <a href="/playbooks/overview" className="text-green-600 dark:text-green-400 text-sm font-medium hover:underline">Learn more →</a>
+  </div>
+  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg shadow-sm">
+    <div className="text-3xl mb-2">3️⃣</div>
+    <h3 className="text-lg font-bold mb-1">Deploy & Monitor</h3>
+    <p className="text-sm mb-3">Launch and track performance</p>
+    <a href="/advanced/monitoring" className="text-purple-600 dark:text-purple-400 text-sm font-medium hover:underline">View details →</a>
+  </div>
+</div>
 
-## Next Steps
+## Why Demiurg?
 
 <CardGroup cols={2}>
-  <Card title="Create Agent" icon="user-plus" href="/agents/overview">
-    Set up your first automated agent
+  <Card>
+    <div className="border-l-4 border-orange-500 pl-4">
+      <h3 className="font-bold mb-2">Natural Language Automation</h3>
+      <p>Create complex automations using simple, natural language without coding skills.</p>
+    </div>
   </Card>
-  <Card title="Write Playbook" icon="pen" href="/playbooks/creating">
-    Create your first playbook
+  <Card>
+    <div className="border-l-4 border-pink-500 pl-4">
+      <h3 className="font-bold mb-2">AI-Powered Creation</h3>
+      <p>Let Demiurg AI generate complete playbooks from your descriptions, with side-by-side comparisons.</p>
+    </div>
+  </Card>
+  <Card>
+    <div className="border-l-4 border-indigo-500 pl-4">
+      <h3 className="font-bold mb-2">Versatile Agents</h3>
+      <p>Configure agents with specialized knowledge, tools, and communication channels.</p>
+    </div>
+  </Card>
+  <Card>
+    <div className="border-l-4 border-emerald-500 pl-4">
+      <h3 className="font-bold mb-2">Ready to Scale</h3>
+      <p>From small tasks to enterprise-grade workflows, Demiurg grows with your needs.</p>
+    </div>
   </Card>
 </CardGroup>
+
+<div className="mt-8">
+  <h2 className="mb-4">Next Steps</h2>
+  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700">
+    <div className="flex items-center">
+      <div className="text-2xl mr-3">🚀</div>
+      <div>
+        <h3 className="font-bold">Ready to dive in?</h3>
+        <p className="text-sm mt-1">Follow our <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 hover:underline">quick start guide</a> to create your first agent in minutes.</p>
+      </div>
+    </div>
+  </div>
+</div>
