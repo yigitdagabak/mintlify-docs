@@ -1,21 +1,21 @@
 ---
-title: 'API Getting Started'
-description: 'Learn how to integrate with Demiurg API for programmatic automation'
+title: 'Getting Started'
+description: 'Learn how to integrate with the Demiurg API'
 ---
 
-## Introduction
+## Quick Start
 
-The Demiurg API provides programmatic access to:
+The Demiurg API enables programmatic access to:
 - Create and manage agents
-- Build playbooks
+- Build and run playbooks
 - Design workflow pages
-- Monitor performance
+- Monitor system performance
 
 ## Authentication
 
-1. Get API credentials in **Settings > API**
-2. Keep keys secure
-3. Include in requests:
+1. Generate API credentials in your Demiurg dashboard
+2. Securely store your keys
+3. Include the API key in request headers
 
 ```bash
 curl https://api.demiurg.io/v1/agents \
@@ -24,119 +24,61 @@ curl https://api.demiurg.io/v1/agents \
 
 ## Core Concepts
 
-### RESTful Endpoints
+### Request Structure
 
-- Standard HTTP methods
-- Predictable URLs
+- RESTful endpoints
+- JSON request and response bodies
+- Standard HTTP methods (GET, POST, PUT, DELETE)
 
-```
-GET /agents
-POST /playbooks
-PUT /pages/{id}
-```
-
-### JSON Responses
-
-Consistent JSON structure:
+### Response Format
 
 ```json
 {
   "id": "ag_123456",
-  "name": "Support Bot",
-  "created_at": "2025-01-15T..."
-}
-```
-
-## API Resources
-
-### Agents
-
-#### Create Agent
-
-```
-POST /v1/agents
-```
-
-```json
-{
-  "name": "Customer Support Assistant",
-  "type": "support",
-  "communication": {
-    "email": "support@company.com",
-    "channels": ["email", "chat"]
-  }
-}
-```
-
-#### List Agents
-
-```
-GET /v1/agents
-```
-
-### Playbooks
-
-#### Create Playbook
-
-```
-POST /v1/playbooks
-```
-
-```json
-{
-  "name": "Customer Onboarding",
-  "priority": "high",
-  "settings": {
-    "notifications": {
-      "email": true,
-      "slack": false
-    }
-  }
+  "name": "Support Agent",
+  "created_at": "2025-01-15T12:00:00Z"
 }
 ```
 
 ## Code Examples
 
-### Node.js
+### Create an Agent (Node.js)
 
 ```javascript
 const axios = require('axios');
 
-const demiurgClient = axios.create({
+const client = axios.create({
   baseURL: 'https://api.demiurg.io/v1',
   headers: {
-    'Authorization': `Bearer ${DEMIURG_API_KEY}`,
+    'Authorization': `Bearer ${API_KEY}`,
     'Content-Type': 'application/json'
   }
 });
 
 async function createAgent() {
   try {
-    const response = await demiurgClient.post('/agents', {
-      name: 'Sales Assistant',
-      type: 'sales',
+    const response = await client.post('/agents', {
+      name: 'Customer Support Bot',
+      type: 'support',
       communication: {
-        email: 'sales@company.com',
         channels: ['email', 'chat']
       }
     });
-    
-    return response.data.id;
+    return response.data;
   } catch (error) {
-    console.error('Error creating agent:', error.response?.data);
+    console.error('Agent creation failed', error);
   }
 }
 ```
 
-### Python
+### Create an Agent (Python)
 
 ```python
 import requests
-import json
 
 BASE_URL = 'https://api.demiurg.io/v1'
 headers = {
-    'Authorization': f'Bearer {DEMIURG_API_KEY}',
+    'Authorization': f'Bearer {API_KEY}',
     'Content-Type': 'application/json'
 }
 
@@ -145,22 +87,17 @@ def create_agent():
         'name': 'Sales Assistant',
         'type': 'sales',
         'communication': {
-            'email': 'sales@company.com',
             'channels': ['email', 'chat']
         }
     }
     
     response = requests.post(
-        f'{BASE_URL}/agents',
-        headers=headers,
-        data=json.dumps(payload)
+        f'{BASE_URL}/agents', 
+        headers=headers, 
+        json=payload
     )
     
-    if response.status_code == 200:
-        return response.json()['id']
-    else:
-        print(f"Error: {response.text}")
-        return None
+    return response.json()
 ```
 
 ## Rate Limits
@@ -173,9 +110,9 @@ def create_agent():
 
 ## Best Practices
 
-- Implement retry logic
-- Use batch operations
-- Verify webhook signatures
-- Handle errors comprehensively
+- Implement robust error handling
+- Use exponential backoff for retries
+- Secure your API keys
+- Monitor rate limit usage
 
-<Note>Detailed API reference available in our [API Documentation](/api/reference).</Note>
+<Tip>Explore our full [API Reference](/api-reference) for detailed endpoint documentation.</Tip>
