@@ -14,20 +14,20 @@ description: 'Welcome to Demiurg - AI-powered playbook automation platform'
   alt="Demiurg Hero Dark"
 />
 
-<div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg mb-8 border-l-4 border-[#598a9c]">
+<div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mb-8 border-l-4 border-blue-500">
   <p className="font-medium">Demiurg helps you create AI-powered automation through a natural language editor with integrated AI assistance.</p>
 </div>
 
 ## The Demiurg Hierarchy
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-  <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-    <h3 className="text-xl font-bold mb-2 flex items-center text-[#1C3943] dark:text-[#598a9c]">
-      <div className="w-8 h-8 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-full mr-2">1</div>
+  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold mb-2 flex items-center text-blue-600 dark:text-blue-400">
+      <div className="w-8 h-8 flex items-center justify-center bg-blue-100 dark:bg-blue-900 rounded-full mr-2">1</div>
       Agents
     </h3>
     <p className="mb-3">Virtual assistants with their own identity, communication channels, and tools.</p>
-    <div className="text-xs font-medium text-[#1C3943] dark:text-[#598a9c] uppercase tracking-wider mb-2">Agent includes</div>
+    <div className="text-xs font-medium text-blue-700 dark:text-blue-300 uppercase tracking-wider mb-2">Agent includes</div>
     <ul className="space-y-1 text-sm">
       <li className="flex items-center">
         <span className="mr-2">📧</span> Email and communication
@@ -44,13 +44,13 @@ description: 'Welcome to Demiurg - AI-powered playbook automation platform'
     </ul>
   </div>
   
-  <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-    <h3 className="text-xl font-bold mb-2 flex items-center text-[#1C3943] dark:text-[#598a9c]">
-      <div className="w-8 h-8 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-full mr-2">2</div>
+  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold mb-2 flex items-center text-green-600 dark:text-green-400">
+      <div className="w-8 h-8 flex items-center justify-center bg-green-100 dark:bg-green-900 rounded-full mr-2">2</div>
       Playbooks
     </h3>
     <p className="mb-3">Collections of related pages that define agent capabilities for specific functions.</p>
-    <div className="text-xs font-medium text-[#1C3943] dark:text-[#598a9c] uppercase tracking-wider mb-2">Playbook includes</div>
+    <div className="text-xs font-medium text-green-700 dark:text-green-300 uppercase tracking-wider mb-2">Playbook includes</div>
     <ul className="space-y-1 text-sm">
       <li className="flex items-center">
         <span className="mr-2">📄</span> Multiple pages
@@ -67,13 +67,13 @@ description: 'Welcome to Demiurg - AI-powered playbook automation platform'
     </ul>
   </div>
   
-  <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
-    <h3 className="text-xl font-bold mb-2 flex items-center text-[#1C3943] dark:text-[#598a9c]">
-      <div className="w-8 h-8 flex items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-full mr-2">3</div>
+  <div className="bg-slate-50 dark:bg-slate-800 p-6 rounded-lg shadow-sm border border-slate-200 dark:border-slate-700">
+    <h3 className="text-xl font-bold mb-2 flex items-center text-purple-600 dark:text-purple-400">
+      <div className="w-8 h-8 flex items-center justify-center bg-purple-100 dark:bg-purple-900 rounded-full mr-2">3</div>
       Pages
     </h3>
     <p className="mb-3">Individual workflows built with specialized blocks that define specific automations.</p>
-    <div className="text-xs font-medium text-[#1C3943] dark:text-[#598a9c] uppercase tracking-wider mb-2">Page includes</div>
+    <div className="text-xs font-medium text-purple-700 dark:text-purple-300 uppercase tracking-wider mb-2">Page includes</div>
     <ul className="space-y-1 text-sm">
       <li className="flex items-center">
         <span className="mr-2">👂</span> Listen blocks
@@ -134,55 +134,55 @@ The Demiurg platform consists of two primary interfaces:
 ## Building Blocks
 
 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
-  <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-    <h3 className="font-bold flex items-center mb-3 text-[#1C3943] dark:text-[#598a9c]">
+  <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+    <h3 className="font-bold flex items-center mb-3">
       <span className="mr-2 text-xl">👂</span> Listen Blocks
     </h3>
     <p className="mb-3">Configure what triggers your automation:</p>
     <div className="space-y-2">
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Incoming emails</div>
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">WhatsApp messages</div>
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Form submissions</div>
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Scheduled events</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Incoming emails</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">WhatsApp messages</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Form submissions</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Scheduled events</div>
     </div>
   </div>
   
-  <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
-    <h3 className="font-bold flex items-center mb-3 text-[#1C3943] dark:text-[#598a9c]">
+  <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
+    <h3 className="font-bold flex items-center mb-3">
       <span className="mr-2 text-xl">✨</span> Generate Blocks
     </h3>
     <p className="mb-3">Process information with AI:</p>
     <div className="space-y-2">
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Create personalized responses</div>
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Analyze and categorize content</div>
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Make routing decisions</div>
-      <div className="bg-white dark:bg-gray-700 p-2 rounded text-sm border border-gray-200 dark:border-gray-600">Extract and process data</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Create personalized responses</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Analyze and categorize content</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Make routing decisions</div>
+      <div className="bg-white dark:bg-slate-800 p-2 rounded text-sm border border-purple-200 dark:border-purple-900">Extract and process data</div>
     </div>
   </div>
 </div>
 
 ## Demiurg AI Assistant
 
-<div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-lg mb-6 mt-6 border border-[#598a9c]">
+<div className="bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 p-6 rounded-lg mb-6 mt-6">
   <div className="flex flex-col md:flex-row items-start md:items-center mb-4">
     <div className="text-3xl mr-4 mb-2 md:mb-0">🧠</div>
     <div>
-      <h3 className="font-bold text-lg text-[#1C3943] dark:text-[#598a9c]">AI Co-pilot for Creating Pages</h3>
+      <h3 className="font-bold text-lg">AI Co-pilot for Creating Pages</h3>
       <p className="text-sm mt-1">Demiurg AI lives in the right panel of the editor, helping you create and modify pages with natural language.</p>
     </div>
   </div>
   
   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm">
-      <h4 className="font-bold mb-2 text-[#1C3943] dark:text-[#598a9c]">Generate Complete Pages</h4>
-      <div className="text-sm italic bg-gray-50 dark:bg-gray-800 p-3 rounded border border-gray-200 dark:border-gray-600 mb-2">
+    <div className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm">
+      <h4 className="font-bold mb-2 text-purple-600 dark:text-purple-400">Generate Complete Pages</h4>
+      <div className="text-sm italic bg-slate-50 dark:bg-slate-900 p-3 rounded border border-slate-200 dark:border-slate-700 mb-2">
         "Create a page that handles customer support tickets, categorizes them by urgency, and routes to the appropriate team."
       </div>
       <p className="text-xs">Type a description like this and click "generate"</p>
     </div>
     
-    <div className="bg-white dark:bg-gray-700 p-4 rounded-lg shadow-sm">
-      <h4 className="font-bold mb-2 text-[#1C3943] dark:text-[#598a9c]">Side-by-Side Comparison</h4>
+    <div className="bg-white dark:bg-slate-800 p-4 rounded-lg shadow-sm">
+      <h4 className="font-bold mb-2 text-purple-600 dark:text-purple-400">Side-by-Side Comparison</h4>
       <p className="text-sm mb-3">View current and AI-generated versions side by side to:</p>
       <ul className="text-sm list-disc list-inside">
         <li>Understand changes</li>
@@ -199,23 +199,23 @@ The Demiurg platform consists of two primary interfaces:
 <CardGroup cols={3}>
   <Card title="Customer Support" icon="headset">
     <div className="space-y-2 mt-2">
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Ticket routing</div>
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Response automation</div>
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Follow-up management</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Ticket routing</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Response automation</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Follow-up management</div>
     </div>
   </Card>
   <Card title="Sales Automation" icon="shopping-cart">
     <div className="space-y-2 mt-2">
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Lead qualification</div>
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Meeting scheduling</div>
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Proposal generation</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Lead qualification</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Meeting scheduling</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Proposal generation</div>
     </div>
   </Card>
   <Card title="Document Processing" icon="file-lines">
     <div className="space-y-2 mt-2">
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Information extraction</div>
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Content categorization</div>
-      <div className="text-xs bg-gray-100 dark:bg-gray-800 p-2 rounded">Summary generation</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Information extraction</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Content categorization</div>
+      <div className="text-xs bg-slate-100 dark:bg-slate-800 p-2 rounded">Summary generation</div>
     </div>
   </Card>
 </CardGroup>
@@ -223,23 +223,23 @@ The Demiurg platform consists of two primary interfaces:
 ## Getting Started
 
 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-6">
-  <div className="p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+  <div className="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 p-6 rounded-lg shadow-sm">
     <div className="text-3xl mb-2">1️⃣</div>
-    <h3 className="text-lg font-bold mb-1 text-[#1C3943] dark:text-[#598a9c]">Create an Agent</h3>
+    <h3 className="text-lg font-bold mb-1">Create an Agent</h3>
     <p className="text-sm mb-3">Set up your first virtual assistant</p>
-    <a href="/tutorials/quick-start" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">Get started →</a>
+    <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 text-sm font-medium hover:underline">Get started →</a>
   </div>
-  <div className="p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+  <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-6 rounded-lg shadow-sm">
     <div className="text-3xl mb-2">2️⃣</div>
-    <h3 className="text-lg font-bold mb-1 text-[#1C3943] dark:text-[#598a9c]">Create Playbooks</h3>
+    <h3 className="text-lg font-bold mb-1">Create Playbooks</h3>
     <p className="text-sm mb-3">Build automation with or without AI</p>
-    <a href="/playbooks/overview" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">Learn more →</a>
+    <a href="/playbooks/overview" className="text-green-600 dark:text-green-400 text-sm font-medium hover:underline">Learn more →</a>
   </div>
-  <div className="p-6 rounded-lg shadow-sm border border-gray-200 dark:border-gray-700">
+  <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 p-6 rounded-lg shadow-sm">
     <div className="text-3xl mb-2">3️⃣</div>
-    <h3 className="text-lg font-bold mb-1 text-[#1C3943] dark:text-[#598a9c]">Deploy & Monitor</h3>
+    <h3 className="text-lg font-bold mb-1">Deploy & Monitor</h3>
     <p className="text-sm mb-3">Launch and track performance</p>
-    <a href="/advanced/monitoring" className="text-[#598a9c] dark:text-[#598a9c] text-sm font-medium hover:underline">View details →</a>
+    <a href="/advanced/monitoring" className="text-purple-600 dark:text-purple-400 text-sm font-medium hover:underline">View details →</a>
   </div>
 </div>
 
@@ -247,25 +247,25 @@ The Demiurg platform consists of two primary interfaces:
 
 <CardGroup cols={2}>
   <Card>
-    <div className="border-l-4 border-[#1C3943] pl-4">
+    <div className="border-l-4 border-orange-500 pl-4">
       <h3 className="font-bold mb-2">Natural Language Automation</h3>
       <p>Create complex automations using simple, natural language without coding skills.</p>
     </div>
   </Card>
   <Card>
-    <div className="border-l-4 border-[#598a9c] pl-4">
+    <div className="border-l-4 border-pink-500 pl-4">
       <h3 className="font-bold mb-2">AI-Powered Creation</h3>
       <p>Let Demiurg AI generate complete playbooks from your descriptions, with side-by-side comparisons.</p>
     </div>
   </Card>
   <Card>
-    <div className="border-l-4 border-[#1C3943] pl-4">
+    <div className="border-l-4 border-indigo-500 pl-4">
       <h3 className="font-bold mb-2">Versatile Agents</h3>
       <p>Configure agents with specialized knowledge, tools, and communication channels.</p>
     </div>
   </Card>
   <Card>
-    <div className="border-l-4 border-[#598a9c] pl-4">
+    <div className="border-l-4 border-emerald-500 pl-4">
       <h3 className="font-bold mb-2">Ready to Scale</h3>
       <p>From small tasks to enterprise-grade workflows, Demiurg grows with your needs.</p>
     </div>
@@ -274,12 +274,12 @@ The Demiurg platform consists of two primary interfaces:
 
 <div className="mt-8">
   <h2 className="mb-4">Next Steps</h2>
-  <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+  <div className="bg-slate-50 dark:bg-slate-800 p-4 rounded-lg border border-slate-200 dark:border-slate-700">
     <div className="flex items-center">
       <div className="text-2xl mr-3">🚀</div>
       <div>
         <h3 className="font-bold">Ready to dive in?</h3>
-        <p className="text-sm mt-1">Follow our <a href="/tutorials/quick-start" className="text-[#598a9c] dark:text-[#598a9c] hover:underline">quick start guide</a> to create your first agent in minutes.</p>
+        <p className="text-sm mt-1">Follow our <a href="/tutorials/quick-start" className="text-blue-600 dark:text-blue-400 hover:underline">quick start guide</a> to create your first agent in minutes.</p>
       </div>
     </div>
   </div>
