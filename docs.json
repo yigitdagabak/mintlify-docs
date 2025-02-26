@@ -142,8 +142,7 @@
   },
   "logo": {
     "light": "/logo/logo-light.svg",
-    "dark": "/logo/logo-dark.svg",
-    "height": 50 
+    "dark": "/logo/logo-dark.svg"
   },
   "navbar": {
     "links": [
@@ -168,5 +167,8 @@
       "github": "https://github.com/demiurg",
       "linkedin": "https://linkedin.com/company/demiurg"
     }
+  },
+  "style": {
+    "css": "/styles/custom.css"
   }
 }

@@ -1,0 +1,21 @@
+/* Custom CSS for Mintlify - Demiurg logo customization */
+
+/* Make the logo larger and move it to the right */
+.logo-container img {
+  height: 40px !important; /* Increase this value to make the logo bigger */
+  width: auto !important;
+  margin-left: 20px; /* Move the logo to the right */
+}
+
+/* Adjust the logo container size if needed */
+.logo-container {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+}
+
+/* For the dark mode logo */
+[data-theme='dark'] .logo-container img {
+  height: 40px !important;
+  width: auto !important;
+}
