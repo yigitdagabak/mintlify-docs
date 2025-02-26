@@ -84,7 +84,7 @@
           {
             "group": "Get Started",
             "pages": [
-              "introduction",
+              "api",
               "api/authentication",
               "api/errors"
             ]
