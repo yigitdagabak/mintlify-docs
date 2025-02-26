@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 50">
+  <!-- Background padding area -->
+  <rect width="320" height="50" fill="none" />
+  
+  <!-- Text "demiurg" in SF Pro - Light version -->
+  <text x="15" y="35" fill="#000000" font-family="SF Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" font-weight="600" font-size="28">demiurg</text>
+  
+  <!-- Text "Documentation" in Inter - Light version -->
+  <text x="125" y="35" fill="#000000" font-family="Inter, sans-serif" font-weight="500" font-size="24">Documentation</text>
+</svg>
