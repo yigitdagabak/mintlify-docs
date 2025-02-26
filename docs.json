@@ -8,6 +8,20 @@
     "dark": "#1C3943"
   },
   "favicon": "/favicon.png",
+  "font": {
+    "headings": {
+      "family": "Inter",
+      "weight": 600
+    },
+    "body": {
+      "family": "Inter",
+      "weight": 400
+    }
+  },
+  "logo": {
+    "light": "/logo/logo-light.svg",
+    "dark": "/logo/logo-dark.svg"
+  },
   "navigation": {
     "tabs": [
       {
@@ -139,10 +153,6 @@
         }
       ]
     }
-  },
-  "logo": {
-    "light": "/logo/demiurg-logo-black.svg",
-    "dark": "/logo/demiurg-logo-white.svg"
   },
   "navbar": {
     "links": [
