@@ -77,47 +77,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "api",
-              "api/authentication",
-              "api/errors"
-            ]
-          },
-          {
-            "group": "Agents API",
-            "pages": [
-              "api/agents/create",
-              "api/agents/update",
-              "api/agents/delete",
-              "api/agents/list"
-            ]
-          },
-          {
-            "group": "Playbooks API",
-            "pages": [
-              "api/playbooks/create",
-              "api/playbooks/update",
-              "api/playbooks/delete",
-              "api/playbooks/list"
-            ]
-          },
-          {
-            "group": "Pages API",
-            "pages": [
-              "api/pages/create",
-              "api/pages/update",
-              "api/pages/delete",
-              "api/pages/run",
-              "api/pages/test"
-            ]
-          }
-        ]
       }
     ],
     "global": {
