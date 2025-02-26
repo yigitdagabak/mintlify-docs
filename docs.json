@@ -141,8 +141,8 @@
     }
   },
   "logo": {
-    "light": "/logo/logo-light.svg",
-    "dark": "/logo/logo-dark.svg"
+    "light": "/logo/demiurg-logo-black.svg",
+    "dark": "/logo/demiurg-logo-white.svg"
   },
   "navbar": {
     "links": [
