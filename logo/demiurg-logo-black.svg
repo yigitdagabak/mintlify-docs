@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 50">
-  <!-- Background padding area -->
-  <rect width="160" height="50" fill="none" />
-  
-  <!-- Text "demiurg" - Black for light mode -->
-  <text x="15" y="35" fill="#000000" font-family="SF Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif" font-weight="600" font-size="32">demiurg</text>
-</svg>
