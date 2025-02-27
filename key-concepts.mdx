@@ -18,18 +18,18 @@ description: "Essential building blocks and fundamental terms in Demiurg"
     <CardGroup cols={2}>
       <Card title="Basic Information">
         <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Name and purpose</li>
-          <li>Role definition</li>
-          <li>Agent type (support, sales, etc.)</li>
-          <li>Description and capabilities</li>
+          <li>Name and surname (e.g., "Sarah Johnson")</li>
+          <li>Human-like persona and character</li>
+          <li>Role definition (e.g., "Customer Success Specialist")</li>
+          <li>Expertise areas and specialization</li>
         </ul>
       </Card>
       <Card title="Communication">
         <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Email address</li>
-          <li>Phone number</li>
-          <li>WhatsApp connection</li>
-          <li>Other messaging channels</li>
+          <li>Personal email address</li>
+          <li>Direct phone number</li>
+          <li>Messaging profile</li>
+          <li>Communication style preferences</li>
         </ul>
       </Card>
     </CardGroup>
@@ -84,10 +84,10 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   <img src="/images/playbook-detail.png" alt="Playbook Details" className="rounded-lg" />
 </Frame>
 
-<CardGroup cols={3}>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
   <Card>
     <div className="flex items-center gap-2 mb-2">
-      <span>📚</span>
+      <span className="text-primary dark:text-primary-light">•</span>
       <h4 className="font-medium">Organization</h4>
     </div>
     <p className="text-sm mb-3">Playbooks organize related pages into logical groups for specific functions.</p>
@@ -96,7 +96,7 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   
   <Card>
     <div className="flex items-center gap-2 mb-2">
-      <span>🔄</span>
+      <span className="text-primary dark:text-primary-light">•</span>
       <h4 className="font-medium">Reusability</h4>
     </div>
     <p className="text-sm mb-3">The same playbook can be assigned to multiple agents or reused across scenarios.</p>
@@ -105,13 +105,13 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   
   <Card>
     <div className="flex items-center gap-2 mb-2">
-      <span>⚙️</span>
+      <span className="text-primary dark:text-primary-light">•</span>
       <h4 className="font-medium">Configuration</h4>
     </div>
     <p className="text-sm mb-3">Playbooks have their own settings that affect how they execute.</p>
     <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">Example: Priority levels, execution rules, and notification settings</div>
   </Card>
-</CardGroup>
+</div>
 
 ## Pages & Blocks in Action
 
@@ -119,16 +119,16 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   <Card title="Listen Block Examples">
     <div className="space-y-2">
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">📩</span> Email received at support@company.com
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> Email received at sarah.johnson@company.com
       </div>
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">📱</span> WhatsApp message with keywords "help" or "support"
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> WhatsApp message with keywords "help" or "support"
       </div>
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">🕒</span> Every Monday at 9am, send weekly report
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> Every Monday at 9am, send weekly report
       </div>
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">📝</span> New form submission on website contact form
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> New form submission on website contact form
       </div>
     </div>
   </Card>
@@ -136,16 +136,16 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   <Card title="Generate Block Examples">
     <div className="space-y-2">
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">💬</span> Generate personalized response based on customer history
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> Generate personalized response based on customer history
       </div>
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">🔍</span> Analyze message sentiment and categorize as positive/neutral/negative
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> Analyze message sentiment and categorize as positive/neutral/negative
       </div>
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">🔀</span> Route to appropriate department based on content analysis
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> Route to appropriate department based on content analysis
       </div>
       <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-        <span className="mr-2">📊</span> Extract key data points and update customer record
+        <span className="mr-2 text-primary dark:text-primary-light">•</span> Extract key data points and update customer record
       </div>
     </div>
   </Card>
@@ -155,12 +155,12 @@ description: "Essential building blocks and fundamental terms in Demiurg"
   <img src="/images/page-blocks.png" alt="Page Blocks in Action" className="rounded-lg" />
 </Frame>
 
-## AI Assistant Features
+## Demiurg AI Features
 
 <Card title="Advanced AI Capabilities">
   <CardGroup cols={2}>
     <Card>
-      <h4 className="font-medium mb-2">Content Generation</h4>
+      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Content Generation</h4>
       <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Understands natural language descriptions</li>
         <li>Creates complex, multi-stage workflows</li>
@@ -170,7 +170,7 @@ description: "Essential building blocks and fundamental terms in Demiurg"
     </Card>
     
     <Card>
-      <h4 className="font-medium mb-2">Version Management</h4>
+      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Version Management</h4>
       <ul className="list-disc list-inside space-y-1 mt-2">
         <li>Clear side-by-side comparison</li>
         <li>Highlights changes and additions</li>
@@ -185,21 +185,38 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 
 <Card title="Complete Example: Customer Support Solution">
   <div className="space-y-4">
-    <Accordion title="Agent: Support Assistant">
-      <p>Handles customer inquiries with email support@company.com</p>
+    <Accordion title="Agent: Sarah Johnson, Customer Support Specialist">
+      <p>Sarah handles customer inquiries with her personal email sarah.johnson@company.com. She specializes in technical product issues and has a warm, professional tone that aligns with your company's brand voice.</p>
     </Accordion>
     
     <Accordion title="Playbook: Customer Support">
-      <p>Collection of pages for handling different support scenarios</p>
+      <p>Collection of pages for handling different support scenarios:</p>
+      <ul className="list-disc list-inside space-y-1 mt-2">
+        <li>Initial inquiry triage</li>
+        <li>Technical troubleshooting</li>
+        <li>Refund processing</li>
+        <li>Customer satisfaction follow-ups</li>
+        <li>Escalation to management</li>
+      </ul>
     </Accordion>
     
     <Accordion title="Page: Ticket Triage">
       <p>Automated workflow with blocks:</p>
       <ul className="list-disc list-inside space-y-1 mt-2">
-        <li><strong>Listen Block</strong>: Trigger on new email to support@company.com</li>
+        <li><strong>Listen Block</strong>: Trigger on new email to sarah.johnson@company.com</li>
         <li><strong>Generate Block</strong>: Analyze email content and categorize by urgency/type</li>
         <li><strong>Generate Block</strong>: Create appropriate response based on category</li>
         <li><strong>Generate Block</strong>: Route ticket to right department or escalate if needed</li>
+      </ul>
+    </Accordion>
+    
+    <Accordion title="Page: Technical Support">
+      <p>Specialized workflow for technical issues:</p>
+      <ul className="list-disc list-inside space-y-1 mt-2">
+        <li><strong>Listen Block</strong>: Triggered when triage identifies technical problem</li>
+        <li><strong>Generate Block</strong>: Extract product/version information</li>
+        <li><strong>Generate Block</strong>: Check knowledge base for known solutions</li>
+        <li><strong>Generate Block</strong>: Create personalized troubleshooting guide</li>
       </ul>
     </Accordion>
   </div>
@@ -221,15 +238,15 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 ## Next Steps
 
 <CardGroup cols={3}>
-  <Card title="Create Your First Agent" icon="robot" href="/tutorials/quick-start">
-    Follow our step-by-step guide to build your first automation
+  <Card title="Create Your First Agent" icon="robot" href="/agents/configuration">
+    Learn how to configure a human-like agent with the right skills
   </Card>
   
-  <Card title="Explore Templates" icon="copy" href="/solutions/customer-service">
-    Browse pre-built solutions for common use cases
+  <Card title="Build Playbooks" icon="copy" href="/playbooks/creating">
+    Discover how to create effective playbooks for your agents
   </Card>
   
-  <Card title="Advanced Techniques" icon="wand-magic-sparkles" href="/advanced/complex-workflows">
-    Learn sophisticated automation patterns
+  <Card title="Design Pages" icon="wand-magic-sparkles" href="/pages/blocks">
+    Master the building blocks for sophisticated workflows
   </Card>
 </CardGroup>
