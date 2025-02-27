@@ -4,71 +4,75 @@ description: 'Understanding agents, their functionality, and how to manage them'
 ---
 
 <Tip>
-  Agents are AI-powered assistants that operate as virtual team members in your organization, automating tasks and workflows. They serve as the primary interface between your users and Demiurg's automation capabilities.
+  Agents are human-like virtual team members in your organization, automating tasks and workflows. They have their own identity, personality, and expertise areas to provide a natural experience for your users.
 </Tip>
 
 ## What are Agents?
 
-Agents are AI-powered assistants that act as virtual team members capable of handling specific tasks and workflows. Each agent has its own identity, communication channels, knowledge base, and capabilities defined by the playbooks assigned to them.
+Agents are AI-powered virtual professionals that act as dedicated team members capable of handling specific tasks and workflows. Each agent has a name, role, communication style, and specialized skills defined by the playbooks assigned to them.
 
-<CardGroup cols={3}>
-  <Card>
-    <div className="font-medium mb-1">Autonomous</div>
-    <div className="text-sm">Operate 24/7 with minimal supervision</div>
-  </Card>
-  <Card>
-    <div className="font-medium mb-1">Personalized</div>
-    <div className="text-sm">Custom identity and behavior for each use case</div>
-  </Card>
-  <Card>
-    <div className="font-medium mb-1">Contextual</div>
-    <div className="text-sm">Understand and remember conversation history</div>
-  </Card>
-</CardGroup>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Autonomous</h4>
+    <p className="text-sm">Work independently 24/7 with minimal supervision</p>
+  </div>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Personalized</h4>
+    <p className="text-sm">Have distinct personalities suited for their role</p>
+  </div>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Contextual</h4>
+    <p className="text-sm">Remember conversation history and user preferences</p>
+  </div>
+</div>
 
 ## Agent Components
 
-<CardGroup cols={2}>
-  <Card title="1. Identity">
-    <p className="mb-2">Each agent has a unique profile that defines how it appears to users.</p>
-    <ul className="list-disc list-inside space-y-1">
-      <li>Name and avatar</li>
-      <li>Role and purpose</li>
-      <li>Communication style</li>
-      <li>Signature and sign-off format</li>
+<div className="space-y-6">
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">1. Personal Identity</h3>
+    <p className="mb-2">Each agent has a unique professional profile that shapes their interactions.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Full name and professional headshot</li>
+      <li>Job title and department role</li>
+      <li>Communication style and tone</li>
+      <li>Personal signature and email format</li>
     </ul>
-  </Card>
+  </div>
   
-  <Card title="2. Communication">
-    <p className="mb-2">Configure how your agent interacts with users through various channels.</p>
-    <ul className="list-disc list-inside space-y-1">
-      <li>Email address configurations</li>
-      <li>Messaging platform connections</li>
-      <li>Phone and SMS capabilities</li>
-      <li>Web widget integrations</li>
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">2. Communication Channels</h3>
+    <p className="mb-2">Configure how your virtual team member connects with users.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Professional email address (e.g., sarah.chen@company.com)</li>
+      <li>Messaging platform accounts (WhatsApp, Messenger)</li>
+      <li>Direct phone number for calls or SMS</li>
+      <li>Chat widget integration for your website</li>
     </ul>
-  </Card>
+  </div>
   
-  <Card title="3. AI Configuration">
-    <p className="mb-2">Define the AI capabilities and models that power your agent.</p>
-    <ul className="list-disc list-inside space-y-1">
-      <li>AI model selection (ChatGPT, Claude)</li>
-      <li>Response parameters</li>
-      <li>System prompt configuration</li>
-      <li>Model fine-tuning options</li>
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">3. AI Capabilities</h3>
+    <p className="mb-2">Define the intelligence powering your virtual team member.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>AI model selection (OpenAI, Anthropic Claude, Gemini)</li>
+      <li>Personality and response parameters</li>
+      <li>System instructions for consistent behavior</li>
+      <li>Specialized expertise areas</li>
     </ul>
-  </Card>
+  </div>
   
-  <Card title="4. Knowledge Base">
-    <p className="mb-2">Provide your agent with the information it needs to effectively assist users.</p>
-    <ul className="list-disc list-inside space-y-1">
-      <li>Document repositories</li>
-      <li>Training materials</li>
-      <li>FAQs and guidelines</li>
-      <li>Custom knowledge embedding</li>
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">4. Knowledge & Expertise</h3>
+    <p className="mb-2">Equip your agent with the expertise they need to excel in their role.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Documents and reference materials</li>
+      <li>Product specifications and guidelines</li>
+      <li>Common questions and prepared responses</li>
+      <li>Company policies and procedures</li>
     </ul>
-  </Card>
-</CardGroup>
+  </div>
+</div>
 
 ## Creating Your First Agent
 
@@ -81,53 +85,44 @@ Agents are AI-powered assistants that act as virtual team members capable of han
     Use the button in the top right corner to start the agent creation process.
   </Step>
   
-  <Step title="Configure Basic Details">
-    Set your agent's name, purpose, and basic identity information.
+  <Step title="Define the Person">
+    Set your agent's name, title, profile picture, and professional background.
   </Step>
   
-  <Step title="Set Up Communication Channels">
-    Configure email and messaging options for your agent.
+  <Step title="Set Up Communication">
+    Configure email address, phone number, and messaging channels.
   </Step>
   
-  <Step title="Assign Playbooks">
-    Select the playbooks that define your agent's capabilities.
+  <Step title="Assign Expertise">
+    Select playbooks that define your agent's skills and capabilities.
   </Step>
   
-  <Step title="Review and Launch">
-    Verify your agent configuration and activate it to start handling tasks.
+  <Step title="Activate Your Team Member">
+    Review the configuration and launch your new virtual professional.
   </Step>
 </Steps>
 
-## Common Agent Types
+## Common Agent Roles
 
-<CardGroup cols={3}>
-  <Card>
-    <div className="text-2xl mb-2">👨‍💼</div>
-    <div className="font-medium mb-1">Customer Support</div>
-    <p className="text-sm mb-3">Handle inquiries, resolve issues, and provide assistance to customers.</p>
-    <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">
-      Popular for: SaaS companies, e-commerce, service businesses
-    </div>
-  </Card>
+<div className="space-y-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Sophia Chen, Customer Experience Specialist</h4>
+    <p className="text-sm mb-1">Handles customer inquiries, resolves issues, and provides personalized support.</p>
+    <p className="text-xs text-gray-500">Ideal for: SaaS companies, e-commerce, service businesses</p>
+  </div>
   
-  <Card>
-    <div className="text-2xl mb-2">🤝</div>
-    <div className="font-medium mb-1">Sales Assistant</div>
-    <p className="text-sm mb-3">Qualify leads, schedule demos, and assist with the sales process.</p>
-    <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">
-      Popular for: B2B companies, real estate, financial services
-    </div>
-  </Card>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Alex Rivera, Business Development Expert</h4>
+    <p className="text-sm mb-1">Qualifies leads, schedules meetings, and assists with the sales process.</p>
+    <p className="text-xs text-gray-500">Ideal for: B2B companies, real estate, financial services</p>
+  </div>
   
-  <Card>
-    <div className="text-2xl mb-2">📝</div>
-    <div className="font-medium mb-1">Document Processor</div>
-    <p className="text-sm mb-3">Extract, categorize, and process information from various documents.</p>
-    <div className="text-xs p-2 rounded bg-gray-100 dark:bg-gray-800">
-      Popular for: Legal firms, healthcare, HR departments
-    </div>
-  </Card>
-</CardGroup>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Fatima Khalid, Technical Support Lead</h4>
+    <p className="text-sm mb-1">Provides troubleshooting assistance and resolves technical problems.</p>
+    <p className="text-xs text-gray-500">Ideal for: Technology providers, software companies, IT services</p>
+  </div>
+</div>
 
 ## Agent Dashboard
 
@@ -135,166 +130,70 @@ Agents are AI-powered assistants that act as virtual team members capable of han
   <img src="/images/agent-dashboard-detailed.png" alt="Agent Dashboard Interface" className="rounded-lg" />
 </Frame>
 
-<Card title="Key Dashboard Features">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div>
-      <ul className="space-y-2">
-        <li>
-          <div className="font-medium">Active Conversations</div>
-          <div className="text-sm">View and manage current interactions</div>
-        </li>
-        <li>
-          <div className="font-medium">Performance Metrics</div>
-          <div className="text-sm">Track response times and resolution rates</div>
-        </li>
-        <li>
-          <div className="font-medium">Escalations</div>
-          <div className="text-sm">Review items that require human attention</div>
-        </li>
-      </ul>
-    </div>
-    
-    <div>
-      <ul className="space-y-2">
-        <li>
-          <div className="font-medium">Playbook Management</div>
-          <div className="text-sm">Assign and update agent capabilities</div>
-        </li>
-        <li>
-          <div className="font-medium">Knowledge Updates</div>
-          <div className="text-sm">Maintain the agent's information sources</div>
-        </li>
-        <li>
-          <div className="font-medium">Configuration</div>
-          <div className="text-sm">Adjust settings and integration details</div>
-        </li>
-      </ul>
-    </div>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Daily Operations</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Monitor active conversations</li>
+      <li>Review performance metrics</li>
+      <li>Handle escalations requiring human input</li>
+      <li>Track response times and satisfaction</li>
+    </ul>
   </div>
-</Card>
-
-## Managing Agents
-
-<Tabs>
-  <Tab title="Monitoring">
-    <Card>
-      <p className="mb-3">
-        Keep track of your agent's performance and activity to ensure optimal operation.
-      </p>
-      
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div>
-          <h4 className="font-medium mb-2">Key Metrics to Track</h4>
-          <ul className="list-disc list-inside space-y-1">
-            <li>Response time averages</li>
-            <li>Resolution rates</li>
-            <li>User satisfaction scores</li>
-            <li>Escalation frequency</li>
-            <li>Channel usage statistics</li>
-          </ul>
-        </div>
-        
-        <div>
-          <h4 className="font-medium mb-2">Monitoring Tools</h4>
-          <ul className="list-disc list-inside space-y-1">
-            <li>Real-time activity dashboard</li>
-            <li>Conversation logs and history</li>
-            <li>Performance reports</li>
-            <li>Alert configurations</li>
-            <li>Quality assurance tools</li>
-          </ul>
-        </div>
-      </div>
-    </Card>
-  </Tab>
   
-  <Tab title="Maintenance">
-    <Card>
-      <p className="mb-3">
-        Regular maintenance ensures your agents continue to perform at their best.
-      </p>
-      
-      <Accordion title="Knowledge Base Updates">
-        Keep your agent's information current by regularly updating the knowledge base with new documents, FAQs, and training materials.
-      </Accordion>
-      
-      <Accordion title="Response Quality Review">
-        Periodically review agent responses to identify areas for improvement and refine communication patterns.
-      </Accordion>
-      
-      <Accordion title="Playbook Optimization">
-        Analyze playbook performance and adjust workflows to improve efficiency and effectiveness.
-      </Accordion>
-    </Card>
-  </Tab>
-  
-  <Tab title="Scaling">
-    <Card>
-      <p className="mb-3">
-        As your needs grow, you can scale your agent operations in several ways.
-      </p>
-      
-      <Steps>
-        <Step title="Multiple Specialized Agents">
-          Create dedicated agents for different departments, products, or service areas.
-        </Step>
-        
-        <Step title="Enhanced AI Capabilities">
-          Upgrade to more advanced AI models and configurations as volume increases.
-        </Step>
-        
-        <Step title="Team Collaboration">
-          Implement human-in-the-loop workflows for complex scenarios requiring expert input.
-        </Step>
-        
-        <Step title="Cross-Channel Expansion">
-          Extend agent availability across additional communication platforms and entry points.
-        </Step>
-      </Steps>
-    </Card>
-  </Tab>
-</Tabs>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Management Tools</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Assign and update playbooks</li>
+      <li>Enhance knowledge resources</li>
+      <li>Adjust communication settings</li>
+      <li>Refine agent personality and tone</li>
+    </ul>
+  </div>
+</div>
 
 ## Best Practices
 
-<CardGroup cols={2}>
-  <Card title="Clear Identity">
-    Define a consistent, purpose-driven identity that aligns with your brand and resonates with users.
-  </Card>
+<div className="space-y-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Authentic Personas</h4>
+    <p className="text-sm">Create consistent, believable virtual team members with well-defined roles that complement your human staff.</p>
+  </div>
   
-  <Card title="Comprehensive Knowledge">
-    Provide thorough information and training materials to enable accurate and helpful responses.
-  </Card>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Specialized Knowledge</h4>
+    <p className="text-sm">Equip each agent with focused expertise rather than trying to make them generalists in too many areas.</p>
+  </div>
   
-  <Card title="Focused Scope">
-    Design agents with well-defined responsibilities rather than attempting to handle too many diverse tasks.
-  </Card>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Clear Handoff Protocols</h4>
+    <p className="text-sm">Establish smooth transitions when complex issues need to be escalated to human team members.</p>
+  </div>
   
-  <Card title="Escalation Paths">
-    Create clear pathways for complex issues to be routed to human team members when necessary.
-  </Card>
-  
-  <Card title="Ongoing Refinement">
-    Regularly review agent performance and user feedback to make continuous improvements.
-  </Card>
-  
-  <Card title="Communication Style">
-    Craft a tone and communication approach that suits your audience and business context.
-  </Card>
-</CardGroup>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Continuous Improvement</h4>
+    <p className="text-sm">Regularly review interactions and update agent knowledge to refine their capabilities over time.</p>
+  </div>
+</div>
 
 ## Next Steps
 
-<CardGroup cols={3}>
-  <Card title="Configure Your Agent" icon="gear" href="/agents/configuration">
-    Dive into detailed agent settings and customization options
-  </Card>
+<div className="space-y-4">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Configure Your Agent</h4>
+    <p className="text-sm mb-1">Customize personality, communication style, and appearance</p>
+    <a href="/agents/configuration" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Learn more →</a>
+  </div>
   
-  <Card title="Build a Knowledge Base" icon="brain" href="/agents/knowledge-base">
-    Learn how to create an effective knowledge foundation for your agent
-  </Card>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Build a Knowledge Base</h4>
+    <p className="text-sm mb-1">Provide your agent with the expertise they need to excel</p>
+    <a href="/agents/knowledge-base" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Get started →</a>
+  </div>
   
-  <Card title="Set Up Integrations" icon="plug" href="/agents/integrations/overview">
-    Connect your agent to communication channels and external services
-  </Card>
-</CardGroup>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Set Up Communication Channels</h4>
+    <p className="text-sm mb-1">Connect your agent to email, messaging, and other platforms</p>
+    <a href="/agents/integrations/communication" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View options →</a>
+  </div>
+</div>
