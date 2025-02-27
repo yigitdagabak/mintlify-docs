@@ -4,7 +4,7 @@ description: 'Create your first automated solution with Demiurg'
 ---
 
 <Tip>
-  In less than 15 minutes, you'll have a working Demiurg agent that can handle automated workflows. This guide walks you through building your first agent, creating a playbook, and designing automation pages.
+  In less than 15 minutes, you'll have a working Demiurg agent that can handle automated workflows. This guide walks you through building your first human-like agent, creating a playbook, and designing automation pages.
 </Tip>
 
 ## Step 1: Create an Agent
@@ -19,41 +19,44 @@ description: 'Create your first automated solution with Demiurg'
   </Step>
   
   <Step title="Configure Basic Settings">
-    <CardGroup cols={2}>
-      <Card title="Identity">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Name your agent (e.g., "Support Assistant")</li>
-          <li>Add a description of its purpose</li>
-          <li>Select agent type (support, sales, etc.)</li>
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Identity</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
+          <li>Name and surname (e.g., "Sophia Chen")</li>
+          <li>Professional title (e.g., "Customer Experience Specialist")</li>
+          <li>Profile photo to represent your agent</li>
+          <li>Personality and communication style</li>
         </ul>
-      </Card>
-      <Card title="Communication">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Set up email address</li>
-          <li>Add phone number (optional)</li>
-          <li>Configure messaging channels</li>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Communication</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
+          <li>Business email address</li>
+          <li>Phone number for SMS or WhatsApp</li>
+          <li>Social messaging channels</li>
         </ul>
-      </Card>
-    </CardGroup>
+      </div>
+    </div>
   </Step>
   
   <Step title="Set Up AI Tools">
-    <CardGroup cols={2}>
-      <Card title="AI Models">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Select AI providers (ChatGPT, Claude)</li>
-          <li>Configure response parameters</li>
-          <li>Set up system instructions</li>
-        </ul>
-      </Card>
-      <Card title="Knowledge Base">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Upload reference documents</li>
-          <li>Add domain-specific knowledge</li>
-          <li>Set response guidelines</li>
-        </ul>
-      </Card>
-    </CardGroup>
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">AI Models</h4>
+        <div className="p-3 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+          Select from OpenAI, Anthropic, or Google Gemini models to power your agent's responses
+        </div>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Knowledge Base</h4>
+        <div className="p-3 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+          Upload documents and resources to give your agent domain-specific expertise
+        </div>
+      </div>
+    </div>
   </Step>
 </Steps>
 
@@ -65,33 +68,34 @@ description: 'Create your first automated solution with Demiurg'
 
 <Steps>
   <Step title="Choose Template or Create New">
-    <CardGroup cols={2}>
-      <Card title="Use Template">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Browse available templates</li>
-          <li>Select one matching your needs</li>
-          <li>Customize as needed</li>
-        </ul>
-      </Card>
-      <Card title="Start Fresh">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>Click "New Playbook"</li>
-          <li>Name your playbook</li>
-          <li>Set up from scratch</li>
-        </ul>
-      </Card>
-    </CardGroup>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="p-3 rounded bg-gray-100 dark:bg-gray-800">
+        <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Use Template</h4>
+        <p className="text-sm">Select from pre-built playbooks for common use cases like customer support, sales outreach, or document processing</p>
+      </div>
+      
+      <div className="p-3 rounded bg-gray-100 dark:bg-gray-800">
+        <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Start Fresh</h4>
+        <p className="text-sm">Click "New Playbook" to build a custom workflow from scratch with full flexibility</p>
+      </div>
+    </div>
   </Step>
   
   <Step title="Configure Settings">
-    <Card title="Key Playbook Settings">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Priority level</div>
-        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Access controls</div>
-        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Notifications</div>
-        <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Monitoring</div>
+    <div className="p-3 rounded bg-gray-100 dark:bg-gray-800">
+      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Key Playbook Settings</h4>
+      <div className="space-y-2 text-sm">
+        <div className="flex items-center">
+          <span className="mr-2">•</span> Priority level for orchestrating multiple playbooks
+        </div>
+        <div className="flex items-center">
+          <span className="mr-2">•</span> Access controls for team collaboration
+        </div>
+        <div className="flex items-center">
+          <span className="mr-2">•</span> Notification preferences for key events
+        </div>
       </div>
-    </Card>
+    </div>
   </Step>
 </Steps>
 
@@ -107,40 +111,37 @@ description: 'Create your first automated solution with Demiurg'
   </Step>
   
   <Step title="Build with Blocks">
-    <CardGroup cols={2}>
-      <Card title="Listen Blocks">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Listen Blocks</h4>
         <div className="space-y-2">
           <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">📥</span> Email received
+            <span className="mr-2 text-primary dark:text-primary-light">•</span> WhatsApp messages
           </div>
           <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">📝</span> Form submission
+            <span className="mr-2 text-primary dark:text-primary-light">•</span> Email received
           </div>
           <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">⏰</span> Schedule trigger
-          </div>
-          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">🔔</span> Custom events
+            <span className="mr-2 text-primary dark:text-primary-light">•</span> Scheduled events
           </div>
         </div>
-      </Card>
-      <Card title="Generate Blocks">
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Generate Blocks</h4>
         <div className="space-y-2">
           <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">💬</span> Create responses
+            <span className="mr-2 text-primary dark:text-primary-light">•</span> OpenAI models
           </div>
           <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">🔀</span> Make decisions
+            <span className="mr-2 text-primary dark:text-primary-light">•</span> Anthropic Claude
           </div>
           <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">🔄</span> Process data
-          </div>
-          <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm flex items-center">
-            <span className="mr-2">📊</span> Analyze information
+            <span className="mr-2 text-primary dark:text-primary-light">•</span> Google Gemini
           </div>
         </div>
-      </Card>
-    </CardGroup>
+      </div>
+    </div>
   </Step>
   
   <Step title="Use Demiurg AI">
@@ -148,22 +149,13 @@ description: 'Create your first automated solution with Demiurg'
       <img src="/images/ai-assistant.png" alt="AI Assistant" className="rounded-lg" />
     </Frame>
     
-    <CardGroup cols={2}>
-      <Card title="Generate with AI">
-        <div className="p-3 rounded bg-gray-100 dark:bg-gray-800 mb-2 text-sm italic">
-          "Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."
-        </div>
-        <p className="text-sm text-gray-500">Click "generate" in the right panel and describe what you want to build</p>
-      </Card>
-      <Card title="Review & Refine">
-        <ul className="list-disc list-inside space-y-1 mt-2">
-          <li>View side-by-side comparison</li>
-          <li>Accept AI suggestions</li>
-          <li>Make manual adjustments</li>
-          <li>Request specific changes</li>
-        </ul>
-      </Card>
-    </CardGroup>
+    <div className="p-4 rounded bg-gray-100 dark:bg-gray-800 mt-4">
+      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Natural Language Page Creation</h4>
+      <div className="p-3 rounded bg-white dark:bg-gray-700 mb-2 text-sm italic border border-gray-200 dark:border-gray-600">
+        "Create a page that greets customers, categorizes their inquiry by urgency and department, then routes it appropriately."
+      </div>
+      <p className="text-sm text-gray-600 dark:text-gray-300">Type what you want to build in plain language and Demiurg AI will generate a complete workflow</p>
+    </div>
   </Step>
 </Steps>
 
@@ -173,90 +165,83 @@ description: 'Create your first automated solution with Demiurg'
   <img src="/images/complete-example.png" alt="Complete Example" className="rounded-lg" />
 </Frame>
 
-<Accordion title="Agent: Support Assistant">
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Email:** support@company.com
+<Accordion title="Sophia Chen, Customer Experience Specialist">
+  <div className="space-y-2 text-sm">
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>Email:</strong> sophia.chen@company.com
     </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **AI:** ChatGPT + Claude
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>Channels:</strong> Email, WhatsApp
     </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Knowledge:** Product docs
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>AI:</strong> ChatGPT + Claude
     </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Channels:** Email + Chat
-    </div>
-  </div>
-</Accordion>
-
-<Accordion title="Playbook: Support Inquiries">
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Purpose:** Handle questions
-    </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Pages:** 3 active flows
-    </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Status:** Active
-    </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Priority:** High
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>Knowledge:</strong> Product documentation, pricing, and policies
     </div>
   </div>
 </Accordion>
 
-<Accordion title="Page: Email Triage">
-  <div className="space-y-2">
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Listen Block:** New email received at support@company.com
+<Accordion title="Customer Support Playbook">
+  <div className="space-y-2 text-sm">
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>Pages:</strong> Inquiry triage, technical support, refund processing, follow-up
     </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Generate Block:** Analyze email content, categorize by urgency and topic
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>Priority:</strong> High (handles all customer communications first)
     </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Generate Block:** Create appropriate response based on category
+    <div className="flex items-center">
+      <span className="mr-2 text-primary dark:text-primary-light">•</span> <strong>Status:</strong> Active and monitoring all channels
     </div>
-    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">
-      **Generate Block:** Decide if escalation needed, route accordingly
+  </div>
+</Accordion>
+
+<Accordion title="Inquiry Triage Page">
+  <div className="space-y-2 text-sm">
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800">
+      <strong className="text-primary dark:text-primary-light">Listen Block:</strong> New message received on WhatsApp or email
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800">
+      <strong className="text-primary dark:text-primary-light">Generate Block:</strong> Analyze message content with OpenAI and determine category/urgency
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800">
+      <strong className="text-primary dark:text-primary-light">Generate Block:</strong> Create personalized response based on customer history
+    </div>
+    <div className="p-2 rounded bg-gray-100 dark:bg-gray-800">
+      <strong className="text-primary dark:text-primary-light">Advanced Block:</strong> Route to specialized page based on content analysis
     </div>
   </div>
 </Accordion>
 
 ## Next Steps
 
-<CardGroup cols={3}>
-  <Card title="Expand Your Agent" icon="lightbulb" href="/pages/overview">
-    Add more capabilities with additional playbooks and pages
-    
-    <div className="mt-2">
-      <a href="/pages/overview" className="text-blue-500 text-sm hover:underline">Learn more →</a>
-    </div>
-  </Card>
-  <Card title="Add Integrations" icon="plug" href="/agents/external-services">
-    Connect to your existing tools and services
-    
-    <div className="mt-2">
-      <a href="/agents/external-services" className="text-blue-500 text-sm hover:underline">View options →</a>
-    </div>
-  </Card>
-  <Card title="Explore Templates" icon="book-open" href="/solutions/customer-service">
-    Browse our library of pre-built solutions
-    
-    <div className="mt-2">
-      <a href="/solutions/customer-service" className="text-blue-500 text-sm hover:underline">See templates →</a>
-    </div>
-  </Card>
-</CardGroup>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div className="p-4 rounded bg-gray-100 dark:bg-gray-800">
+    <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Expand Your Agent</h4>
+    <p className="text-sm mb-3">Add more capabilities and skills to your human-like agent</p>
+    <a href="/agents/configuration" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Learn more →</a>
+  </div>
+  
+  <div className="p-4 rounded bg-gray-100 dark:bg-gray-800">
+    <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Add Integrations</h4>
+    <p className="text-sm mb-3">Connect to your existing tools and services</p>
+    <a href="/agents/integrations/custom-services" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View options →</a>
+  </div>
+  
+  <div className="p-4 rounded bg-gray-100 dark:bg-gray-800">
+    <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Create Advanced Pages</h4>
+    <p className="text-sm mb-3">Design complex workflows with advanced blocks</p>
+    <a href="/pages/blocks" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Explore blocks →</a>
+  </div>
+</div>
 
 <Check>
   <div className="font-medium mb-2">Key Points to Remember:</div>
   <ul className="list-disc list-inside space-y-1">
-    <li>**Agents** are the identity and interface your users interact with</li>
-    <li>**Playbooks** define sets of capabilities assigned to an agent</li>
-    <li>**Pages** contain the actual workflow logic built with blocks</li>
-    <li>Use **Demiurg AI** to quickly build sophisticated pages</li>
-    <li>Start with **templates** to get up and running faster</li>
+    <li>**Agents** are human-like virtual professionals with their own identity and expertise</li>
+    <li>**Playbooks** are collections of related pages assigned to an agent</li>
+    <li>**Pages** contain the actual workflow logic built with Listen and Generate blocks</li>
+    <li>**Listen blocks** trigger on incoming messages, emails, or events</li>
+    <li>**Generate blocks** use AI models to process information and create responses</li>
   </ul>
 </Check>
