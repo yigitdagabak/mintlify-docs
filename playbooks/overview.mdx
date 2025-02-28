@@ -1,5 +1,199 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Playbooks Overview'
+description: 'Understanding playbooks, their structure, and how to use them effectively'
 ---
 
+<Tip>
+  Playbooks are organized collections of pages that define specific capabilities for your agents. They provide structure to your automation and allow you to assign multiple workflows to agents as a cohesive skill set.
+</Tip>
+
+## What are Playbooks?
+
+Playbooks are collections of related pages that work together to handle specific functions or domains of knowledge. Think of playbooks as specialized skill sets you can assign to your agents to give them particular capabilities.
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Structured</h4>
+    <p className="text-sm">Organize related workflows into logical functional groups</p>
+  </div>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Reusable</h4>
+    <p className="text-sm">Assign the same capabilities to multiple agents quickly</p>
+  </div>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Configurable</h4>
+    <p className="text-sm">Define settings that apply across all contained pages</p>
+  </div>
+</div>
+
+## Playbook Components
+
+<div className="space-y-6">
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">1. Pages</h3>
+    <p className="mb-2">Individual workflows that define specific processes and automations.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Email response workflows</li>
+      <li>Customer inquiry processing</li>
+      <li>Document analysis procedures</li>
+      <li>Scheduled follow-up sequences</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">2. Configuration</h3>
+    <p className="mb-2">Settings that apply to all pages within the playbook.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Priority levels and execution order</li>
+      <li>Default response templates</li>
+      <li>Escalation pathways</li>
+      <li>Notification preferences</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">3. Organization</h3>
+    <p className="mb-2">Structure that groups related functionality logically.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Categories and subcategories</li>
+      <li>Tags and metadata</li>
+      <li>Dependency relationships</li>
+      <li>Execution sequence</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">4. Versioning</h3>
+    <p className="mb-2">Track changes and maintain different versions of your playbooks.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Published and draft versions</li>
+      <li>Change history</li>
+      <li>Rollback capabilities</li>
+      <li>Branching for experimentation</li>
+    </ul>
+  </div>
+</div>
+
+## Creating Your First Playbook
+
+<Steps>
+  <Step title="Navigate to Playbooks">
+    From your main dashboard, select "Playbooks" in the left sidebar.
+  </Step>
+  
+  <Step title="Click 'Create Playbook'">
+    Use the button in the top right corner to start the playbook creation process.
+  </Step>
+  
+  <Step title="Define Basic Information">
+    Add a name, description, and category for your playbook.
+  </Step>
+  
+  <Step title="Configure Settings">
+    Set priority levels, notification preferences, and other global settings.
+  </Step>
+  
+  <Step title="Add Pages">
+    Create new pages or add existing ones to build your workflow collection.
+  </Step>
+  
+  <Step title="Publish and Assign">
+    Publish your playbook and assign it to relevant agents.
+  </Step>
+</Steps>
+
+## Common Playbook Types
+
+<div className="space-y-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Customer Support Playbook</h4>
+    <p className="text-sm mb-1">Handles inquiries, troubleshooting, and support ticket management.</p>
+    <p className="text-xs text-gray-500">Essential pages: Ticket triage, FAQ responses, escalation protocol, satisfaction follow-up</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Sales Development Playbook</h4>
+    <p className="text-sm mb-1">Qualifies leads, schedules meetings, and assists with sales processes.</p>
+    <p className="text-xs text-gray-500">Essential pages: Lead qualification, meeting scheduler, proposal generator, follow-up sequence</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Document Processing Playbook</h4>
+    <p className="text-sm mb-1">Extracts, analyzes, and processes information from various documents.</p>
+    <p className="text-xs text-gray-500">Essential pages: Document classifier, data extractor, summary generator, report creator</p>
+  </div>
+</div>
+
+## Playbook Management Dashboard
+
+<Frame>
+  <img src="/images/playbook-dashboard.png" alt="Playbook Management Dashboard" className="rounded-lg" />
+</Frame>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Creation Tools</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Build from scratch with the editor</li>
+      <li>Use AI to generate complete playbooks</li>
+      <li>Import templates from the library</li>
+      <li>Clone and modify existing playbooks</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Management Features</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Track performance metrics</li>
+      <li>Manage version history</li>
+      <li>Share and collaborate with team</li>
+      <li>Test and debug workflows</li>
+    </ul>
+  </div>
+</div>
+
+## Best Practices
+
+<div className="space-y-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Start with User Journeys</h4>
+    <p className="text-sm">Map out entire processes from the user's perspective before building individual pages.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Focus on Related Functions</h4>
+    <p className="text-sm">Keep playbooks focused on a specific domain rather than mixing unrelated capabilities.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Build for Reusability</h4>
+    <p className="text-sm">Design playbooks that can be assigned to multiple agents with minimal customization needed.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Include Error Handling</h4>
+    <p className="text-sm">Add processes for handling exceptions and situations that require human intervention.</p>
+  </div>
+</div>
+
+## Next Steps
+
+<div className="space-y-4">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Create Your First Playbook</h4>
+    <p className="text-sm mb-1">Learn how to build a playbook from scratch</p>
+    <a href="/playbooks/creating" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Get started →</a>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Manage Your Playbooks</h4>
+    <p className="text-sm mb-1">Organize, test, and optimize your playbook collection</p>
+    <a href="/playbooks/managing" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Learn more →</a>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Explore Example Playbooks</h4>
+    <p className="text-sm mb-1">Get inspired with pre-built templates and examples</p>
+    <a href="/playbooks/examples" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View examples →</a>
+  </div>
+</div>
