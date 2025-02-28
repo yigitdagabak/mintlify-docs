@@ -15,66 +15,75 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 
 <Tabs>
   <Tab title="Identity">
-    <CardGroup cols={2}>
-      <Card title="Basic Information">
-        <ul className="list-disc list-inside space-y-1 mt-2">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Basic Information</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
           <li>Name and surname (e.g., "Sarah Johnson")</li>
           <li>Human-like persona and character</li>
           <li>Role definition (e.g., "Customer Success Specialist")</li>
           <li>Expertise areas and specialization</li>
         </ul>
-      </Card>
-      <Card title="Communication">
-        <ul className="list-disc list-inside space-y-1 mt-2">
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Communication</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
           <li>Personal email address</li>
           <li>Direct phone number</li>
           <li>Messaging profile</li>
           <li>Communication style preferences</li>
         </ul>
-      </Card>
-    </CardGroup>
+      </div>
+    </div>
   </Tab>
   
   <Tab title="AI & Knowledge">
-    <CardGroup cols={2}>
-      <Card title="AI Tools">
-        <ul className="list-disc list-inside space-y-1 mt-2">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">AI Tools</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
           <li>ChatGPT integration</li>
           <li>Claude integration</li>
           <li>Model parameters</li>
           <li>Response configuration</li>
         </ul>
-      </Card>
-      <Card title="Knowledge Base">
-        <ul className="list-disc list-inside space-y-1 mt-2">
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Knowledge Base</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
           <li>Domain knowledge</li>
           <li>Reference documents</li>
           <li>Response guidelines</li>
           <li>Training information</li>
         </ul>
-      </Card>
-    </CardGroup>
+      </div>
+    </div>
   </Tab>
   
   <Tab title="Integrations">
-    <CardGroup cols={2}>
-      <Card title="Communication Tools">
-        <ul className="list-disc list-inside space-y-1 mt-2">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Communication Tools</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
           <li>Email providers</li>
           <li>SMS gateways</li>
           <li>Messaging platforms</li>
           <li>Voice services</li>
         </ul>
-      </Card>
-      <Card title="External Services">
-        <ul className="list-disc list-inside space-y-1 mt-2">
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">External Services</h4>
+        <ul className="list-disc list-inside space-y-1 ml-2">
           <li>CRM systems</li>
           <li>Ticketing platforms</li>
           <li>Database connections</li>
           <li>Custom API integrations</li>
         </ul>
-      </Card>
-    </CardGroup>
+      </div>
+    </div>
   </Tab>
 </Tabs>
 
@@ -157,29 +166,27 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 
 ## Demiurg AI Features
 
-<Card title="Advanced AI Capabilities">
-  <CardGroup cols={2}>
-    <Card>
-      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Content Generation</h4>
-      <ul className="list-disc list-inside space-y-1 mt-2">
-        <li>Understands natural language descriptions</li>
-        <li>Creates complex, multi-stage workflows</li>
-        <li>Includes error handling automatically</li>
-        <li>Follows organizational best practices</li>
-      </ul>
-    </Card>
-    
-    <Card>
-      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Version Management</h4>
-      <ul className="list-disc list-inside space-y-1 mt-2">
-        <li>Clear side-by-side comparison</li>
-        <li>Highlights changes and additions</li>
-        <li>Explains rationale for modifications</li>
-        <li>Lets you selectively accept changes</li>
-      </ul>
-    </Card>
-  </CardGroup>
-</Card>
+<div className="space-y-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Content Generation</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Understands natural language descriptions</li>
+      <li>Creates complex, multi-stage workflows</li>
+      <li>Includes error handling automatically</li>
+      <li>Follows organizational best practices</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Version Management</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Clear side-by-side comparison</li>
+      <li>Highlights changes and additions</li>
+      <li>Explains rationale for modifications</li>
+      <li>Lets you selectively accept changes</li>
+    </ul>
+  </div>
+</div>
 
 ## Putting It All Together
 
@@ -225,7 +232,7 @@ description: "Essential building blocks and fundamental terms in Demiurg"
 ## Key Relationships
 
 <Info>
-  <h4 className="font-medium mb-2">Component Relationships</h4>
+  <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Component Relationships</h4>
   <ul className="list-disc list-inside space-y-1 mt-2">
     <li>Agents are assigned one or more Playbooks</li>
     <li>Playbooks contain multiple Pages</li>
