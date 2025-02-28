@@ -82,9 +82,9 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Community",
-          "href": "https://demiurg.community",
-          "icon": "people-group"
+          "anchor": "Get Started",
+          "href": "https://app.demiurg.io/signup",
+          "icon": "rocket"
         },
         {
           "anchor": "Blog",
