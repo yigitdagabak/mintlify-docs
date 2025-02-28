@@ -1,5 +1,335 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Pages Overview'
+description: 'Understanding pages and how to build workflows with specialized blocks'
 ---
 
+<Tip>
+  Pages are individual workflows that define specific automated processes for your agents. They combine specialized blocks with natural language instructions to create powerful, AI-driven automation.
+</Tip>
+
+## What are Pages?
+
+Pages are the fundamental building blocks where you design specific workflows for your agents. Each page defines a complete process that starts with a trigger (Listen block) and includes the logic for how to handle and respond to that event using AI (Generate block).
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Process-Focused</h4>
+    <p className="text-sm">Define specific workflows for handling different scenarios</p>
+  </div>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">AI-Powered</h4>
+    <p className="text-sm">Leverage AI models to analyze content and generate responses</p>
+  </div>
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Composable</h4>
+    <p className="text-sm">Build with blocks that can be combined in countless ways</p>
+  </div>
+</div>
+
+## Page Structure
+
+<Frame>
+  <img src="/images/page-structure.png" alt="Page Structure Diagram" className="rounded-lg" />
+</Frame>
+
+<div className="space-y-6">
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">1. Listen Blocks</h3>
+    <p className="mb-2">Listen blocks serve as triggers that activate your workflow when specific events occur.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Email: Respond to messages sent to your agent's email address</li>
+      <li>WhatsApp: Handle messages from WhatsApp conversations</li>
+      <li>Form: Process submissions from web forms</li>
+      <li>Schedule: Run workflows at specific times or intervals</li>
+      <li>API: Trigger workflows from external system calls</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">2. Generate Blocks</h3>
+    <p className="mb-2">Generate blocks use AI to process information and create appropriate responses.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Analysis: Extract information and make decisions</li>
+      <li>Response: Create personalized messages</li>
+      <li>Classification: Categorize content by type, sentiment, or priority</li>
+      <li>Extraction: Pull specific data points from unstructured content</li>
+      <li>Summary: Create concise summaries of longer content</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">3. Natural Language Instructions</h3>
+    <p className="mb-2">Between blocks, you can write detailed instructions in plain English that guide the AI.</p>
+    <div className="p-4 rounded bg-gray-100 dark:bg-gray-800 text-sm border-l-4 border-primary">
+      <p className="italic">
+        "When a customer asks about product pricing, first check if they've mentioned a specific product. If they have, provide detailed pricing for that product. If they haven't specified a product, ask which product they're interested in and provide options from our catalog."
+      </p>
+    </div>
+  </div>
+</div>
+
+## Demiurg AI 
+
+<Frame>
+  <img src="/images/demiurg-ai.png" alt="Demiurg AI Interface" className="rounded-lg" />
+</Frame>
+
+<div className="space-y-6">
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">AI-Powered Page Creation</h3>
+    <p className="mb-2">Demiurg AI can create entire pages or modify existing ones based on your natural language instructions.</p>
+    <div className="p-4 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      <p className="italic font-medium mb-2">Example instruction:</p>
+      <p className="italic">
+        "Create a customer support workflow that categorizes incoming emails by urgency, generates personalized responses for common questions, and escalates complex issues to the appropriate department."
+      </p>
+    </div>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">Side-by-Side Comparison</h3>
+    <p className="mb-2">Review AI-proposed changes next to your current page version to easily see and understand modifications.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Highlighted differences show what's been added, modified, or removed</li>
+      <li>Accept all changes or selectively incorporate specific improvements</li>
+      <li>Get explanations for why certain changes were suggested</li>
+      <li>Iterate on the AI's proposal with further refinement instructions</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">Continuous Improvement</h3>
+    <p className="mb-2">Use Demiurg AI to refine and optimize your pages over time as your needs evolve.</p>
+    <div className="p-4 rounded bg-gray-100 dark:bg-gray-800 text-sm">
+      <p className="italic font-medium mb-2">Example refinement instruction:</p>
+      <p className="italic">
+        "Update this page to include better error handling when customer attachments can't be processed, and add a follow-up sequence for unresolved issues after 24 hours."
+      </p>
+    </div>
+  </div>
+</div>
+
+## Creating Pages
+
+<Steps>
+  <Step title="Navigate to a Playbook">
+    Open an existing playbook or create a new one in your agent's dashboard.
+  </Step>
+  
+  <Step title="Add a New Page">
+    Click "Add Page" button within your playbook to create a new workflow.
+  </Step>
+  
+  <Step title="Choose Creation Method">
+    Decide whether to build manually or use Demiurg AI to generate the page.
+  </Step>
+  
+  <Step title="For AI Generation">
+    If using AI, provide a detailed description of what you want the page to do and click "Generate."
+  </Step>
+  
+  <Step title="For Manual Creation">
+    Give your page a name and start adding blocks using the slash command.
+    
+    <Frame>
+      <img src="/images/listen-block-menu.png" alt="Listen Block Selection Menu" className="rounded-lg" />
+    </Frame>
+  </Step>
+  
+  <Step title="Configure Blocks">
+    Set up each block's settings based on your workflow requirements.
+    
+    <Frame>
+      <img src="/images/listen-block-config.png" alt="Listen Block Configuration" className="rounded-lg" />
+    </Frame>
+  </Step>
+  
+  <Step title="Add Instructions">
+    Write clear instructions for how the AI should analyze and respond to triggers.
+  </Step>
+  
+  <Step title="Save and Test">
+    Save your page and use the testing tools to verify its functionality.
+  </Step>
+</Steps>
+
+## Block Types
+
+<Tabs>
+  <Tab title="Listen Blocks">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Email</h4>
+        <p className="text-sm">Triggers when emails arrive at your agent's address. You can filter by sender, subject lines, or content.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">WhatsApp</h4>
+        <p className="text-sm">Activates when your agent receives messages through WhatsApp. Configure for specific numbers or message content.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Schedule</h4>
+        <p className="text-sm">Runs automatically at specified times or intervals. Perfect for sending reports, reminders, or follow-ups.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Form</h4>
+        <p className="text-sm">Processes submissions from web forms on your website, with automatic field mapping.</p>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Generate Blocks">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">OpenAI</h4>
+        <p className="text-sm">Uses GPT models to analyze content and generate responses. Configurable with temperature, token limits, and system prompts.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Claude</h4>
+        <p className="text-sm">Leverages Anthropic's Claude for nuanced understanding and response generation with detailed instructions.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Gemini</h4>
+        <p className="text-sm">Implements Google's Gemini models for content analysis and generation with multilingual support.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Custom</h4>
+        <p className="text-sm">Integrate with your own AI models or specialized services via API for domain-specific tasks.</p>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Basic Blocks">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Headings</h4>
+        <p className="text-sm">Organize your page with section titles and subtitles for better readability.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Lists</h4>
+        <p className="text-sm">Create bulleted or numbered lists to outline steps or options.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Quotes</h4>
+        <p className="text-sm">Highlight important instructions or examples with blockquotes.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Dividers</h4>
+        <p className="text-sm">Separate distinct sections of your workflow with horizontal divider lines.</p>
+      </div>
+    </div>
+  </Tab>
+  
+  <Tab title="Advanced Blocks">
+    <div className="space-y-4">
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Tables</h4>
+        <p className="text-sm">Organize structured data in tables for reference during workflow execution.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Code</h4>
+        <p className="text-sm">Include code snippets or formulas that your agent can execute or reference.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Conditional</h4>
+        <p className="text-sm">Create branching logic that directs the workflow based on specific conditions.</p>
+      </div>
+      
+      <div>
+        <h4 className="font-medium text-primary dark:text-primary-light mb-2">Variable</h4>
+        <p className="text-sm">Define and use variables to store and reference information throughout the workflow.</p>
+      </div>
+    </div>
+  </Tab>
+</Tabs>
+
+## The Page Editor
+
+<Frame>
+  <img src="/images/page-editor.png" alt="Demiurg Page Editor" className="rounded-lg" />
+</Frame>
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Key Features</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Visual block-based editor</li>
+      <li>Slash command for inserting blocks</li>
+      <li>Natural language instruction support</li>
+      <li>Real-time validation and hints</li>
+      <li>Syntax highlighting for code blocks</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">AI Assistance</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Generate entire pages from descriptions</li>
+      <li>See proposed changes side-by-side with current version</li>
+      <li>Refine natural language instructions</li>
+      <li>Optimize AI prompt parameters</li>
+      <li>Identify potential logic issues</li>
+    </ul>
+  </div>
+</div>
+
+## Best Practices
+
+<div className="space-y-4 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">One Purpose Per Page</h4>
+    <p className="text-sm">Keep each page focused on a single specific workflow or process for clarity and maintainability.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Clear Instructions</h4>
+    <p className="text-sm">Provide detailed, specific guidance for AI blocks to ensure consistent and accurate results.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Leverage Demiurg AI</h4>
+    <p className="text-sm">Use the AI assistant to generate initial pages and suggest improvements rather than building everything manually.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Error Handling</h4>
+    <p className="text-sm">Anticipate edge cases and include instructions for how to handle unclear inputs or exceptions.</p>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Test Thoroughly</h4>
+    <p className="text-sm">Use the built-in testing tools to verify that your page works as expected with various inputs.</p>
+  </div>
+</div>
+
+## Next Steps
+
+<div className="space-y-4">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Explore Block Types</h4>
+    <p className="text-sm mb-1">Learn about all available blocks and their specific configurations</p>
+    <a href="/pages/blocks" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View blocks →</a>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Use AI Assistance</h4>
+    <p className="text-sm mb-1">Discover how AI can help you create and improve your pages</p>
+    <a href="/pages/ai-assistance" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Learn more →</a>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Test Your Pages</h4>
+    <p className="text-sm mb-1">Verify your workflows function correctly before deployment</p>
+    <a href="/pages/testing" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View testing guides →</a>
+  </div>
+</div>
