@@ -9,9 +9,10 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Essentials",
+        "dropdown": "Essentials",
+        "icon": "book-open",
         "groups": [
           {
             "group": "Getting Started",
@@ -55,49 +56,62 @@
               "pages/version-control",
               "pages/testing"
             ]
-          },
-          {
-            "group": "Examples",
-            "pages": [
-              "examples/customer-service",
-              "examples/sales",
-              "examples/marketing",
-              "examples/document-processing",
-              "examples/custom"
-            ]
-          },
-          {
-            "group": "Advanced Topics",
-            "pages": [
-              "advanced/complex-scenarios",
-              "advanced/performance",
-              "advanced/security", 
-              "advanced/monitoring",
-              "advanced/troubleshooting"
-            ]
           }
         ]
+      },
+      {
+        "dropdown": "Use Cases",
+        "icon": "lightbulb",
+        "pages": [
+          "examples/customer-service",
+          "examples/sales",
+          "examples/marketing",
+          "examples/document-processing",
+          "examples/custom"
+        ]
+      },
+      {
+        "dropdown": "Technical Resources",
+        "icon": "zap",
+        "pages": [
+          "advanced/complex-scenarios",
+          "advanced/performance",
+          "advanced/security", 
+          "advanced/monitoring",
+          "advanced/troubleshooting"
+        ]
+      },
+      {
+        "dropdown": "Developer Hub",
+        "icon": "code",
+        "pages": [
+          "api/overview",
+          "api/authentication",
+          "api/endpoints",
+          "api/webhooks",
+          "api/sdks"
+        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Get Started",
-          "href": "https://app.demiurg.io/signup",
-          "icon": "rocket"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://demiurg.blog",
-          "icon": "newspaper"
-        },
-        {
-          "anchor": "GitHub",
-          "href": "https://github.com/demiurg",
-          "icon": "github"
-        }
-      ]
-    }
+    ]
+  },
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Get Started",
+        "href": "https://app.demiurg.io/signup",
+        "icon": "rocket"
+      },
+      {
+        "anchor": "Blog",
+        "href": "https://demiurg.blog",
+        "icon": "newspaper"
+      },
+      {
+        "anchor": "GitHub",
+        "href": "https://github.com/demiurg",
+        "icon": "github"
+      }
+    ]
   },
   "logo": {
     "light": "/logo/demiurg-light.svg",
