@@ -136,13 +136,13 @@
       },
       {
         "label": "Status",
-        "href": "https://status.demiurg.io"
+        "href": "https://status.demiurg.ai"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.demiurg.io"
+      "label": "Demiurg Home",
+      "href": "https://demiurg.ai"
     }
   },
   "footer": {
