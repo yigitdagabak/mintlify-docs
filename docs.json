@@ -74,7 +74,7 @@
         ]
       },
       {
-        "tab": "Technical Resources",
+        "tab": "Advanced Guide",
         "groups": [
           {
             "group": "Advanced Topics",
@@ -103,26 +103,26 @@
           }
         ]
       }
-    ]
-  },
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Get Started",
-        "href": "https://app.demiurg.io/signup",
-        "icon": "rocket"
-      },
-      {
-        "anchor": "Blog",
-        "href": "https://demiurg.blog",
-        "icon": "newspaper"
-      },
-      {
-        "anchor": "GitHub",
-        "href": "https://github.com/demiurg",
-        "icon": "github"
-      }
-    ]
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Get Started",
+          "href": "https://app.demiurg.io/signup",
+          "icon": "rocket"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://demiurg.blog",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/demiurg",
+          "icon": "github"
+        }
+      ]
+    }
   },
   "logo": {
     "light": "/logo/demiurg-light.svg",
