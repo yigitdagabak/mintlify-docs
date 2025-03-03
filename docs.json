@@ -9,6 +9,23 @@
   },
   "favicon": "/favicon.png",
   "navigation": {
+    "anchors": [
+      {
+        "anchor": "Get Started",
+        "href": "https://app.demiurg.io/signup",
+        "icon": "rocket"
+      },
+      {
+        "anchor": "Blog",
+        "href": "https://demiurg.blog",
+        "icon": "newspaper"
+      },
+      {
+        "anchor": "GitHub",
+        "href": "https://github.com/demiurg",
+        "icon": "github"
+      }
+    ],
     "dropdowns": [
       {
         "dropdown": "Essentials",
@@ -91,25 +108,6 @@
           "api/webhooks",
           "api/sdks"
         ]
-      }
-    ]
-  },
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Get Started",
-        "href": "https://app.demiurg.io/signup",
-        "icon": "rocket"
-      },
-      {
-        "anchor": "Blog",
-        "href": "https://demiurg.blog",
-        "icon": "newspaper"
-      },
-      {
-        "anchor": "GitHub",
-        "href": "https://github.com/demiurg",
-        "icon": "github"
       }
     ]
   },
