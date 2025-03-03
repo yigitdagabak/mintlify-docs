@@ -8,89 +8,96 @@
     "dark": "#1C3943"
   },
   "favicon": "/favicon.png",
-  "navigation": [
-    {
-      "group": "Get Started",
-      "pages": [
-        "introduction", 
-        "key-concepts",
-        "tutorials/quick-start"
-      ]
-    },
-    {
-      "group": "Agents",
-      "pages": [
-        "agents/overview",
-        "agents/configuration",
-        "agents/knowledge-base",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Essentials",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction", 
+              "key-concepts",
+              "tutorials/quick-start"
+            ]
+          },
+          {
+            "group": "Agents",
+            "pages": [
+              "agents/overview",
+              "agents/configuration",
+              "agents/knowledge-base",
+              {
+                "group": "Integrations",
+                "pages": [
+                  "agents/integrations/communication",
+                  "agents/integrations/ai-tools",
+                  "agents/integrations/custom-services"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Playbooks",
+            "pages": [
+              "playbooks/overview",
+              "playbooks/creating",
+              "playbooks/managing",
+              "playbooks/examples"
+            ]
+          },
+          {
+            "group": "Pages",
+            "pages": [
+              "pages/overview",
+              "pages/blocks",
+              "pages/ai-assistance",
+              "pages/version-control",
+              "pages/testing"
+            ]
+          },
+          {
+            "group": "Examples",
+            "pages": [
+              "examples/customer-service",
+              "examples/sales",
+              "examples/marketing",
+              "examples/document-processing",
+              "examples/custom"
+            ]
+          },
+          {
+            "group": "Advanced Topics",
+            "pages": [
+              "advanced/complex-scenarios",
+              "advanced/performance",
+              "advanced/security", 
+              "advanced/monitoring",
+              "advanced/troubleshooting"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
         {
-          "group": "Integrations",
-          "pages": [
-            "agents/integrations/communication",
-            "agents/integrations/ai-tools",
-            "agents/integrations/custom-services"
-          ]
+          "anchor": "Get Started",
+          "href": "https://app.demiurg.io/signup",
+          "icon": "rocket"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://demiurg.blog",
+          "icon": "newspaper"
+        },
+        {
+          "anchor": "GitHub",
+          "href": "https://github.com/demiurg",
+          "icon": "github"
         }
       ]
-    },
-    {
-      "group": "Playbooks",
-      "pages": [
-        "playbooks/overview",
-        "playbooks/creating",
-        "playbooks/managing",
-        "playbooks/examples"
-      ]
-    },
-    {
-      "group": "Pages",
-      "pages": [
-        "pages/overview",
-        "pages/blocks",
-        "pages/ai-assistance",
-        "pages/version-control",
-        "pages/testing"
-      ]
-    },
-    {
-      "group": "Examples",
-      "pages": [
-        "examples/customer-service",
-        "examples/sales",
-        "examples/marketing",
-        "examples/document-processing",
-        "examples/custom"
-      ]
-    },
-    {
-      "group": "Advanced Topics",
-      "pages": [
-        "advanced/complex-scenarios",
-        "advanced/performance",
-        "advanced/security", 
-        "advanced/monitoring",
-        "advanced/troubleshooting"
-      ]
     }
-  ],
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Get Started",
-        "href": "https://app.demiurg.io/signup",
-        "icon": "rocket"
-      },
-      {
-        "anchor": "Blog",
-        "href": "https://demiurg.blog",
-        "icon": "newspaper"
-      },
-      {
-        "anchor": "GitHub",
-        "href": "https://github.com/demiurg",
-        "icon": "github"
-      }
-    ]
   },
   "logo": {
     "light": "/logo/demiurg-light.svg",
