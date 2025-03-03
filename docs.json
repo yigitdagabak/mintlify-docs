@@ -79,7 +79,9 @@
           "advanced/troubleshooting"
         ]
       }
-    ],
+    ]
+  },
+  "global": {
     "anchors": [
       {
         "anchor": "Get Started",
