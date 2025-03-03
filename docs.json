@@ -12,7 +12,6 @@
     "tabs": [
       {
         "tab": "Essentials",
-        "icon": "book",
         "groups": [
           {
             "group": "Getting Started",
@@ -61,7 +60,6 @@
       },
       {
         "tab": "Use Cases",
-        "icon": "lightbulb",
         "groups": [
           {
             "group": "Examples",
@@ -77,7 +75,6 @@
       },
       {
         "tab": "Advanced Guide",
-        "icon": "zap",
         "groups": [
           {
             "group": "Advanced Topics",
@@ -93,7 +90,6 @@
       },
       {
         "tab": "Developer Hub",
-        "icon": "code",
         "groups": [
           {
             "group": "API Reference",
