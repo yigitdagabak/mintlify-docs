@@ -1,258 +1,102 @@
 ---
-title: 'Introduction'
-description: 'Welcome to Demiurg - AI-powered vertical agent platform'
+title: "Welcome to Demiurg"
+description: "Create, deploy, and chat with AI agents in minutes"
 ---
 
-<img
-  className="block dark:hidden rounded-lg shadow-sm"
-  src="/images/hero-light.png"
-  alt="Demiurg Hero Light"
-/>
-<img
-  className="hidden dark:block rounded-lg shadow-sm"
-  src="/images/hero-dark.png"
-  alt="Demiurg Hero Dark"
-/>
+import { Callout } from 'nextra/components'
+import { Steps } from 'nextra/components'
+import { Card, Cards } from 'nextra/components'
+import { Tabs } from 'nextra/components'
 
-<Note>
-  Demiurg helps you create AI-powered vertical agents through a natural language editor with integrated AI assistance.
-</Note>
+# Welcome to Demiurg
 
-## The Demiurg Hierarchy
+Demiurg is a revolutionary platform that lets you create sophisticated AI agents through natural language prompts. Simply describe the agent you want, and Demiurg builds and deploys it for you instantly.
 
-<div className="grid grid-cols-1 gap-6 mb-6">
-  <Card>
-    <div className="flex items-center space-x-2 mb-2">
-      <div className="w-6 h-6 flex items-center justify-center bg-primary/20 dark:bg-primary/30 rounded-full">
-        <span className="text-primary dark:text-primary-light text-sm">1</span>
-      </div>
-      <h3 className="text-lg font-medium">Agents</h3>
-    </div>
-    <p className="mb-3 text-gray-600 dark:text-gray-300 text-sm">Virtual assistants with their own identity, communication channels, and tools.</p>
-    <div className="text-xs font-medium uppercase text-gray-500 dark:text-gray-400 mb-2">Agent includes</div>
-    <div className="space-y-2 text-sm">
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Email and communication
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Knowledge base
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> AI tools (ChatGPT, Claude)
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Custom integrations
-      </div>
-    </div>
-  </Card>
-  
-  <Card>
-    <div className="flex items-center space-x-2 mb-2">
-      <div className="w-6 h-6 flex items-center justify-center bg-primary/20 dark:bg-primary/30 rounded-full">
-        <span className="text-primary dark:text-primary-light text-sm">2</span>
-      </div>
-      <h3 className="text-lg font-medium">Playbooks</h3>
-    </div>
-    <p className="mb-3 text-gray-600 dark:text-gray-300 text-sm">Collections of related pages that define agent capabilities for specific functions.</p>
-    <div className="text-xs font-medium uppercase text-gray-500 dark:text-gray-400 mb-2">Playbook includes</div>
-    <div className="space-y-2 text-sm">
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Multiple pages
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Organizational structure
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Configuration settings
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Notification preferences
-      </div>
-    </div>
-  </Card>
-  
-  <Card>
-    <div className="flex items-center space-x-2 mb-2">
-      <div className="w-6 h-6 flex items-center justify-center bg-primary/20 dark:bg-primary/30 rounded-full">
-        <span className="text-primary dark:text-primary-light text-sm">3</span>
-      </div>
-      <h3 className="text-lg font-medium">Pages</h3>
-    </div>
-    <p className="mb-3 text-gray-600 dark:text-gray-300 text-sm">Individual workflows built with specialized blocks that define specific automations.</p>
-    <div className="text-xs font-medium uppercase text-gray-500 dark:text-gray-400 mb-2">Page includes</div>
-    <div className="space-y-2 text-sm">
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Listen blocks
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Generate blocks
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Natural language instructions
-      </div>
-      <div className="flex items-center">
-        <span className="mr-2">•</span> Logic and decision flows
-      </div>
-    </div>
-  </Card>
+<Callout emoji="✨">
+  From idea to working AI agent in less than a minute — no coding required.
+</Callout>
+
+## What Makes Demiurg Different
+
+Most AI tools require technical expertise or endless configuration. Demiurg eliminates these barriers by turning your ideas into fully functional agents through simple conversation.
+
+<div className="mt-8 mb-12">
+  <img 
+    src="/images/prompt-to-agent.png" 
+    alt="Prompt to Agent Process" 
+    className="rounded-lg border border-gray-200 dark:border-gray-800 shadow-md"
+  />
 </div>
 
-## Main Interfaces
-
-The Demiurg platform consists of two primary interfaces:
-
-<Tabs>
-  <Tab title="Agent Dashboard">
-    <Frame>
-      <img src="/images/agent-dashboard.png" alt="Agent Dashboard" className="rounded-lg" />
-    </Frame>
-    
-    <div className="mt-4">
-      <p>The <strong>Agent Dashboard</strong> is your command center where you:</p>
-      <ul className="list-disc list-inside space-y-1 mt-2">
-        <li>View and manage all your agents</li>
-        <li>Monitor active conversations and resolved items</li>
-        <li>See performance metrics in real-time</li>
-        <li>Manage playbooks assigned to each agent</li>
-        <li>Create new agents and playbooks</li>
-      </ul>
-    </div>
-  </Tab>
-  
-  <Tab title="Page Editor">
-    <Frame>
-      <img src="/images/page-editor.png" alt="Page Editor" className="rounded-lg" />
-    </Frame>
-    
-    <div className="mt-4">
-      <p>The <strong>Page Editor</strong> is where you create and modify pages:</p>
-      <ul className="list-disc list-inside space-y-1 mt-2">
-        <li>Built on TipTap and Next.js</li>
-        <li>Write in natural language</li>
-        <li>Add specialized blocks with the slash command</li>
-        <li>Get AI assistance in the right panel</li>
-        <li>Preview and test your pages</li>
-      </ul>
-    </div>
-  </Tab>
-</Tabs>
-
-## Building Blocks
-
-<CardGroup cols={2}>
-  <Card title="Listen Blocks" icon="ear-listen">
-    <p className="mb-3 text-sm">Configure what triggers your automation:</p>
-    <div className="space-y-2">
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Incoming emails</div>
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">WhatsApp messages</div>
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Form submissions</div>
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Scheduled events</div>
-    </div>
-  </Card>
-  
-  <Card title="Generate Blocks" icon="sparkles">
-    <p className="mb-3 text-sm">Process information with AI:</p>
-    <div className="space-y-2">
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Create personalized responses</div>
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Analyze and categorize content</div>
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Make routing decisions</div>
-      <div className="px-3 py-2 rounded bg-gray-100 dark:bg-gray-800 text-sm">Extract and process data</div>
-    </div>
-  </Card>
-</CardGroup>
-
-## Demiurg AI
-<Card>
-  <div className="flex items-start space-x-4 mb-4">
-    <div className="text-5xl"><Icon icon="brain-circuit" iconType="solid" /></div>
-    <div>
-      <h3 className="font-medium text-lg">For Creating Pages</h3>
-      <p className="text-sm mt-1 text-gray-600 dark:text-gray-300">Demiurg AI lives in the right panel of the editor, helping you create and modify pages with natural language.</p>
-    </div>
-  </div>
-  
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div className="p-4 rounded bg-gray-100 dark:bg-gray-800">
-      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Generate Complete Pages</h4>
-      <div className="p-3 rounded bg-white dark:bg-gray-700 mb-2 text-sm italic border border-gray-200 dark:border-gray-600">
-        "Create a page that handles customer support tickets, categorizes them by urgency, and routes to the appropriate team."
-      </div>
-      <p className="text-xs text-gray-500 dark:text-gray-400">Type a description like this and click "generate"</p>
-    </div>
-    
-    <div className="p-4 rounded bg-gray-100 dark:bg-gray-800">
-      <h4 className="font-medium mb-2 text-primary dark:text-primary-light">Side-by-Side Comparison</h4>
-      <p className="text-sm mb-2 text-gray-600 dark:text-gray-300">View current and AI-generated versions side by side to:</p>
-      <ul className="list-disc list-inside text-sm text-gray-600 dark:text-gray-300">
-        <li>Understand changes</li>
-        <li>Accept all or parts</li>
-        <li>Make adjustments</li>
-        <li>Preserve history</li>
-      </ul>
-    </div>
-  </div>
-</Card>
-
-## Common Use Cases
-
-<CardGroup cols={3}>
-  <Card title="Customer Support" icon="headset">
-    <div className="space-y-2 mt-2">
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Ticket routing</div>
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Response automation</div>
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Follow-up management</div>
-    </div>
-  </Card>
-  <Card title="Sales Automation" icon="messages-dollar">
-    <div className="space-y-2 mt-2">
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Lead qualification</div>
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Meeting scheduling</div>
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Proposal generation</div>
-    </div>
-  </Card>
-  <Card title="Document Processing" icon="file-lines">
-    <div className="space-y-2 mt-2">
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Information extraction</div>
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Content categorization</div>
-      <div className="px-3 py-2 text-xs rounded bg-gray-100 dark:bg-gray-800">Summary generation</div>
-    </div>
-  </Card>
-</CardGroup>
-
-## Getting Started
+### From Prompt to Powerful Agent
 
 <Steps>
-  <Step title="Create an Agent">
-    <div className="text-sm text-gray-600 dark:text-gray-300 mb-3">Set up your first virtual assistant</div>
-    <a href="/tutorials/quick-start" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Get started →</a>
-  </Step>
-  <Step title="Create Playbooks">
-    <div className="text-sm text-gray-600 dark:text-gray-300 mb-3">Build automation with or without AI</div>
-    <a href="/playbooks/overview" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Learn more →</a>
-  </Step>
-  <Step title="Create Pages">
-    <div className="text-sm text-gray-600 dark:text-gray-300 mb-3">Design workflows with specialized blocks</div>
-    <a href="/pages/overview" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View details →</a>
-  </Step>
+  ### Describe what you need
+  ```
+  I need an AI agent that can analyze financial markets and provide trading 
+  insights. It should analyze correlations between crypto and traditional 
+  markets, identify market regimes, predict trends, and suggest trading 
+  strategies based on risk tolerance.
+  ```
+
+  ### Demiurg builds your agent
+  Your description is transformed into a complete agent with all necessary files, tools, and capabilities.
+
+  ### Start using immediately
+  Your new agent (in this case, Sarah Chen, Financial Analyst) is instantly available for conversation.
 </Steps>
 
-## Why Demiurg?
+## Core Features
 
-<CardGroup cols={2}>
-  <Card title="Natural Language Automation">
-    Create complex automations using simple, natural language without coding skills.
+<Cards>
+  <Card title="Prompt-Based Creation" href="/first-agent/crafting-prompts">
+    Describe your ideal agent in natural language, and Demiurg handles the technical implementation.
   </Card>
-  <Card title="AI-Powered Creation">
-    Let Demiurg AI generate complete playbooks from your descriptions, with side-by-side comparisons.
+  <Card title="Instant Deployment" href="/first-agent/deploying-your-agent">
+    Your agents are ready to use immediately after creation, with no waiting or complex setup.
   </Card>
-  <Card title="Versatile Agents">
-    Configure agents with specialized knowledge, tools, and communication channels.
+  <Card title="Powerful Customization" href="/customization/editing-files">
+    Use our intuitive code editor to fine-tune your agent's capabilities, personality, and knowledge.
   </Card>
-  <Card title="Ready to Scale">
-    From small tasks to enterprise-grade workflows, Demiurg grows with your needs.
+  <Card title="Mobile Access" href="/mobile/getting-started">
+    Chat with your agents on the go using our mobile app.
   </Card>
-</CardGroup>
+  <Card title="Agent Sharing" href="/marketplace/sharing-your-agents">
+    Share your creations with colleagues or discover agents built by others in our marketplace.
+  </Card>
+</Cards>
 
-<Check>
-  Ready to dive in? Follow our [quick start guide](/tutorials/quick-start) to create your first agent in minutes.
-</Check>
+## How Demiurg Works
+
+Demiurg uses advanced AI to translate your requirements into structured agent architectures. Behind the scenes, we're building on OpenAI's Agent SDK to create agents with:
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+  <div className="p-4 border rounded-lg dark:border-gray-800">
+    <h3 className="text-lg font-medium">Specialized Capabilities</h3>
+    <p>Custom-tailored to your specific requirements.</p>
+  </div>
+  <div className="p-4 border rounded-lg dark:border-gray-800">
+    <h3 className="text-lg font-medium">Appropriate Tools</h3>
+    <p>Automatically selected based on your agent's domain.</p>
+  </div>
+  <div className="p-4 border rounded-lg dark:border-gray-800">
+    <h3 className="text-lg font-medium">Conversation Flows</h3>
+    <p>Structured dialogs with branching and memory.</p>
+  </div>
+  <div className="p-4 border rounded-lg dark:border-gray-800">
+    <h3 className="text-lg font-medium">Coherent Personality</h3>
+    <p>Consistent expert voice matched to your needs.</p>
+  </div>
+</div>
+
+## Get Started in Minutes
+
+<div className="mt-8 text-center">
+  <a href="/how-demiurg-works" className="px-6 py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition">
+    Learn How Demiurg Works
+  </a>
+  <span className="mx-2">or</span>
+  <a href="/first-agent/crafting-prompts" className="px-6 py-3 bg-gray-200 dark:bg-gray-800 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition">
+    Create Your First Agent
+  </a>
+</div>
