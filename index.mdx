@@ -3,78 +3,76 @@ title: "Welcome to Demiurg"
 description: "Create AI agents through natural language"
 ---
 
-import { Tip } from 'nextra/components'
-import { Card, Cards } from 'nextra/components'
+import { Tip, Card, Cards, Steps, Frame, Callout } from 'nextra/components'
 
 <Tip>
-  Demiurg turns your ideas into powerful AI agents in seconds. Just describe what you need in plain language, and we'll build it for you.
+  **Demiurg turns your ideas into powerful AI agents in seconds.** Just describe what you need in plain language, and we'll build it for you.
 </Tip>
 
-# Demiurg
+# Demiurg: AI Agent Creation Made Simple
 
-<div className="mb-8 mt-4">
-  <div className="overflow-hidden rounded-lg shadow-md">
-    <img 
-      src="/images/hero.png" 
-      alt="Demiurg Interface" 
-      className="w-full"
-    />
-  </div>
-  <p className="text-sm text-gray-500 mt-2 text-center">Create AI agents with natural language prompts</p>
-</div>
+<Frame>
+  <img
+    src="/images/hero.png"
+    alt="Demiurg Interface showing natural language input and agent creation"
+  />
+  <figcaption className="text-center">Create AI agents with natural language prompts</figcaption>
+</Frame>
+
+Describe your desired AI agent, and Demiurg brings it to life instantly.
 
 ## How It Works
 
-<div className="mb-8 p-6 bg-gray-50 dark:bg-gray-900 rounded-lg">
-  <div className="flex flex-col space-y-4">
-    <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg">
-      <p className="font-medium text-gray-700 dark:text-gray-300">You</p>
-      <p>I need a financial analysis agent that can identify market trends and suggest trading strategies.</p>
-    </div>
-    
-    <div className="p-4 bg-primary-50 dark:bg-primary-900/20 rounded-lg border-l-4 border-primary-500">
-      <p className="font-medium text-primary dark:text-primary-light">Demiurg</p>
-      <p>I've created Sarah Chen, your financial analyst agent with market correlation tools and personalized investment advice.</p>
-    </div>
+See how easy it is to get started:
+
+<div className="nx-mt-6 nx-flex nx-flex-col nx-space-y-4">
+  {/* User Prompt */}
+  <div className="nx-rounded-lg nx-border nx-bg-gray-100 nx-p-4 dark:nx-border-neutral-800 dark:nx-bg-neutral-900">
+    <p className="nx-font-semibold nx-text-gray-700 dark:nx-text-gray-300">You:</p>
+    <p className="nx-mt-1">I need a financial analysis agent that can identify market trends and suggest trading strategies.</p>
+  </div>
+
+  {/* Demiurg Response */}
+  <div className="nx-rounded-lg nx-border nx-border-primary-500/20 nx-bg-primary-50/50 nx-p-4 dark:nx-border-primary-500/30 dark:nx-bg-primary-500/5">
+    <p className="nx-font-semibold nx-text-primary-600 dark:nx-text-primary-400">Demiurg:</p>
+    <p className="nx-mt-1">I've created Sarah Chen, your financial analyst agent equipped with market correlation tools and personalized investment advice.</p>
   </div>
 </div>
 
-## Three Simple Steps
+## Get Your Agent in Three Simple Steps
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">1. Describe</h4>
-    <p className="text-sm">Tell Demiurg what kind of agent you need in plain language</p>
-  </div>
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">2. Test</h4>
-    <p className="text-sm">Chat with your agent immediately—no waiting or setup required</p>
-  </div>
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">3. Use</h4>
-    <p className="text-sm">Access your agent on web and mobile, customize if needed</p>
-  </div>
-</div>
+<Steps>
+  ### Describe
+  Tell Demiurg what kind of agent you need using everyday language.
+
+  ### Test
+  Chat with your newly created agent immediately—no waiting or complex setup required.
+
+  ### Use & Customize
+  Access your agent via web or our mobile app. Fine-tune its appearance, behavior, or even code if you wish.
+</Steps>
 
 ## Key Benefits
 
 <Cards>
   <Card title="No Coding Required">
-    Create sophisticated agents without any technical expertise
+    Build sophisticated AI agents without needing technical expertise.
   </Card>
   <Card title="Instant Results">
-    Your agents are ready to use the moment they're created
+    Your agents are ready for interaction the moment they're created.
   </Card>
   <Card title="Full Customization">
-    Edit your agent's appearance, behavior, and code if desired
+    Optionally edit your agent's look, personality, and underlying code.
   </Card>
   <Card title="Mobile Access">
-    Chat with your agents on the go using our dedicated app
+    Interact with your agents anytime, anywhere using our dedicated mobile app.
   </Card>
 </Cards>
 
-<div className="mt-12 text-center">
-  <a href="/quickstart/create" className="px-6 py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition inline-block">
-    Create Your First Agent
+<Callout type="info" emoji="🚀">
+  Ready to build? Create your first AI agent in just a few clicks!
+  <br />
+  <a href="/quickstart/create" className="nx-font-semibold nx-text-primary-600 hover:nx-text-primary-700 dark:nx-text-primary-400 dark:hover:nx-text-primary-500 nx-mt-2 nx-inline-block">
+    Get Started &rarr;
   </a>
-</div>
+</Callout>
