@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Demiurg",
+  "name": "Demiurg Academy",
   "colors": {
     "primary": "#1C3943",
     "light": "#598a9c",
@@ -11,94 +11,119 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Essentials",
+        "tab": "Getting Started",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "Welcome",
             "pages": [
-              "introduction", 
-              "key-concepts",
-              "tutorials/quick-start"
+              "introduction",
+              "how-demiurg-works",
+              "quick-tour"
             ]
           },
           {
-            "group": "Agents",
+            "group": "Building Your First Agent",
             "pages": [
-              "agents/overview",
-              "agents/configuration",
-              "agents/knowledge-base",
-              {
-                "group": "Integrations",
-                "pages": [
-                  "agents/integrations/communication",
-                  "agents/integrations/ai-tools",
-                  "agents/integrations/custom-services"
-                ]
-              }
-            ]
-          },
-          {
-            "group": "Playbooks",
-            "pages": [
-              "playbooks/overview",
-              "playbooks/creating",
-              "playbooks/managing",
-              "playbooks/examples"
-            ]
-          },
-          {
-            "group": "Pages",
-            "pages": [
-              "pages/overview",
-              "pages/blocks",
-              "pages/ai-assistance",
-              "pages/version-control",
-              "pages/testing"
+              "first-agent/crafting-prompts",
+              "first-agent/testing-your-agent",
+              "first-agent/iterating-and-refining",
+              "first-agent/deploying-your-agent"
             ]
           }
         ]
       },
       {
-        "tab": "Use Cases",
+        "tab": "Agent Creation",
         "groups": [
           {
-            "group": "Examples",
+            "group": "Prompt Engineering",
             "pages": [
-              "examples/customer-service",
-              "examples/sales",
-              "examples/marketing",
-              "examples/document-processing",
-              "examples/custom"
+              "prompts/best-practices",
+              "prompts/templates",
+              "prompts/examples-gallery"
+            ]
+          },
+          {
+            "group": "Customizing Your Agent",
+            "pages": [
+              "customization/editing-files",
+              "customization/code-editor",
+              "customization/agent-personality",
+              "customization/adding-capabilities"
+            ]
+          },
+          {
+            "group": "Agent Architecture",
+            "pages": [
+              "architecture/file-structure",
+              "architecture/sub-agents",
+              "architecture/tools-integration",
+              "architecture/conversation-flow"
             ]
           }
         ]
       },
       {
-        "tab": "Advanced Guide",
+        "tab": "Using Your Agents",
         "groups": [
           {
-            "group": "Advanced Topics",
+            "group": "Web Interface",
             "pages": [
-              "advanced/complex-scenarios",
-              "advanced/performance",
-              "advanced/security", 
-              "advanced/monitoring",
-              "advanced/troubleshooting"
+              "web-app/dashboard",
+              "web-app/chat-interface",
+              "web-app/sharing-agents",
+              "web-app/analytics"
+            ]
+          },
+          {
+            "group": "Mobile Experience",
+            "pages": [
+              "mobile/getting-started",
+              "mobile/chatting-with-agents",
+              "mobile/managing-agents",
+              "mobile/notifications"
+            ]
+          },
+          {
+            "group": "Agent Marketplace",
+            "pages": [
+              "marketplace/browsing-agents",
+              "marketplace/using-templates",
+              "marketplace/sharing-your-agents",
+              "marketplace/featured-agents"
             ]
           }
         ]
       },
       {
-        "tab": "Developer Hub",
+        "tab": "Advanced Topics",
         "groups": [
           {
-            "group": "API Reference",
+            "group": "Agent Development",
             "pages": [
-              "api/overview",
-              "api/authentication",
-              "api/endpoints",
-              "api/webhooks",
-              "api/sdks"
+              "advanced/openai-agent-sdk",
+              "advanced/custom-tools",
+              "advanced/structured-outputs",
+              "advanced/multi-agent-systems"
+            ]
+          },
+          {
+            "group": "Use Cases",
+            "pages": [
+              "use-cases/financial-analysis",
+              "use-cases/customer-support",
+              "use-cases/content-creation",
+              "use-cases/research-assistants",
+              "use-cases/personal-assistants"
+            ]
+          },
+          {
+            "group": "Technical Reference",
+            "pages": [
+              "reference/file-formats",
+              "reference/api-access",
+              "reference/integration-options",
+              "reference/troubleshooting"
             ]
           }
         ]
@@ -107,19 +132,19 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Get Started",
-          "href": "https://demiurg.ai/signup",
+          "anchor": "Launch App",
+          "href": "https://demiurg.ai/app",
           "icon": "rocket"
         },
         {
-          "anchor": "Blog",
-          "href": "https://demiurg.ai/blog",
-          "icon": "newspaper"
+          "anchor": "Templates",
+          "href": "https://demiurg.ai/templates",
+          "icon": "template"
         },
         {
-          "anchor": "GitHub",
-          "href": "https://github.com/nokt-ai",
-          "icon": "github"
+          "anchor": "Twitter",
+          "href": "https://twitter.com/DemiurgAI",
+          "icon": "twitter"
         }
       ]
     }
@@ -141,8 +166,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Demiurg Home",
-      "href": "https://demiurg.ai"
+      "label": "Demiurg App",
+      "href": "https://demiurg.ai/app"
     }
   },
   "footer": {
