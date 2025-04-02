@@ -1,91 +1,151 @@
 ---
-title: "Demiurg: Create & Deploy AI Agents with Natural Language"
-description: "Simply describe the AI agent you need, and Demiurg builds the code, deploys it, and lets you test, customize, share, and chat via web or mobile."
+title: "Key Features"
+description: "Discover what makes Demiurg the simplest way to create AI agents"
 ---
 
-import { Tip, Card, Cards, Steps, Frame, Callout } from 'nextra/components'
-
-# Demiurg: Your Ideas, Instantly Deployed as AI Agents
+import { Tip } from 'nextra/components'
+import { Steps, Step } from 'nextra/components'
+import { Frame } from 'nextra/components'
+import { Card } from 'nextra/components'
 
 <Tip>
-  Go from a simple description to a fully functional, deployed AI agent in minutes. Demiurg handles the code generation, infrastructure, and deployment, so you can focus on your vision.
+  Demiurg transforms your ideas into fully-functional AI agents through natural language. Simply describe what you need, and we'll build it for you in seconds.
 </Tip>
 
-<Frame>
-  <img
-    src="/images/demiurg-hero.png"
-    alt="Demiurg interface showing natural language prompt leading to AI agent creation"
-  />
-  <figcaption className="text-center">Describe your agent, Demiurg brings it to life.</figcaption>
-</Frame>
+## What Makes Demiurg Different
 
-## From Prompt to Powerful Agent in Minutes
+| Feature | Description |
+| ------- | ----------- |
+| Natural Language Creation | Describe your agent in plain English — no coding or complex interfaces |
+| Instant Deployment | Your agents are ready to use immediately after creation |
+| Advanced Capabilities | Built on OpenAI's Agent SDK for sophisticated functionality |
 
-Creating sophisticated AI agents is now as easy as describing them:
+## Core Components
+
+### 1. Agent Personality
+
+Every agent has a custom identity that matches their purpose.
+
+- Unique name and professional background
+- Expertise level and communication style
+- Custom avatar and visual identity
+- Role-specific vocabulary and terminology
+
+### 2. Specialized Capabilities
+
+Each agent is created with exactly the skills you describe.
+
+- Domain-specific knowledge and expertise
+- Custom tools based on agent purpose
+- Data processing and analysis abilities
+- Content creation and formatting options
+
+### 3. Communication Channels
+
+Interact with your agents across multiple platforms.
+
+- Web application with rich chat interface
+- Mobile app for on-the-go conversations
+- Group chats with multiple users and agents
+- Seamless conversation history across devices
+
+### 4. Customization Options
+
+Fine-tune your agent to match your exact requirements.
+
+- Edit agent profile and appearance
+- Modify behavior and response patterns
+- Access underlying code for deep customization
+- Add new capabilities as your needs evolve
+
+## Creating Your First Agent
 
 <Steps>
-  ### 1. Describe
-  Tell Demiurg what kind of agent you need in plain English – outline its purpose, capabilities, and any specific requirements.
-
-  ### 2. Generate & Test
-  Demiurg instantly generates the necessary code structure and files, deploys the agent, and provides a chat interface for immediate testing.
-
-  ### 3. Use & Customize
-  Interact with your agent via web or mobile. Share it with others, use pre-built templates, or dive into the integrated code editor to fine-tune its behavior.
+  <Step title="Describe Your Agent">
+    Tell Demiurg what kind of agent you want to create in plain language.
+  </Step>
+  
+  <Step title="Review & Test">
+    Your agent is instantly created and ready for conversation.
+  </Step>
+  
+  <Step title="Customize (Optional)">
+    Fine-tune your agent's appearance, behavior, or capabilities if needed.
+  </Step>
+  
+  <Step title="Deploy & Share">
+    Use your agent across web and mobile, and share with others if desired.
+  </Step>
 </Steps>
 
-## See It In Action
+## Popular Agent Types
 
-Here's how a request translates into a ready-to-use agent:
+### Sarah Chen, Financial Analyst
 
-<div className="nx-mt-6 nx-flex nx-flex-col nx-space-y-4">
-  {/* User Prompt */}
-  <div className="nx-rounded-lg nx-border nx-bg-gray-100 nx-p-4 dark:nx-border-neutral-800 dark:nx-bg-neutral-900">
-    <p className="nx-font-semibold nx-text-gray-700 dark:nx-text-gray-300">You:</p>
-    <p className="nx-mt-1">I need an AI agent that can analyze financial markets and provide trading insights. It should handle crypto/traditional market correlations, identify market regimes, predict trends using ML, and suggest strategies based on risk tolerance. Needs expertise in both asset classes.</p>
-  </div>
+Analyzes market trends, identifies investment opportunities, and provides personalized financial advice.
 
-  {/* Demiurg Response 1 (Conceptual) */}
-  <div className="nx-rounded-lg nx-border nx-border-primary-500/20 nx-bg-primary-50/50 nx-p-4 dark:nx-border-primary-500/30 dark:nx-bg-primary-500/5">
-    <p className="nx-font-semibold nx-text-primary-600 dark:nx-text-primary-400">Demiurg:</p>
-    <p className="nx-mt-1">Understood. I'll create Sarah Chen, a Senior Quantitative Analyst specializing in crypto-traditional market correlations, ML-based predictions, and algorithmic trading strategies. I'll build her using OpenAI's Agent SDK for advanced capabilities like tool usage and structured outputs.</p>
-  </div>
+**Capabilities:** Market correlation analysis, risk assessment, portfolio optimization
 
-  {/* Demiurg Response 2 (Ready) */}
-   <div className="nx-rounded-lg nx-border nx-border-primary-500/20 nx-bg-primary-50/50 nx-p-4 dark:nx-border-primary-500/30 dark:nx-bg-primary-500/5">
-    <p className="nx-font-semibold nx-text-primary-600 dark:nx-text-primary-400">Demiurg:</p>
-    <p className="nx-mt-1">I've created Sarah Chen, your financial analysis agent built with OpenAI's Agent SDK. She can analyze market correlations, detect regimes, and provide trading strategies. Would you like to test her capabilities? (Switching to test interface...)</p>
-  </div>
-</div>
+### Marcus Wright, Research Assistant
 
+Helps organize information, synthesize complex topics, and draft comprehensive research summaries.
 
-## Why Choose Demiurg?
+**Capabilities:** Information synthesis, structure generation, citation management
 
-<Cards>
-  <Card title="Effortless Creation">
-    No complex setup. Just describe your agent in natural language and let Demiurg build it.
-  </Card>
-  <Card title="Instant Deployment">
-    Your agent is deployed and ready to interact with seconds after creation. No infrastructure wrangling needed.
-  </Card>
-  <Card title="Full Control & Transparency">
-    Test instantly via chat, tweak prompts, or use the built-in code editor to modify the generated files directly.
-  </Card>
-  <Card title="Share & Collaborate">
-    Share your custom agents with others, or leverage a growing library of shared and template agents.
-  </Card>
-    <Card title="Mobile Access">
-    Chat with your created or shared agents anytime, anywhere using the Demiurg mobile app.
-  </Card>
-  <Card title="Robust Backend">
-    Demiurg manages the underlying code structure, dependencies, and deployment pipeline for you.
-  </Card>
-</Cards>
+### Elena Patel, Content Strategist
 
-<Callout type="info" emoji="🚀">
-  Ready to bring your AI agent ideas to life?
-  <br />
-  <a href="/quickstart/create" className="nx-font-semibold nx-text-primary-600 hover:nx-text-primary-700 dark:nx-text-primary-400 dark:hover:nx-text-primary-500 nx-mt-2 nx-inline-block">
-    Create Your First Agent &rarr;
-  </a>
-</Callout>
+Creates engaging content, optimizes for SEO, and develops consistent brand messaging.
+
+**Capabilities:** Content creation, SEO optimization, editorial planning
+
+## Web & Mobile Experience
+
+<Frame>
+  <img src="/images/demiurg-interface.png" alt="Demiurg Interface" />
+</Frame>
+
+### Web Application
+
+- Create and manage all your agents
+- Access the code editor for customization
+- Organize agents into groups and projects
+- Share agents with other users
+
+### Mobile App
+
+- Chat with your agents on the go
+- Create group conversations
+- Access your entire agent library
+- Receive notifications for important updates
+
+## Best Practices
+
+### Be Specific
+
+The more detailed your description, the better your agent will match your needs.
+
+### Focus on Purpose
+
+Create agents with clearly defined roles rather than trying to make them do everything.
+
+### Iterative Improvement
+
+Test your agent with real scenarios and refine as needed based on performance.
+
+### Leverage Templates
+
+Start with existing templates and customize to save time when creating similar agents.
+
+## Next Steps
+
+<Card title="Create Your First Agent" icon="wand-magic-sparkles" href="/quickstart/create">
+  Start building your custom AI assistant in seconds
+</Card>
+
+<Card title="Explore Templates" icon="folder-open" href="/agents/templates">
+  Browse pre-built agents for common use cases
+</Card>
+
+<Card title="Learn Customization" icon="code" href="/agents/code-editor">
+  Discover how to fine-tune your agents for perfect results
+</Card>
