@@ -11,119 +11,83 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Getting Started",
+        "tab": "Quick Start",
         "groups": [
           {
             "group": "Welcome",
             "pages": [
-              "introduction",
-              "how-demiurg-works",
-              "quick-tour"
+              "index",
+              "features"
             ]
           },
           {
-            "group": "Building Your First Agent",
+            "group": "In 3 Minutes",
             "pages": [
-              "first-agent/crafting-prompts",
-              "first-agent/testing-your-agent",
-              "first-agent/iterating-and-refining",
-              "first-agent/deploying-your-agent"
+              "quickstart/create",
+              "quickstart/chat",
+              "quickstart/share"
             ]
           }
         ]
       },
       {
-        "tab": "Agent Creation",
+        "tab": "Agents",
         "groups": [
           {
-            "group": "Prompt Engineering",
+            "group": "Creating Agents",
             "pages": [
-              "prompts/best-practices",
-              "prompts/templates",
-              "prompts/examples-gallery"
+              "agents/creating",
+              "agents/templates",
+              "agents/prompt-tips"
             ]
           },
           {
-            "group": "Customizing Your Agent",
+            "group": "Customizing",
             "pages": [
-              "customization/editing-files",
-              "customization/code-editor",
-              "customization/agent-personality",
-              "customization/adding-capabilities"
-            ]
-          },
-          {
-            "group": "Agent Architecture",
-            "pages": [
-              "architecture/file-structure",
-              "architecture/sub-agents",
-              "architecture/tools-integration",
-              "architecture/conversation-flow"
+              "agents/appearance",
+              "agents/behavior",
+              "agents/code-editor"
             ]
           }
         ]
       },
       {
-        "tab": "Using Your Agents",
+        "tab": "Use",
         "groups": [
           {
-            "group": "Web Interface",
+            "group": "Web App",
             "pages": [
-              "web-app/dashboard",
-              "web-app/chat-interface",
-              "web-app/sharing-agents",
-              "web-app/analytics"
+              "use/agents-library",
+              "use/direct-messaging", 
+              "use/group-chats"
             ]
           },
           {
-            "group": "Mobile Experience",
+            "group": "Mobile",
             "pages": [
-              "mobile/getting-started",
-              "mobile/chatting-with-agents",
-              "mobile/managing-agents",
-              "mobile/notifications"
+              "mobile/setup",
+              "mobile/chatting"
             ]
           },
           {
-            "group": "Agent Marketplace",
+            "group": "Sharing",
             "pages": [
-              "marketplace/browsing-agents",
-              "marketplace/using-templates",
-              "marketplace/sharing-your-agents",
-              "marketplace/featured-agents"
+              "sharing/with-friends",
+              "sharing/community",
+              "sharing/permissions"
             ]
           }
         ]
       },
       {
-        "tab": "Advanced Topics",
+        "tab": "Inspiration",
         "groups": [
           {
-            "group": "Agent Development",
+            "group": "Examples",
             "pages": [
-              "advanced/openai-agent-sdk",
-              "advanced/custom-tools",
-              "advanced/structured-outputs",
-              "advanced/multi-agent-systems"
-            ]
-          },
-          {
-            "group": "Use Cases",
-            "pages": [
-              "use-cases/financial-analysis",
-              "use-cases/customer-support",
-              "use-cases/content-creation",
-              "use-cases/research-assistants",
-              "use-cases/personal-assistants"
-            ]
-          },
-          {
-            "group": "Technical Reference",
-            "pages": [
-              "reference/file-formats",
-              "reference/api-access",
-              "reference/integration-options",
-              "reference/troubleshooting"
+              "inspiration/featured-agents",
+              "inspiration/use-cases", 
+              "inspiration/community"
             ]
           }
         ]
@@ -137,14 +101,14 @@
           "icon": "rocket"
         },
         {
-          "anchor": "Templates",
-          "href": "https://demiurg.ai/templates",
-          "icon": "template"
+          "anchor": "Community",
+          "href": "https://discord.gg/demiurg",
+          "icon": "discord"
         },
         {
-          "anchor": "Twitter",
-          "href": "https://twitter.com/DemiurgAI",
-          "icon": "twitter"
+          "anchor": "Mobile App",
+          "href": "https://demiurg.ai/download",
+          "icon": "mobile"
         }
       ]
     }
@@ -166,8 +130,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Demiurg App",
-      "href": "https://demiurg.ai/app"
+      "label": "Demiurg Home",
+      "href": "https://demiurg.ai"
     }
   },
   "footer": {
