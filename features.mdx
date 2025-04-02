@@ -7,34 +7,38 @@ import { Tip } from 'nextra/components'
 import { Steps, Step } from 'nextra/components'
 import { Frame } from 'nextra/components'
 
-<Tip>
+<Tip className="my-6 border-l-4 border-blue-300 bg-blue-50 p-4 rounded-md">
   Demiurg transforms your ideas into fully-functional AI agents through natural language. Simply describe what you need, and we'll build it for you in seconds.
 </Tip>
 
 ## What Makes Demiurg Different
-
-<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Natural Language Creation</h4>
-    <p className="text-sm">Describe your agent in plain English — no coding or complex interfaces</p>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Natural Language Creation</h4>
+    <p className="text-sm leading-relaxed">
+      Build AI agents simply by describing them in plain English — no coding required. This intuitive approach allows you to rapidly prototype and iterate on new ideas.
+    </p>
   </div>
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Instant Deployment</h4>
-    <p className="text-sm">Your agents are ready to use immediately after creation</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Instant Deployment</h4>
+    <p className="text-sm leading-relaxed">
+      Once an agent is created, it’s immediately available for conversation. Test, refine, and deploy within seconds — perfect for rapid experimentation.
+    </p>
   </div>
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Advanced Capabilities</h4>
-    <p className="text-sm">Built on OpenAI's Agent SDK for sophisticated functionality</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Advanced Capabilities</h4>
+    <p className="text-sm leading-relaxed">
+      Harness the power of OpenAI’s Agent SDK for robust functionality. Your agents can tackle everything from data analysis to creative content generation.
+    </p>
   </div>
 </div>
 
 ## Core Components
-
-<div className="space-y-6">
-  <div>
-    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">1. Agent Personality</h3>
-    <p className="mb-2">Every agent has a custom identity that matches their purpose.</p>
-    <ul className="list-disc list-inside space-y-1 ml-2">
+<div className="space-y-8 mb-8">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h3 className="font-semibold text-lg text-primary dark:text-primary-light mb-2">1. Agent Personality</h3>
+    <p className="mb-2 leading-relaxed">Every agent is given a tailored identity aligned with its specific purpose.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2 text-sm leading-relaxed">
       <li>Unique name and professional background</li>
       <li>Expertise level and communication style</li>
       <li>Custom avatar and visual identity</li>
@@ -42,10 +46,10 @@ import { Frame } from 'nextra/components'
     </ul>
   </div>
   
-  <div>
-    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">2. Specialized Capabilities</h3>
-    <p className="mb-2">Each agent is created with exactly the skills you describe.</p>
-    <ul className="list-disc list-inside space-y-1 ml-2">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h3 className="font-semibold text-lg text-primary dark:text-primary-light mb-2">2. Specialized Capabilities</h3>
+    <p className="mb-2 leading-relaxed">Each agent is equipped with exactly the skills you request.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2 text-sm leading-relaxed">
       <li>Domain-specific knowledge and expertise</li>
       <li>Custom tools based on agent purpose</li>
       <li>Data processing and analysis abilities</li>
@@ -53,141 +57,150 @@ import { Frame } from 'nextra/components'
     </ul>
   </div>
   
-  <div>
-    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">3. Communication Channels</h3>
-    <p className="mb-2">Interact with your agents across multiple platforms.</p>
-    <ul className="list-disc list-inside space-y-1 ml-2">
-      <li>Web application with rich chat interface</li>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h3 className="font-semibold text-lg text-primary dark:text-primary-light mb-2">3. Communication Channels</h3>
+    <p className="mb-2 leading-relaxed">Engage with your agents on multiple platforms and seamlessly continue your conversations anywhere.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2 text-sm leading-relaxed">
+      <li>Web application with a rich chat interface</li>
       <li>Mobile app for on-the-go conversations</li>
       <li>Group chats with multiple users and agents</li>
-      <li>Seamless conversation history across devices</li>
+      <li>Consistent conversation history across devices</li>
     </ul>
   </div>
   
-  <div>
-    <h3 className="font-medium text-lg text-primary dark:text-primary-light mb-2">4. Customization Options</h3>
-    <p className="mb-2">Fine-tune your agent to match your exact requirements.</p>
-    <ul className="list-disc list-inside space-y-1 ml-2">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h3 className="font-semibold text-lg text-primary dark:text-primary-light mb-2">4. Customization Options</h3>
+    <p className="mb-2 leading-relaxed">Fine-tune your agent to match your exact workflow and brand identity.</p>
+    <ul className="list-disc list-inside space-y-1 ml-2 text-sm leading-relaxed">
       <li>Edit agent profile and appearance</li>
-      <li>Modify behavior and response patterns</li>
-      <li>Access underlying code for deep customization</li>
+      <li>Refine behavior and response patterns</li>
+      <li>Access underlying code for deeper customizations</li>
       <li>Add new capabilities as your needs evolve</li>
     </ul>
   </div>
 </div>
 
 ## Creating Your First Agent
-
-<Steps>
+<Steps className="mb-8">
   <Step title="Describe Your Agent">
-    Tell Demiurg what kind of agent you want to create in plain language.
+    Provide a plain-language description of the agent you’d like to create.
   </Step>
   
   <Step title="Review & Test">
-    Your agent is instantly created and ready for conversation.
+    Your agent is generated instantly, ready for immediate testing and conversation.
   </Step>
   
   <Step title="Customize (Optional)">
-    Fine-tune your agent's appearance, behavior, or capabilities if needed.
+    Adjust your agent’s appearance, behavior, or capabilities to suit your preferences.
   </Step>
   
   <Step title="Deploy & Share">
-    Use your agent across web and mobile, and share with others if desired.
+    Deploy your agent across web and mobile apps. Invite others to collaborate or use your agent.
   </Step>
 </Steps>
 
 ## Popular Agent Types
-
-<div className="space-y-4 mb-6">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Sarah Chen, Financial Analyst</h4>
-    <p className="text-sm mb-1">Analyzes market trends, identifies investment opportunities, and provides personalized financial advice.</p>
+<div className="space-y-6 mb-8">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Sarah Chen, Financial Analyst</h4>
+    <p className="text-sm mb-1 leading-relaxed">
+      Offers real-time market insights, identifies investment opportunities, and provides personalized financial advice.
+    </p>
     <p className="text-xs text-gray-500">Capabilities: Market correlation analysis, risk assessment, portfolio optimization</p>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Marcus Wright, Research Assistant</h4>
-    <p className="text-sm mb-1">Helps organize information, synthesize complex topics, and draft comprehensive research summaries.</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Marcus Wright, Research Assistant</h4>
+    <p className="text-sm mb-1 leading-relaxed">
+      Gathers and organizes data, synthesizes complex topics, and drafts detailed research summaries.
+    </p>
     <p className="text-xs text-gray-500">Capabilities: Information synthesis, structure generation, citation management</p>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Elena Patel, Content Strategist</h4>
-    <p className="text-sm mb-1">Creates engaging content, optimizes for SEO, and develops consistent brand messaging.</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Elena Patel, Content Strategist</h4>
+    <p className="text-sm mb-1 leading-relaxed">
+      Crafts engaging content, optimizes copy for SEO, and ensures consistent brand messaging.
+    </p>
     <p className="text-xs text-gray-500">Capabilities: Content creation, SEO optimization, editorial planning</p>
   </div>
 </div>
 
 ## Web & Mobile Experience
-
-<Frame>
+<Frame className="mb-8">
   <img src="/images/demiurg-interface.png" alt="Demiurg Interface" className="rounded-lg" />
 </Frame>
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Web Application</h4>
-    <ul className="list-disc list-inside space-y-1 ml-2">
-      <li>Create and manage all your agents</li>
-      <li>Access the code editor for customization</li>
-      <li>Organize agents into groups and projects</li>
-      <li>Share agents with other users</li>
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Web Application</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2 text-sm leading-relaxed">
+      <li>Create and manage all your agents in one place</li>
+      <li>Access the code editor for advanced customizations</li>
+      <li>Group agents by projects or teams for better organization</li>
+      <li>Share agents with other users or collaborators</li>
     </ul>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Mobile App</h4>
-    <ul className="list-disc list-inside space-y-1 ml-2">
-      <li>Chat with your agents on the go</li>
-      <li>Create group conversations</li>
-      <li>Access your entire agent library</li>
-      <li>Receive notifications for important updates</li>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Mobile App</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2 text-sm leading-relaxed">
+      <li>Engage with your agents on the go</li>
+      <li>Host group chats with multiple agents and users</li>
+      <li>Manage your entire agent library from anywhere</li>
+      <li>Receive notifications for important updates and alerts</li>
     </ul>
   </div>
 </div>
 
 ## Best Practices
-
-<div className="space-y-4 mb-6">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Be Specific</h4>
-    <p className="text-sm">The more detailed your description, the better your agent will match your needs.</p>
+<div className="space-y-6 mb-8">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Be Specific</h4>
+    <p className="text-sm leading-relaxed">
+      The more detailed your description, the better your agent will match your needs and goals.
+    </p>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Focus on Purpose</h4>
-    <p className="text-sm">Create agents with clearly defined roles rather than trying to make them do everything.</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Focus on Purpose</h4>
+    <p className="text-sm leading-relaxed">
+      Give each agent a clear, specialized role. Trying to make one agent do everything can dilute its effectiveness.
+    </p>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Iterative Improvement</h4>
-    <p className="text-sm">Test your agent with real scenarios and refine as needed based on performance.</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Iterative Improvement</h4>
+    <p className="text-sm leading-relaxed">
+      Test your agent in real scenarios and refine it based on performance or feedback.
+    </p>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Leverage Templates</h4>
-    <p className="text-sm">Start with existing templates and customize to save time when creating similar agents.</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Leverage Templates</h4>
+    <p className="text-sm leading-relaxed">
+      Use existing agent templates for a head start, then customize them to suit your exact needs.
+    </p>
   </div>
 </div>
 
 ## Next Steps
-
-<div className="space-y-4">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Create Your First Agent</h4>
-    <p className="text-sm mb-1">Start building your custom AI assistant in seconds</p>
+<div className="space-y-6">
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Create Your First Agent</h4>
+    <p className="text-sm mb-1 leading-relaxed">Start building a custom AI assistant in seconds.</p>
     <a href="/quickstart/create" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Get started →</a>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Explore Templates</h4>
-    <p className="text-sm mb-1">Browse pre-built agents for common use cases</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Explore Templates</h4>
+    <p className="text-sm mb-1 leading-relaxed">Browse a library of pre-built agents for common use cases.</p>
     <a href="/agents/templates" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">View templates →</a>
   </div>
   
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-1">Learn Customization</h4>
-    <p className="text-sm mb-1">Discover how to fine-tune your agents for perfect results</p>
+  <div className="p-4 bg-white dark:bg-neutral-900 rounded-md shadow-sm">
+    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Learn Customization</h4>
+    <p className="text-sm mb-1 leading-relaxed">Dive deeper into how to tailor agent code and behavior for perfect results.</p>
     <a href="/agents/code-editor" className="text-primary dark:text-primary-light text-sm font-medium hover:underline">Read guide →</a>
   </div>
 </div>
