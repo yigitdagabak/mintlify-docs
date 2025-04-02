@@ -1,78 +1,91 @@
 ---
-title: "Welcome to Demiurg"
-description: "Create AI agents through natural language"
+title: "Demiurg: Create & Deploy AI Agents with Natural Language"
+description: "Simply describe the AI agent you need, and Demiurg builds the code, deploys it, and lets you test, customize, share, and chat via web or mobile."
 ---
 
 import { Tip, Card, Cards, Steps, Frame, Callout } from 'nextra/components'
 
-<Tip>
-  **Demiurg turns your ideas into powerful AI agents in seconds.** Just describe what you need in plain language, and we'll build it for you.
-</Tip>
+# Demiurg: Your Ideas, Instantly Deployed as AI Agents
 
-# Demiurg: AI Agent Creation Made Simple
+<Tip>
+  Go from a simple description to a fully functional, deployed AI agent in minutes. Demiurg handles the code generation, infrastructure, and deployment, so you can focus on your vision.
+</Tip>
 
 <Frame>
   <img
-    src="/images/hero.png"
-    alt="Demiurg Interface showing natural language input and agent creation"
+    src="/images/demiurg-hero.png"
+    alt="Demiurg interface showing natural language prompt leading to AI agent creation"
   />
-  <figcaption className="text-center">Create AI agents with natural language prompts</figcaption>
+  <figcaption className="text-center">Describe your agent, Demiurg brings it to life.</figcaption>
 </Frame>
 
-Describe your desired AI agent, and Demiurg brings it to life instantly.
+## From Prompt to Powerful Agent in Minutes
 
-## How It Works
+Creating sophisticated AI agents is now as easy as describing them:
 
-See how easy it is to get started:
+<Steps>
+  ### 1. Describe
+  Tell Demiurg what kind of agent you need in plain English – outline its purpose, capabilities, and any specific requirements.
+
+  ### 2. Generate & Test
+  Demiurg instantly generates the necessary code structure and files, deploys the agent, and provides a chat interface for immediate testing.
+
+  ### 3. Use & Customize
+  Interact with your agent via web or mobile. Share it with others, use pre-built templates, or dive into the integrated code editor to fine-tune its behavior.
+</Steps>
+
+## See It In Action
+
+Here's how a request translates into a ready-to-use agent:
 
 <div className="nx-mt-6 nx-flex nx-flex-col nx-space-y-4">
   {/* User Prompt */}
   <div className="nx-rounded-lg nx-border nx-bg-gray-100 nx-p-4 dark:nx-border-neutral-800 dark:nx-bg-neutral-900">
     <p className="nx-font-semibold nx-text-gray-700 dark:nx-text-gray-300">You:</p>
-    <p className="nx-mt-1">I need a financial analysis agent that can identify market trends and suggest trading strategies.</p>
+    <p className="nx-mt-1">I need an AI agent that can analyze financial markets and provide trading insights. It should handle crypto/traditional market correlations, identify market regimes, predict trends using ML, and suggest strategies based on risk tolerance. Needs expertise in both asset classes.</p>
   </div>
 
-  {/* Demiurg Response */}
+  {/* Demiurg Response 1 (Conceptual) */}
   <div className="nx-rounded-lg nx-border nx-border-primary-500/20 nx-bg-primary-50/50 nx-p-4 dark:nx-border-primary-500/30 dark:nx-bg-primary-500/5">
     <p className="nx-font-semibold nx-text-primary-600 dark:nx-text-primary-400">Demiurg:</p>
-    <p className="nx-mt-1">I've created Sarah Chen, your financial analyst agent equipped with market correlation tools and personalized investment advice.</p>
+    <p className="nx-mt-1">Understood. I'll create Sarah Chen, a Senior Quantitative Analyst specializing in crypto-traditional market correlations, ML-based predictions, and algorithmic trading strategies. I'll build her using OpenAI's Agent SDK for advanced capabilities like tool usage and structured outputs.</p>
+  </div>
+
+  {/* Demiurg Response 2 (Ready) */}
+   <div className="nx-rounded-lg nx-border nx-border-primary-500/20 nx-bg-primary-50/50 nx-p-4 dark:nx-border-primary-500/30 dark:nx-bg-primary-500/5">
+    <p className="nx-font-semibold nx-text-primary-600 dark:nx-text-primary-400">Demiurg:</p>
+    <p className="nx-mt-1">I've created Sarah Chen, your financial analysis agent built with OpenAI's Agent SDK. She can analyze market correlations, detect regimes, and provide trading strategies. Would you like to test her capabilities? (Switching to test interface...)</p>
   </div>
 </div>
 
-## Get Your Agent in Three Simple Steps
 
-<Steps>
-  ### Describe
-  Tell Demiurg what kind of agent you need using everyday language.
-
-  ### Test
-  Chat with your newly created agent immediately—no waiting or complex setup required.
-
-  ### Use & Customize
-  Access your agent via web or our mobile app. Fine-tune its appearance, behavior, or even code if you wish.
-</Steps>
-
-## Key Benefits
+## Why Choose Demiurg?
 
 <Cards>
-  <Card title="No Coding Required">
-    Build sophisticated AI agents without needing technical expertise.
+  <Card title="Effortless Creation">
+    No complex setup. Just describe your agent in natural language and let Demiurg build it.
   </Card>
-  <Card title="Instant Results">
-    Your agents are ready for interaction the moment they're created.
+  <Card title="Instant Deployment">
+    Your agent is deployed and ready to interact with seconds after creation. No infrastructure wrangling needed.
   </Card>
-  <Card title="Full Customization">
-    Optionally edit your agent's look, personality, and underlying code.
+  <Card title="Full Control & Transparency">
+    Test instantly via chat, tweak prompts, or use the built-in code editor to modify the generated files directly.
   </Card>
-  <Card title="Mobile Access">
-    Interact with your agents anytime, anywhere using our dedicated mobile app.
+  <Card title="Share & Collaborate">
+    Share your custom agents with others, or leverage a growing library of shared and template agents.
+  </Card>
+    <Card title="Mobile Access">
+    Chat with your created or shared agents anytime, anywhere using the Demiurg mobile app.
+  </Card>
+  <Card title="Robust Backend">
+    Demiurg manages the underlying code structure, dependencies, and deployment pipeline for you.
   </Card>
 </Cards>
 
 <Callout type="info" emoji="🚀">
-  Ready to build? Create your first AI agent in just a few clicks!
+  Ready to bring your AI agent ideas to life?
   <br />
   <a href="/quickstart/create" className="nx-font-semibold nx-text-primary-600 hover:nx-text-primary-700 dark:nx-text-primary-400 dark:hover:nx-text-primary-500 nx-mt-2 nx-inline-block">
-    Get Started &rarr;
+    Create Your First Agent &rarr;
   </a>
 </Callout>
