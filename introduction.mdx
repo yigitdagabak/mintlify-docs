@@ -1,102 +1,57 @@
 ---
 title: "Welcome to Demiurg"
-description: "Create, deploy, and chat with AI agents in minutes"
+description: "Create AI agents through conversation"
 ---
 
 import { Callout } from 'nextra/components'
-import { Steps } from 'nextra/components'
 import { Card, Cards } from 'nextra/components'
-import { Tabs } from 'nextra/components'
 
-# Welcome to Demiurg
+# Demiurg
 
-Demiurg is a revolutionary platform that lets you create sophisticated AI agents through natural language prompts. Simply describe the agent you want, and Demiurg builds and deploys it for you instantly.
+Describe an agent. We'll build it for you.
 
-<Callout emoji="✨">
-  From idea to working AI agent in less than a minute — no coding required.
-</Callout>
-
-## What Makes Demiurg Different
-
-Most AI tools require technical expertise or endless configuration. Demiurg eliminates these barriers by turning your ideas into fully functional agents through simple conversation.
-
-<div className="mt-8 mb-12">
+<div className="my-8">
   <img 
-    src="/images/prompt-to-agent.png" 
-    alt="Prompt to Agent Process" 
-    className="rounded-lg border border-gray-200 dark:border-gray-800 shadow-md"
+    src="/images/hero.png" 
+    alt="Demiurg Interface" 
+    className="rounded-lg"
   />
 </div>
 
-### From Prompt to Powerful Agent
+## How It Works
 
-<Steps>
-  ### Describe what you need
-  ```
-  I need an AI agent that can analyze financial markets and provide trading 
-  insights. It should analyze correlations between crypto and traditional 
-  markets, identify market regimes, predict trends, and suggest trading 
-  strategies based on risk tolerance.
-  ```
+```
+You: I need a financial analysis agent that can identify market trends and suggest trading strategies.
 
-  ### Demiurg builds your agent
-  Your description is transformed into a complete agent with all necessary files, tools, and capabilities.
+Demiurg: I've created Sarah Chen, your financial analyst agent with market correlation tools and personalized investment advice.
+```
 
-  ### Start using immediately
-  Your new agent (in this case, Sarah Chen, Financial Analyst) is instantly available for conversation.
-</Steps>
+Your agent is ready immediately. Chat, customize, or share it.
 
 ## Core Features
 
 <Cards>
-  <Card title="Prompt-Based Creation" href="/first-agent/crafting-prompts">
-    Describe your ideal agent in natural language, and Demiurg handles the technical implementation.
+  <Card title="Create" href="/first-agent/crafting-prompts">
+    Describe what you need in plain language
   </Card>
-  <Card title="Instant Deployment" href="/first-agent/deploying-your-agent">
-    Your agents are ready to use immediately after creation, with no waiting or complex setup.
+  <Card title="Chat" href="/web-app/chat-interface">
+    Instant conversations with your custom agent
   </Card>
-  <Card title="Powerful Customization" href="/customization/editing-files">
-    Use our intuitive code editor to fine-tune your agent's capabilities, personality, and knowledge.
+  <Card title="Customize" href="/customization/editing-files">
+    Fine-tune your agent's files when needed
   </Card>
-  <Card title="Mobile Access" href="/mobile/getting-started">
-    Chat with your agents on the go using our mobile app.
-  </Card>
-  <Card title="Agent Sharing" href="/marketplace/sharing-your-agents">
-    Share your creations with colleagues or discover agents built by others in our marketplace.
+  <Card title="Share" href="/marketplace/sharing-your-agents">
+    Use your agents anywhere, including mobile
   </Card>
 </Cards>
 
-## How Demiurg Works
+## What Makes Us Different
 
-Demiurg uses advanced AI to translate your requirements into structured agent architectures. Behind the scenes, we're building on OpenAI's Agent SDK to create agents with:
+- **No coding required** — describe your agent in conversation
+- **Instant deployment** — start using your agent immediately
+- **Powerful under the hood** — built on OpenAI's Agent SDK
+- **Complete flexibility** — edit any aspect of your agent
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-  <div className="p-4 border rounded-lg dark:border-gray-800">
-    <h3 className="text-lg font-medium">Specialized Capabilities</h3>
-    <p>Custom-tailored to your specific requirements.</p>
-  </div>
-  <div className="p-4 border rounded-lg dark:border-gray-800">
-    <h3 className="text-lg font-medium">Appropriate Tools</h3>
-    <p>Automatically selected based on your agent's domain.</p>
-  </div>
-  <div className="p-4 border rounded-lg dark:border-gray-800">
-    <h3 className="text-lg font-medium">Conversation Flows</h3>
-    <p>Structured dialogs with branching and memory.</p>
-  </div>
-  <div className="p-4 border rounded-lg dark:border-gray-800">
-    <h3 className="text-lg font-medium">Coherent Personality</h3>
-    <p>Consistent expert voice matched to your needs.</p>
-  </div>
-</div>
-
-## Get Started in Minutes
-
-<div className="mt-8 text-center">
-  <a href="/how-demiurg-works" className="px-6 py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition">
-    Learn How Demiurg Works
-  </a>
-  <span className="mx-2">or</span>
-  <a href="/first-agent/crafting-prompts" className="px-6 py-3 bg-gray-200 dark:bg-gray-800 rounded-md hover:bg-gray-300 dark:hover:bg-gray-700 transition">
-    Create Your First Agent
-  </a>
-</div>
+<Callout>
+  Ready to create your first agent? [Get started →](/first-agent/crafting-prompts)
+</Callout>
