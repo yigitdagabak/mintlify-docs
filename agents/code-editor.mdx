@@ -1,0 +1,81 @@
+---
+title: 'Code Editor'
+description: 'Fine-tune your agent with custom code and advanced configurations'
+---
+
+import { Frame } from 'nextra/components'
+import { Tip, Warning, Info } from 'nextra/components'
+import { Steps, Step } from 'nextra/components'
+import { Accordion, AccordionGroup } from 'nextra/components'
+
+The Demiurg Code Editor gives you direct access to the underlying code that powers your agent, allowing for precise customization beyond what's possible with natural language descriptions alone.
+
+<Frame>
+  <img src="/images/code-editor.png" alt="Demiurg Code Editor Interface" />
+</Frame>
+
+## Understanding the Code Editor
+
+The Code Editor provides access to the files that define your agent's behavior, appearance, and functionality:
+
+<AccordionGroup>
+  <Accordion title="File Structure" icon="folder-tree" defaultOpen>
+    - **src/**: The main source directory
+      - **components/**: UI components for your agent
+      - **pages/**: Main interface files
+      - **styles/**: CSS and styling files
+    - **config/**: Configuration files for agent behavior
+  </Accordion>
+  
+  <Accordion title="Key Files" icon="file-code">
+    - **index.tsx**: The main entry point of your agent
+    - **components/*.tsx**: Individual UI components
+    - **styles/globals.css**: Global styling rules
+    - **config/agent.json**: Core agent configuration
+  </Accordion>
+</AccordionGroup>
+
+<Warning>
+  While the Code Editor gives you powerful customization capabilities, incorrect changes could affect your agent's functionality. Consider making a backup or duplicate of your agent before significant changes.
+</Warning>
+
+## Basic Editing Operations
+
+<Steps>
+  <Step title="Access the Code Editor">
+    From your agent's dashboard, click "Code" or "Code Editor" to open the editor interface.
+  </Step>
+  
+  <Step title="Navigate Files">
+    Use the file tree on the left side to browse and select files for editing.
+  </Step>
+  
+  <Step title="Edit Code">
+    Make changes directly in the editor. The editor supports syntax highlighting and basic code completion.
+  </Step>
+  
+  <Step title="Save Changes">
+    Click "Save" or press Ctrl+S (Cmd+S on Mac) to save your changes.
+  </Step>
+  
+  <Step title="Test Your Agent">
+    Use the "Test Agent" button to see how your changes affect your agent's behavior.
+  </Step>
+</Steps>
+
+## Common Customizations
+
+Here are some typical changes you might make in the Code Editor:
+
+### Modifying UI Elements
+
+```jsx
+// Example: Customizing the welcome message in index.tsx
+export default function Home() {
+  return (
+    <div>
+      <h1>Hello World</h1>
+      <p>Welcome to my application</p>
+    </div>
+  );
+}
