@@ -1,149 +1,167 @@
 ---
 title: 'Key Features'
-description: 'Discover why Demiurg offers the simplest way to create AI agents'
+description: 'Discover what makes Demiurg the simplest way to create AI agents'
 ---
 
-import { Tip } from 'nextra/components'
-import { Steps, Step } from 'nextra/components'
+import { Card, CardGroup } from 'nextra/components'
 import { Frame } from 'nextra/components'
+import { Accordion, AccordionGroup } from 'nextra/components'
+import { Check, Tip } from 'nextra/components'
 
-<Tip>
-  Demiurg turns your ideas into fully-functional AI agents using just natural language. 
-  Describe your vision, and we’ll bring it to life in seconds.
-</Tip>
-
-## Why Demiurg?
-<div className="grid gap-6 md:grid-cols-3 my-8">
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Natural Language</h4>
-    <p className="text-sm">Create agents by simply describing your needs in plain English—no coding required.</p>
-  </div>
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Instant Deployment</h4>
-    <p className="text-sm">Launch your agent the moment it’s created and start testing immediately.</p>
-  </div>
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-2">Advanced SDK</h4>
-    <p className="text-sm">Leverage OpenAI’s Agent SDK for robust, specialized functionality.</p>
-  </div>
-</div>
-
-## Core Elements
-<div className="space-y-8 my-8">
-  <div>
-    <h4 className="text-base font-semibold text-primary dark:text-primary-light mb-2">Agent Identity</h4>
-    <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-      <li>Unique persona & professional background</li>
-      <li>Targeted communication style & vocabulary</li>
-      <li>Custom avatar & visual branding</li>
-    </ul>
-  </div>
-  
-  <div>
-    <h4 className="text-base font-semibold text-primary dark:text-primary-light mb-2">Specialized Skills</h4>
-    <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-      <li>Domain-specific expertise</li>
-      <li>Data analysis & content creation</li>
-      <li>Custom tools based on the agent’s role</li>
-    </ul>
-  </div>
-  
-  <div>
-    <h4 className="text-base font-semibold text-primary dark:text-primary-light mb-2">Versatile Interfaces</h4>
-    <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-      <li>Web app with a streamlined chat UI</li>
-      <li>Mobile app for on-the-go interaction</li>
-      <li>Group chats involving multiple agents or users</li>
-    </ul>
-  </div>
-  
-  <div>
-    <h4 className="text-base font-semibold text-primary dark:text-primary-light mb-2">Customization</h4>
-    <ul className="list-disc list-inside text-sm space-y-1 ml-4">
-      <li>Refine agent style & behavior</li>
-      <li>Enhance or expand capabilities</li>
-      <li>Access underlying code for deep edits</li>
-    </ul>
-  </div>
-</div>
-
-## Getting Started
-<Steps className="mb-8">
-  <Step title="Describe">
-    Introduce your agent concept in everyday language.
-  </Step>
-  <Step title="Review">
-    Access your agent immediately, ready for testing.
-  </Step>
-  <Step title="Optimize">
-    Adjust appearance, behavior, and skill sets as needed.
-  </Step>
-  <Step title="Deploy">
-    Use your agent on web or mobile. Share with others at will.
-  </Step>
-</Steps>
-
-## Popular Agents
-<div className="space-y-6 my-8">
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Sarah Chen, Financial Analyst</h4>
-    <p className="text-xs text-gray-500 mb-2">Investments • Portfolio Optimization • Risk Assessment</p>
-    <p className="text-sm">Surfaces timely market insights and strategies for smarter investments.</p>
-  </div>
-  
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Marcus Wright, Research Assistant</h4>
-    <p className="text-xs text-gray-500 mb-2">Information Synthesis • Summaries • Citations</p>
-    <p className="text-sm">Organizes data, synthesizes complex topics, and drafts detailed reports.</p>
-  </div>
-  
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Elena Patel, Content Strategist</h4>
-    <p className="text-xs text-gray-500 mb-2">SEO • Editorial Planning • Brand Consistency</p>
-    <p className="text-sm">Creates engaging content, optimizes copy for SEO, and refines brand messaging.</p>
-  </div>
-</div>
-
-## Interface Preview
 <Frame>
-  <img src="/images/demiurg-interface.png" alt="Demiurg Interface" className="rounded-lg" />
+  <img src="/images/features-header.png" alt="Demiurg Features" />
 </Frame>
 
-## Best Practices
-<div className="grid gap-6 md:grid-cols-2 my-8">
+<Tip>
+  **Demiurg transforms how you create, deploy, and interact with AI agents.** Our platform makes advanced AI accessible through intuitive natural language prompts.
+</Tip>
+
+## Effortless Agent Creation
+
+<CardGroup cols={2}>
+  <Card title="Natural Language Prompts" icon="comment-dots">
+    Simply describe what you want your agent to do, and Demiurg handles the technical complexities.
+    
+    ```
+    "Create an agent that can generate social media content with my brand voice, schedule posts, and analyze engagement metrics."
+    ```
+  </Card>
+  
+  <Card title="Automated Configuration" icon="wand-magic-sparkles">
+    Demiurg automatically equips your agent with the appropriate tools, knowledge, and capabilities based on your description.
+  </Card>
+</CardGroup>
+
+## Powerful Agent Interactions
+
+<AccordionGroup>
+  <Accordion title="Web Application" icon="globe" defaultOpen>
+    <div className="grid grid-cols-1 gap-4">
+      <div>
+        <h4 className="font-medium mb-2">Test and Refine</h4>
+        <p>Chat with your agent immediately after creation to test capabilities and provide feedback.</p>
+        
+        <Frame>
+          <img src="/images/web-chat-interface.png" alt="Web Chat Interface" />
+        </Frame>
+      </div>
+      
+      <div>
+        <h4 className="font-medium mb-2">Agent Management</h4>
+        <ul className="list-none space-y-1 ml-1">
+          <li><Check>Create multiple agents for different purposes</Check></li>
+          <li><Check>Organize agents into collections</Check></li>
+          <li><Check>Track usage metrics and performance</Check></li>
+          <li><Check>Version control for agent iterations</Check></li>
+        </ul>
+      </div>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Mobile App" icon="mobile">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div>
+        <h4 className="font-medium mb-2">On-the-Go Access</h4>
+        <p>Take your agents with you and interact with them anywhere, anytime.</p>
+        <ul className="list-none space-y-1 ml-1">
+          <li><Check>Access all your created agents</Check></li>
+          <li><Check>Use shared agents from friends and colleagues</Check></li>
+          <li><Check>Seamless chat experience optimized for mobile</Check></li>
+        </ul>
+      </div>
+      
+      <div>
+        <Frame>
+          <img src="/images/mobile-interface.png" alt="Mobile Interface" />
+        </Frame>
+      </div>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Social Features" icon="users">
+    <div className="grid grid-cols-1 gap-4">
+      <div>
+        <h4 className="font-medium mb-2">Messaging and Collaboration</h4>
+        <p>Connect with friends and share agents within the Demiurg ecosystem.</p>
+        <ul className="list-none space-y-1 ml-1">
+          <li><Check>Direct message friends and colleagues</Check></li>
+          <li><Check>Create group chats with humans and agents</Check></li>
+          <li><Check>Share agents with specific permissions</Check></li>
+          <li><Check>Collaborate on agent improvements</Check></li>
+        </ul>
+      </div>
+    </div>
+  </Accordion>
+</AccordionGroup>
+
+## Advanced Customization
+
+<Frame>
+  <img src="/images/code-editor.png" alt="Demiurg Code Editor" />
+</Frame>
+
+The Demiurg Code Editor lets you fine-tune your agent's behavior beyond what's possible with natural language prompts.
+
+<CardGroup cols={3}>
+  <Card title="Agent Logic" icon="code">
+    Modify the core logic that powers your agent's decision-making processes
+  </Card>
+  
+  <Card title="Custom Tools" icon="screwdriver-wrench">
+    Add specialized tools and integrations to extend your agent's capabilities
+  </Card>
+  
+  <Card title="Knowledge Base" icon="database">
+    Customize how your agent accesses and uses information sources
+  </Card>
+</CardGroup>
+
+## Seamless Deployment & Sharing
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
   <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Stay Focused</h4>
-    <p className="text-sm">Assign a clear role to each agent for sharper results.</p>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Instant Deployment</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>One-click deployment to web and mobile</li>
+      <li>No waiting for builds or approvals</li>
+      <li>Versioning for safe iterations</li>
+      <li>Automatic syncing across platforms</li>
+    </ul>
   </div>
+  
   <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Iterate Quickly</h4>
-    <p className="text-sm">Test real scenarios and refine your agent based on outcomes.</p>
-  </div>
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Use Templates</h4>
-    <p className="text-sm">Leverage existing agent frameworks to jumpstart creation.</p>
-  </div>
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Be Specific</h4>
-    <p className="text-sm">Provide detailed requirements for more accurate agent behavior.</p>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Flexible Sharing Options</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Share with individuals or groups</li>
+      <li>Granular permission settings</li>
+      <li>Public or private visibility</li>
+      <li>API access for custom integrations</li>
+    </ul>
   </div>
 </div>
 
-## Next Steps
-<div className="space-y-6">
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Build Your First Agent</h4>
-    <p className="text-sm mb-1">Kick off with a simple idea and watch it come to life.</p>
-    <a href="/quickstart/create" className="text-primary dark:text-primary-light text-sm hover:underline">Get started →</a>
-  </div>
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Explore Templates</h4>
-    <p className="text-sm mb-1">Customize pre-built agent blueprints for faster creation.</p>
-    <a href="/agents/templates" className="text-primary dark:text-primary-light text-sm hover:underline">View templates →</a>
-  </div>
-  <div>
-    <h4 className="font-semibold text-primary dark:text-primary-light mb-1">Learn Customization</h4>
-    <p className="text-sm mb-1">Deepen your knowledge of agent code and flexible features.</p>
-    <a href="/agents/code-editor" className="text-primary dark:text-primary-light text-sm hover:underline">Read guide →</a>
-  </div>
-</div>
+## Why Demiurg Stands Out
+
+<CardGroup cols={2}>
+  <Card title="No Code Required" icon="code-slash">
+    Create sophisticated AI agents without writing a single line of code
+  </Card>
+  
+  <Card title="Intuitive Interfaces" icon="hand-pointer">
+    User-friendly design focused on simplicity and ease of use
+  </Card>
+  
+  <Card title="Rapid Deployment" icon="bolt">
+    Go from idea to working agent in seconds, not days or weeks
+  </Card>
+  
+  <Card title="Powerful Customization" icon="sliders">
+    Simple by default, but powerful when you need more control
+  </Card>
+</CardGroup>
+
+## Ready to Build Your First Agent?
+
+<Card title="Get Started Now" icon="rocket" href="/quickstart/create">
+  Follow our simple guide to create your first AI agent in under 3 minutes
+</Card>
