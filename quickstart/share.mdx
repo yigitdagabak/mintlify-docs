@@ -1,5 +1,172 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Share Your Agent'
+description: 'Learn how to share your AI agents with others'
 ---
 
+import { Steps, Step } from 'nextra/components'
+import { Frame } from 'nextra/components'
+import { Tip, Warning, Info } from 'nextra/components'
+import { Card, CardGroup } from 'nextra/components'
+
+# Share Your Agent
+
+<Frame>
+  <img src="/images/share-agent-header.png" alt="Sharing an Agent" />
+</Frame>
+
+One of Demiurg's most powerful features is the ability to share your custom agents with others. Whether you're collaborating with teammates, helping friends, or publishing to the wider community, sharing extends the value of your creations.
+
+## Sharing Options
+
+Demiurg offers several ways to share your agents:
+
+<CardGroup cols={3}>
+  <Card title="Direct Sharing" icon="user-plus">
+    Share with specific individuals via email or username
+  </Card>
+  
+  <Card title="Team Sharing" icon="users">
+    Share with everyone in your organization or team
+  </Card>
+  
+  <Card title="Public Sharing" icon="globe">
+    Make your agent available to the entire Demiurg community
+  </Card>
+</CardGroup>
+
+## Permission Levels
+
+When sharing an agent, you can set different permission levels:
+
+| Permission | Description |
+| ---------- | ----------- |
+| **View Only** | Recipients can chat with the agent but cannot modify it |
+| **Edit** | Recipients can modify the agent's settings and description |
+| **Admin** | Recipients can edit and further share the agent with others |
+| **Clone** | Recipients can create their own copy of your agent |
+
+<Tip>
+  For most casual sharing, "View Only" is sufficient. Reserve higher permissions for close collaborators or team members.
+</Tip>
+
+## How to Share Your Agent
+
+<Steps>
+  <Step title="Access Sharing Options">
+    From your agent dashboard, select the agent you want to share and click the "Share" button, or open the agent and click the "Share" icon in the top right corner.
+    
+    <Frame>
+      <img src="/images/share-button-location.png" alt="Share Button Location" />
+    </Frame>
+  </Step>
+  
+  <Step title="Choose Sharing Method">
+    Select how you want to share your agent:
+    
+    - **Direct Share**: Enter email addresses or usernames
+    - **Team Share**: Select from your teams/organizations
+    - **Public Share**: Toggle visibility to public
+    
+    <Frame>
+      <img src="/images/sharing-methods.png" alt="Sharing Methods" />
+    </Frame>
+  </Step>
+  
+  <Step title="Set Permissions">
+    For each recipient or group, set the appropriate permission level from the dropdown menu.
+    
+    <Warning>
+      Be cautious with Admin permissions—admins can further share your agent and modify its core functionality.
+    </Warning>
+  </Step>
+  
+  <Step title="Add a Message (Optional)">
+    Include a personal message explaining the agent's purpose and how it might be helpful to the recipients.
+    
+    ```
+    "I created this research assistant to help with literature reviews. It's great at summarizing papers and finding connections between different studies!"
+    ```
+  </Step>
+  
+  <Step title="Confirm and Share">
+    Review your sharing settings and click "Share Agent" to complete the process. Recipients will receive a notification with access to your agent.
+  </Step>
+</Steps>
+
+## Managing Shared Agents
+
+After sharing your agent, you can manage access and permissions at any time:
+
+1. Go to your agent's settings
+2. Select the "Sharing" tab
+3. View current shares and modify as needed:
+   - Change permission levels
+   - Remove access
+   - Add new recipients
+
+<Info>
+  You'll receive notifications when people interact with your shared agents, including when they first access it or if they leave feedback.
+</Info>
+
+## Accessing Shared Agents
+
+When someone shares an agent with you, you can access it through:
+
+- The notification you receive
+- The "Shared with Me" section in your dashboard
+- Your mobile app's "Agents" tab
+
+<Frame>
+  <img src="/images/shared-agents-section.png" alt="Shared Agents Section" />
+</Frame>
+
+## Using Agents on Mobile
+
+Agents you've created or that have been shared with you are automatically available in the Demiurg mobile app:
+
+1. Open the Demiurg app on your mobile device
+2. Go to the "Agents" tab
+3. Find the agent in your list of available agents
+4. Tap to start a conversation
+
+<Tip>
+  The mobile app is perfect for using your agents on the go. All conversations sync across devices, so you can continue where you left off.
+</Tip>
+
+## Publishing to the Community
+
+For exceptional agents that could benefit the wider community:
+
+<Steps>
+  <Step title="Prepare Your Agent">
+    Make sure your agent is polished and performs consistently. Add a detailed description and example use cases.
+  </Step>
+  
+  <Step title="Submit for Publication">
+    From your agent settings, select "Publish to Community" and complete the submission form.
+  </Step>
+  
+  <Step title="Wait for Review">
+    The Demiurg team will review your submission to ensure quality and appropriateness.
+  </Step>
+  
+  <Step title="Promotion (Optional)">
+    Once approved, you can promote your published agent on social media using the share links provided.
+  </Step>
+</Steps>
+
+<Warning>
+  Published agents are visible to all Demiurg users. Ensure your agent doesn't contain sensitive information or proprietary content.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Explore Agent Templates" icon="clone" href="/agents/templates">
+    Discover pre-built agents you can use or customize
+  </Card>
+  
+  <Card title="Learn About Agent Customization" icon="sliders" href="/agents/behavior">
+    Take your agents to the next level with advanced customization
+  </Card>
+</CardGroup>

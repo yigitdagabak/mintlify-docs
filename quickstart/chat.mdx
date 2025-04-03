@@ -1,5 +1,132 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: 'Chat with Your Agent'
+description: 'Learn how to effectively interact with your AI agent'
 ---
 
+import { Frame } from 'nextra/components'
+import { Tip, Warning, Info } from 'nextra/components'
+import { Card, CardGroup } from 'nextra/components'
+import { Accordion, AccordionGroup } from 'nextra/components'
+
+# Chat with Your Agent
+
+<Frame>
+  <img src="/images/agent-chat-header.png" alt="Chatting with an Agent" />
+</Frame>
+
+Once you've created your agent, it's time to start interacting with it. Effective communication will help you get the most out of your AI assistant.
+
+## Getting Started
+
+When you first open a chat with your agent, you'll see a welcome message that outlines what the agent can do for you. This is a good time to:
+
+1. Confirm the agent understands its purpose
+2. Test basic capabilities with simple requests
+3. Explore the agent's knowledge boundaries
+
+<Tip>
+  Start with simple requests before moving to more complex tasks. This helps you understand your agent's strengths and limitations.
+</Tip>
+
+## The Chat Interface
+
+<Frame>
+  <img src="/images/chat-interface-annotated.png" alt="Chat Interface" />
+</Frame>
+
+The Demiurg chat interface includes several helpful features:
+
+- **Message input**: Type your messages here
+- **File attachments**: Upload documents for your agent to analyze
+- **Conversation memory**: Your agent remembers the entire conversation context
+- **Chat controls**: Options for clearing history, sharing conversations, etc.
+
+## Effective Prompting Techniques
+
+How you phrase your requests greatly impacts your agent's responses. Here are some techniques for better results:
+
+<AccordionGroup>
+  <Accordion title="Be Clear and Specific" icon="bullseye" defaultOpen>
+    Instead of "Give me some ideas," try "Give me 5 blog post ideas about sustainable gardening for beginners."
+    
+    **Example:**
+    ```
+    "Can you create a 7-day meal plan for a vegetarian athlete who trains 5 days a week? Include breakfast, lunch, dinner, and two snacks per day, with approximate calorie counts."
+    ```
+  </Accordion>
+  
+  <Accordion title="Provide Context" icon="info-circle">
+    Give relevant background information to help your agent understand your needs better.
+    
+    **Example:**
+    ```
+    "I'm preparing for a job interview at a marketing agency. The role is for a content strategist position. Can you help me prepare answers for likely questions about content analytics and SEO strategy?"
+    ```
+  </Accordion>
+  
+  <Accordion title="Break Down Complex Tasks" icon="layer-group">
+    For complicated requests, break them into smaller, sequential steps.
+    
+    **Example:**
+    ```
+    "Let's analyze this sales data step by step:
+    1. First, identify the top 3 performing products
+    2. Then, suggest reasons for their success
+    3. Finally, recommend strategies to boost sales of lower-performing items"
+    ```
+  </Accordion>
+  
+  <Accordion title="Use Follow-up Questions" icon="comments">
+    If the initial response isn't quite what you needed, ask clarifying questions to refine the results.
+    
+    **Example:**
+    ```
+    "Could you make these instructions more concise and bullet-pointed for easier reference?"
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Using Advanced Features
+
+<CardGroup cols={2}>
+  <Card title="File Analysis" icon="file-lines">
+    Upload documents for your agent to analyze by clicking the attachment icon. Supported formats include PDF, DOCX, TXT, CSV, and more.
+    
+    **Example prompt after upload:**
+    ```
+    "Summarize the key points from this report and highlight any unusual trends."
+    ```
+  </Card>
+  
+  <Card title="Memory Management" icon="brain">
+    Your agent remembers your conversation history to maintain context. For long sessions, you can:
+    
+    - Start a new thread for separate topics
+    - Use the "Clear History" option to reset context
+    - Reference specific parts of your conversation
+  </Card>
+</CardGroup>
+
+<Warning>
+  While your agent has been created with specific knowledge domains, it may occasionally provide incorrect information. Always verify critical information from trustworthy sources.
+</Warning>
+
+## Troubleshooting Common Issues
+
+If your agent isn't responding as expected, try these approaches:
+
+1. **Rephrase your request** using more specific language
+2. **Provide examples** of the type of response you're looking for
+3. **Break complex requests** into smaller, simpler questions
+4. **Check knowledge boundaries** by asking what the agent knows about the topic
+5. **Restart the conversation** if the agent seems confused
+
+<Info>
+  If you notice your agent consistently struggling with certain tasks, you might need to refine its description or use the Code Editor for more advanced customization.
+</Info>
+
+## Next Steps
+
+<Card title="Share Your Agent" icon="share-nodes" href="/quickstart/share">
+  Learn how to share your agent with teammates, friends, or the public
+</Card>
