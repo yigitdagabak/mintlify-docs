@@ -9,40 +9,9 @@ import { Frame } from 'nextra/components'
 import { Card, CardGroup } from 'nextra/components'
 import { AccordionGroup, Accordion } from 'nextra/components'
 
-<div className="hero-image-container">
-  <img className="light-mode-hero" src="/images/demiurg-hero-light.png" alt="Demiurg Platform - Light Theme" />
-  <img className="dark-mode-hero" src="/images/demiurg-hero-dark.png" alt="Demiurg Platform - Dark Theme" />
-</div>
-
-<style jsx>{`
-  .hero-image-container {
-    position: relative;
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .light-mode-hero, .dark-mode-hero {
-    width: 100%;
-    display: block;
-  }
-  
-  /* Show light image in light mode, hide in dark mode */
-  .light-mode-hero {
-    display: block;
-  }
-  .dark-mode-hero {
-    display: none;
-  }
-  
-  /* In dark mode, hide light image and show dark image */
-  :global(.dark) .light-mode-hero {
-    display: none;
-  }
-  :global(.dark) .dark-mode-hero {
-    display: block;
-  }
-`}</style>
+<Frame>
+  <img src="/images/demiurg-hero.png" alt="Demiurg Platform" />
+</Frame>
 
 <Tip>
   **Transform your ideas into intelligent AI agents with just a conversation.** No coding required.
