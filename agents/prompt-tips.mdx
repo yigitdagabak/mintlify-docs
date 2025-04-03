@@ -1,0 +1,423 @@
+---
+title: 'Prompt Engineering Tips'
+description: 'Advanced techniques for crafting effective agent descriptions'
+---
+
+import { Frame } from 'nextra/components'
+import { Tip, Info, Warning, Check } from 'nextra/components'
+import { Card, CardGroup } from 'nextra/components'
+import { Accordion, AccordionGroup } from 'nextra/components'
+
+# Prompt Engineering Tips
+
+<Frame>
+  <img src="/images/prompt-engineering-banner.png" alt="Prompt Engineering Banner" />
+</Frame>
+
+Prompt engineering is the art and science of crafting effective instructions for AI systems. In Demiurg, your prompt is the foundation of your agent's capabilities. Mastering these techniques will help you create more effective, specialized, and reliable agents.
+
+<Info>
+  The quality of your prompts directly impacts the performance of your agents. Small changes in wording can lead to significant differences in agent behavior.
+</Info>
+
+## The Anatomy of an Effective Prompt
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+  <div>
+    <h3 className="text-lg font-semibold mb-3">Components of a Strong Prompt</h3>
+    <ul className="space-y-2">
+      <li><Check>Clear role definition</Check></li>
+      <li><Check>Specific knowledge domains</Check></li>
+      <li><Check>Defined personality traits</Check></li>
+      <li><Check>Explicit capabilities</Check></li>
+      <li><Check>Task descriptions</Check></li>
+      <li><Check>Interaction guidelines</Check></li>
+      <li><Check>Performance criteria</Check></li>
+    </ul>
+  </div>
+  
+  <div className="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg">
+    <h3 className="text-lg font-semibold mb-3">Example Structure</h3>
+    <pre className="text-sm overflow-auto p-2">
+      I need an AI agent that can [primary function].
+      
+      Knowledge areas: [list specific domains]
+      
+      Personality: [describe interaction style]
+      
+      The agent should be able to:
+      - [capability 1]
+      - [capability 2]
+      - [capability 3]
+      
+      When interacting, the agent should [interaction guidelines].
+      
+      Success means [performance criteria].
+    </pre>
+  </div>
+</div>
+
+## Advanced Prompt Techniques
+
+<AccordionGroup>
+  <Accordion title="Role Framing" icon="user-tie" defaultOpen>
+    Frame your agent's role in terms of a professional position or expert identity.
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+      <div className="bg-red-50 dark:bg-red-900/20 p-3 rounded">
+        <h4 className="font-medium text-red-800 dark:text-red-200">Less Effective:</h4>
+        <p className="text-sm">"An agent that helps with marketing"</p>
+      </div>
+      
+      <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded">
+        <h4 className="font-medium text-green-800 dark:text-green-200">More Effective:</h4>
+        <p className="text-sm">"A senior digital marketing strategist with 15+ years of experience in B2B SaaS companies"</p>
+      </div>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Contextual Anchoring" icon="anchor">
+    Provide specific contexts or scenarios to guide your agent's understanding of its purpose.
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+      <div className="bg-red-50 dark:bg-red-900/20 p-3 rounded">
+        <h4 className="font-medium text-red-800 dark:text-red-200">Less Effective:</h4>
+        <p className="text-sm">"An agent that helps with writing"</p>
+      </div>
+      
+      <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded">
+        <h4 className="font-medium text-green-800 dark:text-green-200">More Effective:</h4>
+        <p className="text-sm">"A writing coach for graduate students working on their dissertations in the humanities, who can help with argumentation, structure, and academic style"</p>
+      </div>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Capability Hierarchies" icon="layer-group">
+    Organize capabilities from fundamental to advanced, helping the agent prioritize its functions.
+    
+    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded mt-3">
+      <h4 className="font-medium text-green-800 dark:text-green-200">Example:</h4>
+      <p className="text-sm">
+        "The agent should have these capabilities, in order of priority:<br/>
+        1. Identify investment opportunities based on financial metrics<br/>
+        2. Analyze risk factors for each opportunity<br/>
+        3. Create portfolio allocation recommendations<br/>
+        4. Generate detailed investment reports with visualizations"
+      </p>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Constraint Definition" icon="ban">
+    Explicitly define boundaries and limitations for your agent's behavior.
+    
+    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded mt-3">
+      <h4 className="font-medium text-green-800 dark:text-green-200">Example:</h4>
+      <p className="text-sm">
+        "The agent must never:<br/>
+        - Make specific stock price predictions<br/>
+        - Recommend individual securities without disclaimers<br/>
+        - Present itself as a licensed financial advisor<br/>
+        - Guarantee returns on investments"
+      </p>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Reasoning Patterns" icon="brain">
+    Define how your agent should approach problems and reasoning tasks.
+    
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-3">
+      <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded">
+        <h4 className="font-medium text-green-800 dark:text-green-200">Analytical Approach:</h4>
+        <p className="text-sm">"When analyzing problems, the agent should break them down into component parts, examine each systematically, and synthesize findings into a comprehensive solution."</p>
+      </div>
+      
+      <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded">
+        <h4 className="font-medium text-green-800 dark:text-green-200">Creative Approach:</h4>
+        <p className="text-sm">"When generating ideas, the agent should first explore broadly, making unexpected connections between concepts, then evaluate and refine the most promising options."</p>
+      </div>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Output Formatting" icon="file-lines">
+    Specify how you want information presented or structured.
+    
+    <div className="bg-green-50 dark:bg-green-900/20 p-3 rounded mt-3">
+      <h4 className="font-medium text-green-800 dark:text-green-200">Example:</h4>
+      <p className="text-sm">
+        "When providing analysis, the agent should structure information as follows:<br/>
+        1. Executive summary (2-3 sentences)<br/>
+        2. Key findings (bullet points)<br/>
+        3. Detailed analysis (organized by topic)<br/>
+        4. Recommendations (prioritized list)<br/>
+        5. Next steps (actionable items)"
+      </p>
+    </div>
+  </Accordion>
+</AccordionGroup>
+
+## Domain-Specific Prompt Patterns
+
+Different types of agents benefit from specialized prompt patterns:
+
+<CardGroup cols={2}>
+  <Card title="Analytical Agents" icon="chart-line">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Focus on:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Data handling methodologies</li>
+        <li>Analytical frameworks</li>
+        <li>Statistical approaches</li>
+        <li>Visualization preferences</li>
+        <li>Certainty qualifiers</li>
+      </ul>
+      
+      <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded mt-3">
+        <strong>Example Pattern:</strong> "Analyze [data type] using [methodologies] to identify [insights type], presenting results with [visualization type] and clearly indicating confidence levels."
+      </div>
+    </div>
+  </Card>
+  
+  <Card title="Creative Agents" icon="lightbulb">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Focus on:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Stylistic preferences</li>
+        <li>Creative constraints</li>
+        <li>Inspiration sources</li>
+        <li>Iteration approaches</li>
+        <li>Evaluation criteria</li>
+      </ul>
+      
+      <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded mt-3">
+        <strong>Example Pattern:</strong> "Generate [creative output] in the style of [reference], balancing [quality A] and [quality B], with multiple variations that explore different [dimension]."
+      </div>
+    </div>
+  </Card>
+  
+  <Card title="Educational Agents" icon="graduation-cap">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Focus on:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Teaching methodologies</li>
+        <li>Knowledge scaffolding</li>
+        <li>Assessment approaches</li>
+        <li>Explanation techniques</li>
+        <li>Learning progression</li>
+      </ul>
+      
+      <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded mt-3">
+        <strong>Example Pattern:</strong> "Teach [subject] starting from [level], using [methodology], adapting explanations based on comprehension, and providing examples that connect to [real-world domain]."
+      </div>
+    </div>
+  </Card>
+  
+  <Card title="Operational Agents" icon="gears">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Focus on:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Process definitions</li>
+        <li>Decision criteria</li>
+        <li>Exception handling</li>
+        <li>Verification steps</li>
+        <li>Efficiency metrics</li>
+      </ul>
+      
+      <div className="bg-blue-50 dark:bg-blue-900/20 p-2 rounded mt-3">
+        <strong>Example Pattern:</strong> "Manage [process] by following [procedure], making decisions based on [criteria], handling exceptions by [approach], and optimizing for [metric]."
+      </div>
+    </div>
+  </Card>
+</CardGroup>
+
+## Examples of Exceptional Prompts
+
+<AccordionGroup>
+  <Accordion title="Financial Advisor Agent" icon="money-bill-trend-up">
+    ```
+    I need an AI financial advisor specialized in personal finance and retirement planning.
+    
+    Knowledge areas:
+    - Investment strategies (stocks, bonds, ETFs, mutual funds)
+    - Retirement account types (401(k), IRA, Roth) and their tax implications
+    - Debt management and credit optimization
+    - Budgeting methodologies
+    - Current financial regulations and tax laws
+    
+    Personality:
+    Approachable yet professional, explains complex concepts in simple terms without being condescending. Conservative in recommendations, prioritizing risk management over maximum returns.
+    
+    The agent should be able to:
+    - Analyze a user's financial situation based on provided information
+    - Create personalized savings and investment plans
+    - Recommend specific account types and general investment categories (not individual securities)
+    - Explain the tax implications of different financial decisions
+    - Generate retirement projections based on various scenarios
+    - Provide budgeting advice tailored to different income levels and goals
+    
+    When providing advice, the agent should:
+    - Always acknowledge the limitations of its guidance
+    - Provide explanations for recommendations
+    - Suggest when a human financial advisor should be consulted
+    - Never guarantee specific returns or outcomes
+    - Always consider both short-term needs and long-term goals
+    
+    Success means users feel more confident in making financial decisions and have clear, actionable steps to improve their financial health.
+    ```
+  </Accordion>
+  
+  <Accordion title="Content Marketing Strategist" icon="bullhorn">
+    ```
+    I need an AI content marketing strategist specialized in SaaS and B2B technology markets.
+    
+    Knowledge areas:
+    - Content marketing methodologies and best practices
+    - SEO principles and current algorithm trends
+    - B2B buyer journey and decision-making processes
+    - SaaS industry terminology and common challenges
+    - Content distribution channels and analytics
+    
+    Personality:
+    Strategic and data-driven, yet creative. Communicates with the authority of an experienced marketer while remaining conversational and accessible. Balances innovative ideas with proven approaches.
+    
+    The agent should be able to:
+    - Develop comprehensive content strategies aligned with business goals
+    - Generate content ideas targeting specific buyer personas and funnel stages
+    - Create detailed content briefs with SEO guidelines
+    - Suggest content repurposing opportunities across different channels
+    - Analyze content performance metrics and recommend optimizations
+    - Identify gaps in existing content and competitive opportunities
+    
+    When developing strategies, the agent should:
+    - Start by understanding business objectives and target audience
+    - Balance short-term wins with long-term brand building
+    - Consider resource constraints and implementation feasibility
+    - Prioritize recommendations based on potential impact
+    - Connect content initiatives to measurable business outcomes
+    
+    Success means providing actionable content marketing guidance that drives organic traffic, engagement, and lead generation while establishing thought leadership.
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Iterative Prompt Refinement
+
+<Steps>
+  <Step title="1. Start with a Basic Prompt">
+    Create your initial agent with a solid but straightforward description.
+  </Step>
+  
+  <Step title="2. Test Thoroughly">
+    Interact with your agent across a variety of scenarios relevant to its purpose.
+  </Step>
+  
+  <Step title="3. Identify Gaps">
+    Note any areas where your agent underperforms or misunderstands your intentions.
+  </Step>
+  
+  <Step title="4. Refine Your Prompt">
+    Revise your description to address the specific issues you identified.
+  </Step>
+  
+  <Step title="5. Repeat">
+    Continue this cycle until your agent consistently performs as expected.
+  </Step>
+</Steps>
+
+<Tip>
+  Keep a record of your prompt revisions and how each change affected your agent's performance. This documentation will help you develop better prompts in the future.
+</Tip>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Agent Misunderstands Its Purpose" icon="circle-question">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Symptoms:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Agent performs tasks outside its intended domain</li>
+        <li>Agent fails to prioritize core functions</li>
+        <li>Agent seems confused about what it should do</li>
+      </ul>
+      
+      <p className="mt-3 mb-2"><strong>Solution:</strong></p>
+      <p>Make your role definition more explicit and prominent in your prompt. Start with a clear statement of purpose and reinforce it throughout your description.</p>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Agent Lacks Depth in Key Areas" icon="arrow-down-to-line">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Symptoms:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Agent provides surface-level information only</li>
+        <li>Agent cannot handle specialized queries</li>
+        <li>Agent often indicates knowledge limitations</li>
+      </ul>
+      
+      <p className="mt-3 mb-2"><strong>Solution:</strong></p>
+      <p>Be more specific about knowledge domains and sub-domains. Instead of "marketing knowledge," specify "expertise in B2B SaaS marketing, including demand generation, account-based marketing, and marketing attribution models."</p>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Agent's Personality Is Inconsistent" icon="face-meh">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Symptoms:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Agent's tone and communication style varies unpredictably</li>
+        <li>Agent sometimes contradicts its established character</li>
+        <li>Agent's personality doesn't align with its purpose</li>
+      </ul>
+      
+      <p className="mt-3 mb-2"><strong>Solution:</strong></p>
+      <p>Define personality traits more explicitly and provide examples of desired communication styles. Consider including examples of how the agent should respond in different scenarios.</p>
+    </div>
+  </Accordion>
+  
+  <Accordion title="Agent Struggles with Complex Tasks" icon="network-wired">
+    <div className="text-sm">
+      <p className="mb-2"><strong>Symptoms:</strong></p>
+      <ul className="list-disc list-inside space-y-1">
+        <li>Agent performs well on simple tasks but fails on complex ones</li>
+        <li>Agent doesn't break down complex problems effectively</li>
+        <li>Agent provides incomplete solutions</li>
+      </ul>
+      
+      <p className="mt-3 mb-2"><strong>Solution:</strong></p>
+      <p>Include specific methodologies or frameworks for approaching complex tasks. Define a step-by-step process that your agent should follow when tackling multi-faceted problems.</p>
+    </div>
+  </Accordion>
+</AccordionGroup>
+
+## Expert Tips
+
+<div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+  <div className="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-lg">
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Use Concrete Examples</h4>
+    <p className="text-sm">Include specific examples of the types of outputs or responses you expect from your agent. Examples provide clear guidance on expected quality and style.</p>
+  </div>
+  
+  <div className="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-lg">
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Define Interaction Patterns</h4>
+    <p className="text-sm">Specify how your agent should handle different interaction types—questions, requests for analysis, brainstorming sessions, etc.—to create a more consistent experience.</p>
+  </div>
+  
+  <div className="bg-slate-50 dark:bg-slate-800/50 p-4 rounded-lg">
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Anticipate Edge Cases</h4>
+    <p className="text-sm">Include instructions for how your agent should handle unusual requests, ambiguous inputs, or situations where it doesn't have sufficient information.</p>
+  </div>
+</div>
+
+<Warning>
+  Remember that prompt engineering is an emerging discipline. What works for one agent may not work for another, and techniques will evolve as AI capabilities advance. Stay curious and experimental in your approach.
+</Warning>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Agent Templates" icon="clone" href="/agents/templates">
+    Explore pre-built templates that demonstrate effective prompt patterns
+  </Card>
+  
+  <Card title="Advanced Customization" icon="sliders" href="/agents/behavior">
+    Learn how to fine-tune your agent's behavior beyond the initial prompt
+  </Card>
+</CardGroup>

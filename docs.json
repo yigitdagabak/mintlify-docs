@@ -37,7 +37,6 @@
             "group": "Creating Agents",
             "pages": [
               "agents/creating",
-              "agents/templates",
               "agents/prompt-tips"
             ]
           },
@@ -45,7 +44,6 @@
             "group": "Customizing",
             "pages": [
               "agents/appearance",
-              "agents/behavior",
               "agents/code-editor"
             ]
           }

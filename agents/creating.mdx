@@ -1,0 +1,211 @@
+---
+title: 'Creating Effective Agents'
+description: 'A comprehensive guide to designing powerful AI agents in Demiurg'
+---
+
+import { Frame } from 'nextra/components'
+import { Tip, Info, Warning } from 'nextra/components'
+import { Card, CardGroup } from 'nextra/components'
+import { Accordion, AccordionGroup } from 'nextra/components'
+
+# Creating Effective Agents
+
+<Frame>
+  <img src="/images/agent-creation-banner.png" alt="Agent Creation Process" />
+</Frame>
+
+Creating an effective AI agent is both an art and a science. While Demiurg makes the technical aspects simple, designing an agent that truly excels at its intended purpose requires thoughtful consideration.
+
+## The Agent Creation Process
+
+At its core, creating an agent in Demiurg involves describing what you want it to do in natural language. The platform then analyzes your description and configures an AI agent with the appropriate capabilities, knowledge, and personality.
+
+<Info>
+  The quality of your agent depends significantly on the clarity and specificity of your description. Demiurg will interpret your instructions literally, so being precise is important.
+</Info>
+
+## Key Elements of an Effective Agent
+
+<CardGroup cols={2}>
+  <Card title="Clear Purpose" icon="bullseye">
+    Define a specific role or function for your agent rather than trying to make it do everything.
+    
+    **Good Example**: "A financial analyst specialized in cryptocurrency market trends"  
+    **Less Effective**: "An agent that knows about money and investing"
+  </Card>
+  
+  <Card title="Knowledge Domains" icon="brain">
+    Specify the areas of knowledge your agent should be proficient in.
+    
+    **Good Example**: "Knowledgeable about SEO, content marketing, and social media analytics"  
+    **Less Effective**: "Knows about marketing"
+  </Card>
+  
+  <Card title="Personality" icon="user">
+    Define how your agent should interact - its tone, communication style, and approach.
+    
+    **Good Example**: "Professional but approachable, uses simple language to explain complex concepts"  
+    **Less Effective**: "Nice and helpful"
+  </Card>
+  
+  <Card title="Core Capabilities" icon="gears">
+    Outline specific tasks and actions your agent should be able to perform.
+    
+    **Good Example**: "Able to analyze financial statements, identify trends, and suggest investment opportunities based on risk tolerance"  
+    **Less Effective**: "Can help with finances"
+  </Card>
+</CardGroup>
+
+## Crafting Your Agent Description
+
+Your agent description is the foundation of its capabilities. Here's how to structure an effective description:
+
+<AccordionGroup>
+  <Accordion title="1. Start with a Role Definition" icon="id-badge" defaultOpen>
+    Begin by clearly stating what role your agent will fill.
+    
+    **Example**:
+    ```
+    "I need an AI research assistant specialized in biomedical literature analysis."
+    ```
+  </Accordion>
+  
+  <Accordion title="2. Specify Knowledge Areas" icon="book">
+    Detail the domains of knowledge your agent should possess.
+    
+    **Example**:
+    ```
+    "The agent should be knowledgeable about recent advancements in immunology, vaccine development, and clinical trial methodologies."
+    ```
+  </Accordion>
+  
+  <Accordion title="3. Define Personality and Communication Style" icon="comments">
+    Describe how your agent should communicate and interact.
+    
+    **Example**:
+    ```
+    "The agent should communicate in a professional, academic tone while still making complex concepts accessible. It should ask clarifying questions when needed and provide balanced perspectives on controversial topics."
+    ```
+  </Accordion>
+  
+  <Accordion title="4. List Core Tasks and Capabilities" icon="list-check">
+    Enumerate specific functions your agent should be able to perform.
+    
+    **Example**:
+    ```
+    "The agent should be able to:
+    - Summarize research papers and extract key findings
+    - Compare methodologies across multiple studies
+    - Identify gaps or contradictions in the literature
+    - Suggest research directions based on current trends
+    - Format citations in APA, MLA, and Chicago styles"
+    ```
+  </Accordion>
+  
+  <Accordion title="5. Include Limitations or Boundaries" icon="circle-exclamation">
+    Specify any constraints or limitations for your agent.
+    
+    **Example**:
+    ```
+    "The agent should acknowledge when information may be outdated and should not attempt to predict specific research outcomes or provide medical advice."
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Specialized Agent Types
+
+Different purposes may require different approaches to agent creation. Here are some specialized agent types and tips for creating them:
+
+<CardGroup cols={2}>
+  <Card title="Customer Service Agents" icon="headset">
+    - Define common customer issues
+    - Specify tone (friendly, professional, etc.)
+    - Include troubleshooting processes
+    - Set escalation criteria
+  </Card>
+  
+  <Card title="Creative Assistants" icon="paintbrush">
+    - Define stylistic preferences
+    - Specify formats and mediums
+    - Include examples of desired output
+    - Set creativity parameters
+  </Card>
+  
+  <Card title="Research Assistants" icon="magnifying-glass">
+    - Define research methodologies
+    - Specify data interpretation approaches
+    - Include citation formats
+    - Set standards for evidence evaluation
+  </Card>
+  
+  <Card title="Educational Tutors" icon="graduation-cap">
+    - Define teaching approach
+    - Specify depth of explanations
+    - Include assessment methods
+    - Set learning progression strategies
+  </Card>
+</CardGroup>
+
+## Refining Your Agent
+
+After creating your initial agent, you'll likely want to refine it based on performance:
+
+1. **Test extensively** with a variety of queries and tasks
+2. **Identify gaps** in knowledge or capabilities
+3. **Note any misconceptions** or incorrect assumptions
+4. **Revise your description** to address these issues
+5. **Consider using the Code Editor** for more precise control
+
+<Warning>
+  When revising your agent, consider creating a new version rather than overwriting your original. This allows you to compare performance and revert if needed.
+</Warning>
+
+## Best Practices and Common Pitfalls
+
+<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Best Practices</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Focus on a specific purpose rather than creating a "jack of all trades"</li>
+      <li>Use clear, unambiguous language in your descriptions</li>
+      <li>Include examples of desired outputs where possible</li>
+      <li>Test with edge cases to ensure robust performance</li>
+      <li>Gather user feedback to identify improvement areas</li>
+    </ul>
+  </div>
+  
+  <div>
+    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Common Pitfalls</h4>
+    <ul className="list-disc list-inside space-y-1 ml-2">
+      <li>Creating overly broad agents with unclear purposes</li>
+      <li>Using vague or ambiguous instructions</li>
+      <li>Assuming capabilities without explicitly stating them</li>
+      <li>Overlooking personality and communication style</li>
+      <li>Failing to test across a range of scenarios</li>
+    </ul>
+  </div>
+</div>
+
+<Tip>
+  Remember that agent creation is iterative. Your first version likely won't be perfect, and that's okay. Continuous refinement based on actual usage will lead to better performance over time.
+</Tip>
+
+## Advanced Agent Design
+
+For users looking to create highly sophisticated agents, Demiurg offers advanced customization options:
+
+<Card title="Code Editor" icon="code">
+  The Code Editor allows precise control over your agent's behavior, knowledge sources, and capabilities. [Learn more about the Code Editor](/agents/code-editor)
+</Card>
+
+## Next Steps
+
+<CardGroup cols={2}>
+  <Card title="Prompt Engineering Tips" icon="wand-magic-sparkles" href="/agents/prompt-tips">
+    Learn advanced techniques for crafting effective agent descriptions
+  </Card>
+  
+  <Card title="Agent Templates" icon="clone" href="/agents/templates">
+    Explore pre-built agent templates for common use cases
+  </Card>
+</CardGroup>
