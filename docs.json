@@ -56,9 +56,7 @@
             "group": "Web App",
             "pages": [
               "use/agents-library",
-              "use/direct-messaging", 
-              "use/group-chats"
-            ]
+              "use/direct-messaging"            ]
           },
           {
             "group": "Mobile",
