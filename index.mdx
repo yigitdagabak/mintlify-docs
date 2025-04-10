@@ -1,142 +1,83 @@
 ---
-title: 'Demiurg Academy'
-description: 'Master the art of creating intelligent AI agents without code'
+title: 'Welcome to Demiurg Academy'
+description: 'Learn how to create, customize, and share powerful AI agents with Demiurg'
 ---
 
-import { Tip, Info, Check } from 'nextra/components'
-import { Steps, Step } from 'nextra/components'
-import { Frame } from 'nextra/components'
-import { Card, CardGroup } from 'nextra/components'
-import { AccordionGroup, Accordion } from 'nextra/components'
+<img
+  className="block dark:hidden"
+  src="/images/hero-light.png"
+  alt="Demiurg hero image"
+/>
+<img
+  className="hidden dark:block"
+  src="/images/hero-dark.png"
+  alt="Demiurg hero image"
+/>
 
-<Frame>
-  <img src="/images/demiurg-hero.png" alt="Demiurg Platform" />
-</Frame>
+## Build AI agents in minutes
 
-<Tip>
-  **Transform your ideas into intelligent AI agents with just a conversation.** No coding required.
-</Tip>
+Demiurg lets you create custom AI agents through simple prompts. No coding required to get started, but powerful customization when you need it.
 
-## Your AI Agent Journey Starts Here
-
-With Demiurg, you can create custom AI agents through natural language descriptions. Turn complex workflows into intelligent assistants that understand exactly what you need them to do.
-
-<CardGroup cols={3}>
-  <Card title="Describe" icon="comment-dots">
-    Just tell Demiurg what you want your agent to do
+<CardGroup cols={2}>
+  <Card
+    title="Create an Agent"
+    icon="wand-magic-sparkles"
+    href="/quickstart/create"
+  >
+    Turn your idea into a fully functional AI agent with a simple prompt
   </Card>
-  <Card title="Create" icon="wand-magic-sparkles">
-    Watch as your agent comes to life in seconds
+  <Card
+    title="Chat & Interact"
+    icon="comments"
+    href="/quickstart/chat"
+  >
+    Engage with your agents through web or mobile interfaces
   </Card>
-  <Card title="Deploy" icon="rocket">
-    Use your agent immediately across all platforms
+  <Card
+    title="Customize Code"
+    icon="code"
+    href="/agents/code-editor"
+  >
+    Fine-tune your agent's capabilities with the built-in code editor
+  </Card>
+  <Card
+    title="Share Your Creations"
+    icon="share-nodes"
+    href="/sharing/with-friends"
+  >
+    Deploy your agents to friends or the Demiurg community
   </Card>
 </CardGroup>
 
-## Craft Your First Agent in Minutes
+## Get started in 3 minutes
 
 <Steps>
-  <Step title="Describe Your Agent">
-    Be specific about what your agent should know, its personality, and what tasks it should perform.
-    
-    ```
-    "I need an AI agent that can analyze financial markets and provide trading insights based on current trends and historical data."
-    ```
+  <Step title="Create your agent">
+    Describe the agent you want in natural language, and Demiurg will generate it for you.
   </Step>
-  
-  <Step title="Review & Refine">
-    Demiurg will instantly build your agent. Test it with a few questions and refine if needed.
-    
-    <Frame>
-      <img src="/images/agent-creation.png" alt="Agent Creation Process" />
-    </Frame>
+  <Step title="Chat with your agent">
+    Test your agent's capabilities through the intuitive chat interface.
   </Step>
-  
-  <Step title="Share & Deploy">
-    Deploy your agent to web, mobile, or share it with your team or the community.
-    
-    <Check>Access your agent anywhere</Check>
-    <Check>Collaborate with team members</Check>
-    <Check>Integrate with your existing tools</Check>
+  <Step title="Share with others">
+    Deploy your agent for personal use or share it with the community.
   </Step>
 </Steps>
 
-## Explore What's Possible
-
-<AccordionGroup>
-  <Accordion title="Business Automation" icon="briefcase">
-    Create agents that handle customer support, sales qualification, meeting scheduling, and internal knowledge management without human intervention.
-    
-    <CardGroup cols={2}>
-      <Card title="Customer Support Bot" href="/showcase/use-cases#customer-support">
-        Handle common questions and troubleshooting 24/7
-      </Card>
-      <Card title="Sales Assistant" href="/showcase/use-cases#sales">
-        Qualify leads and schedule meetings automatically
-      </Card>
-    </CardGroup>
-  </Accordion>
-  
-  <Accordion title="Research & Analysis" icon="chart-line">
-    Build agents that can process large volumes of information, identify patterns, and generate insights across multiple domains.
-    
-    <CardGroup cols={2}>
-      <Card title="Market Analyst" href="/showcase/use-cases#market-analysis">
-        Track trends and provide investment recommendations
-      </Card>
-      <Card title="Research Assistant" href="/showcase/use-cases#research">
-        Synthesize information from multiple sources
-      </Card>
-    </CardGroup>
-  </Accordion>
-  
-  <Accordion title="Content Creation" icon="pen-fancy">
-    Design agents that can generate, edit, and manage content while maintaining your brand voice and style guidelines.
-    
-    <CardGroup cols={2}>
-      <Card title="Content Writer" href="/showcase/use-cases#content-creation">
-        Generate blog posts, social media, and marketing copy
-      </Card>
-      <Card title="Editor Assistant" href="/showcase/use-cases#editing">
-        Review and improve writing with style guidelines
-      </Card>
-    </CardGroup>
-  </Accordion>
-</AccordionGroup>
-
-## How Demiurg Works
-
-<Frame>
-  <img src="/images/demiurg-workflow.png" alt="Demiurg Workflow" />
-</Frame>
-
-<Info>
-  Demiurg combines state-of-the-art language models with a proprietary agent framework that translates natural language descriptions into fully-functional AI systems.
-</Info>
-
-1. **Natural Language Understanding** - Your description is analyzed to identify key capabilities, personality traits, and knowledge domains
-2. **Agent Architecture Design** - Demiurg builds a custom architecture tailored to your needs
-3. **Automatic Integration** - Tools, knowledge bases, and behaviors are configured automatically
-4. **Continuous Improvement** - Agents learn and improve with each interaction
-
-## Join Our Community
+## Explore the community
 
 <CardGroup cols={2}>
-  <Card title="Community Showcase" icon="users" href="/showcase/community-hub">
-    See what other creators are building with Demiurg
+  <Card
+    title="Featured Agents"
+    icon="robot"
+    href="/inspiration/featured-agents"
+  >
+    Discover ready-to-use agents created by the Demiurg team
   </Card>
-  <Card title="Discord Community" icon="discord" href="https://discord.gg/demiurg">
-    Connect with other agent creators and share ideas
-  </Card>
-</CardGroup>
-
-## Get Started Now
-
-<CardGroup cols={2}>
-  <Card title="Launch Playground" icon="play" href="https://demiurg.ai/app">
-    Create your first agent in the Demiurg playground
-  </Card>
-  <Card title="Explore Templates" icon="clone" href="/playground/templates-gallery">
-    Start with pre-built agents for common use cases
+  <Card
+    title="Community Showcase"
+    icon="users"
+    href="/inspiration/community"
+  >
+    See what others have built and shared with the community
   </Card>
 </CardGroup>

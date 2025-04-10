@@ -11,7 +11,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Quick Start",
+        "tab": "Get Started",
         "groups": [
           {
             "group": "Welcome",
@@ -21,7 +21,7 @@
             ]
           },
           {
-            "group": "In 3 Minutes",
+            "group": "Create in 3 Minutes",
             "pages": [
               "quickstart/create",
               "quickstart/chat",
@@ -31,10 +31,10 @@
         ]
       },
       {
-        "tab": "Agents",
+        "tab": "Build Agents",
         "groups": [
           {
-            "group": "Creating Agents",
+            "group": "Creation Basics",
             "pages": [
               "agents/creating",
               "agents/prompt-tips"
@@ -50,23 +50,24 @@
         ]
       },
       {
-        "tab": "Use",
+        "tab": "Interact & Share",
         "groups": [
           {
-            "group": "Web App",
+            "group": "Web Experience",
             "pages": [
               "use/agents-library",
-              "use/direct-messaging"            ]
+              "use/direct-messaging"
+            ]
           },
           {
-            "group": "Mobile",
+            "group": "Mobile App",
             "pages": [
               "mobile/setup",
               "mobile/chatting"
             ]
           },
           {
-            "group": "Sharing",
+            "group": "Sharing Options",
             "pages": [
               "sharing/with-friends",
               "sharing/community",
@@ -76,14 +77,33 @@
         ]
       },
       {
-        "tab": "Inspiration",
+        "tab": "Explore",
         "groups": [
           {
-            "group": "Examples",
+            "group": "Agent Gallery",
             "pages": [
               "inspiration/featured-agents",
               "inspiration/use-cases", 
               "inspiration/community"
+            ]
+          },
+          {
+            "group": "Tips & Tricks",
+            "pages": [
+              "tips/productivity-hacks",
+              "tips/prompt-examples"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Help",
+        "groups": [
+          {
+            "group": "Support",
+            "pages": [
+              "help/faq",
+              "help/troubleshooting"
             ]
           }
         ]
