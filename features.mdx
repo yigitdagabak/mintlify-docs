@@ -1,167 +1,119 @@
 ---
 title: 'Key Features'
-description: 'Discover what makes Demiurg the simplest way to create AI agents'
+description: 'Discover what makes Demiurg the ideal platform for creating and sharing AI agents'
 ---
 
-import { Card, CardGroup } from 'nextra/components'
-import { Frame } from 'nextra/components'
-import { Accordion, AccordionGroup } from 'nextra/components'
-import { Check, Tip } from 'nextra/components'
-
-<Frame>
-  <img src="/images/features-header.png" alt="Demiurg Features" />
-</Frame>
-
-<Tip>
-  **Demiurg transforms how you create, deploy, and interact with AI agents.** Our platform makes advanced AI accessible through intuitive natural language prompts.
-</Tip>
-
-## Effortless Agent Creation
+## Create AI agents through natural language
 
 <CardGroup cols={2}>
-  <Card title="Natural Language Prompts" icon="comment-dots">
-    Simply describe what you want your agent to do, and Demiurg handles the technical complexities.
-    
-    ```
-    "Create an agent that can generate social media content with my brand voice, schedule posts, and analyze engagement metrics."
-    ```
+  <Card title="Prompt-based creation" icon="wand-magic-sparkles">
+    Simply describe the agent you want, and Demiurg generates all necessary code automatically.
   </Card>
-  
-  <Card title="Automated Configuration" icon="wand-magic-sparkles">
-    Demiurg automatically equips your agent with the appropriate tools, knowledge, and capabilities based on your description.
+  <Card title="No coding required" icon="code-slash">
+    Get started without any programming experience. Demiurg handles the technical side for you.
   </Card>
 </CardGroup>
 
-## Powerful Agent Interactions
+## Powerful customization options
+
+<Tabs>
+  <Tab title="Code Editor">
+    <div className="mt-4">
+      <img src="/images/code-editor.png" alt="Demiurg Code Editor" />
+      
+      Our built-in code editor lets you fine-tune your agent's capabilities. Make adjustments to:
+      
+      - Agent behavior and responses
+      - Knowledge base and information sources
+      - Interface elements and appearance
+      - Advanced functionality through custom code
+    </div>
+  </Tab>
+  <Tab title="Appearance">
+    <div className="mt-4">
+      <img src="/images/appearance.png" alt="Agent Appearance Customization" />
+      
+      Customize how your agent looks and feels:
+      
+      - Choose avatar styles or upload custom images
+      - Set color schemes and themes
+      - Adjust UI elements and layout
+      - Create a consistent brand identity
+    </div>
+  </Tab>
+  <Tab title="Behavior">
+    <div className="mt-4">
+      <img src="/images/behavior.png" alt="Agent Behavior Settings" />
+      
+      Control how your agent interacts:
+      
+      - Define communication style and tone
+      - Set knowledge boundaries
+      - Configure response patterns
+      - Establish specialized capabilities
+    </div>
+  </Tab>
+</Tabs>
+
+## Multi-platform access
+
+Access your agents from anywhere, anytime:
+
+<Steps>
+  <Step title="Web Application">
+    Use Demiurg directly in your browser with our full-featured web application.
+  </Step>
+  <Step title="Mobile App">
+    Take your agents on the go with our dedicated mobile application for iOS and Android.
+  </Step>
+  <Step title="Sharing Links">
+    Create shareable links to give others direct access to your agents.
+  </Step>
+</Steps>
+
+## Sharing and discovery
 
 <AccordionGroup>
-  <Accordion title="Web Application" icon="globe" defaultOpen>
-    <div className="grid grid-cols-1 gap-4">
-      <div>
-        <h4 className="font-medium mb-2">Test and Refine</h4>
-        <p>Chat with your agent immediately after creation to test capabilities and provide feedback.</p>
-        
-        <Frame>
-          <img src="/images/web-chat-interface.png" alt="Web Chat Interface" />
-        </Frame>
-      </div>
-      
-      <div>
-        <h4 className="font-medium mb-2">Agent Management</h4>
-        <ul className="list-none space-y-1 ml-1">
-          <li><Check>Create multiple agents for different purposes</Check></li>
-          <li><Check>Organize agents into collections</Check></li>
-          <li><Check>Track usage metrics and performance</Check></li>
-          <li><Check>Version control for agent iterations</Check></li>
-        </ul>
-      </div>
-    </div>
+  <Accordion title="Share with friends" icon="user-group">
+    Invite specific users to access your agents through direct sharing options. Control exactly who can view, use, or edit your creations.
   </Accordion>
-  
-  <Accordion title="Mobile App" icon="mobile">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-      <div>
-        <h4 className="font-medium mb-2">On-the-Go Access</h4>
-        <p>Take your agents with you and interact with them anywhere, anytime.</p>
-        <ul className="list-none space-y-1 ml-1">
-          <li><Check>Access all your created agents</Check></li>
-          <li><Check>Use shared agents from friends and colleagues</Check></li>
-          <li><Check>Seamless chat experience optimized for mobile</Check></li>
-        </ul>
-      </div>
-      
-      <div>
-        <Frame>
-          <img src="/images/mobile-interface.png" alt="Mobile Interface" />
-        </Frame>
-      </div>
-    </div>
+  <Accordion title="Publish to community" icon="globe">
+    Share your agents with the broader Demiurg community. Get feedback, recognition, and see how others use your creation.
   </Accordion>
-  
-  <Accordion title="Social Features" icon="users">
-    <div className="grid grid-cols-1 gap-4">
-      <div>
-        <h4 className="font-medium mb-2">Messaging and Collaboration</h4>
-        <p>Connect with friends and share agents within the Demiurg ecosystem.</p>
-        <ul className="list-none space-y-1 ml-1">
-          <li><Check>Direct message friends and colleagues</Check></li>
-          <li><Check>Create group chats with humans and agents</Check></li>
-          <li><Check>Share agents with specific permissions</Check></li>
-          <li><Check>Collaborate on agent improvements</Check></li>
-        </ul>
-      </div>
-    </div>
+  <Accordion title="Permission controls" icon="lock">
+    Set granular permissions to determine what others can do with your shared agents:
+    - View-only access
+    - Interactive usage rights
+    - Editing and customization permissions
+    - Forking and derivative works
   </Accordion>
 </AccordionGroup>
 
-## Advanced Customization
-
-<Frame>
-  <img src="/images/code-editor.png" alt="Demiurg Code Editor" />
-</Frame>
-
-The Demiurg Code Editor lets you fine-tune your agent's behavior beyond what's possible with natural language prompts.
+## Ready-to-use agents
 
 <CardGroup cols={3}>
-  <Card title="Agent Logic" icon="code">
-    Modify the core logic that powers your agent's decision-making processes
+  <Card title="Productivity" icon="briefcase">
+    Task managers, note-takers, and workflow assistants
   </Card>
-  
-  <Card title="Custom Tools" icon="screwdriver-wrench">
-    Add specialized tools and integrations to extend your agent's capabilities
+  <Card title="Learning" icon="graduation-cap">
+    Tutors, study guides, and educational resources
   </Card>
-  
-  <Card title="Knowledge Base" icon="database">
-    Customize how your agent accesses and uses information sources
+  <Card title="Creative" icon="paintbrush">
+    Writing assistants, idea generators, and design helpers
   </Card>
 </CardGroup>
 
-## Seamless Deployment & Sharing
+## What's coming next
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Instant Deployment</h4>
-    <ul className="list-disc list-inside space-y-1 ml-2">
-      <li>One-click deployment to web and mobile</li>
-      <li>No waiting for builds or approvals</li>
-      <li>Versioning for safe iterations</li>
-      <li>Automatic syncing across platforms</li>
-    </ul>
-  </div>
-  
-  <div>
-    <h4 className="font-medium text-primary dark:text-primary-light mb-2">Flexible Sharing Options</h4>
-    <ul className="list-disc list-inside space-y-1 ml-2">
-      <li>Share with individuals or groups</li>
-      <li>Granular permission settings</li>
-      <li>Public or private visibility</li>
-      <li>API access for custom integrations</li>
-    </ul>
-  </div>
-</div>
-
-## Why Demiurg Stands Out
+<Info>
+  Our roadmap includes exciting new features coming soon to Demiurg. Stay tuned for updates!
+</Info>
 
 <CardGroup cols={2}>
-  <Card title="No Code Required" icon="code-slash">
-    Create sophisticated AI agents without writing a single line of code
+  <Card title="API Access" icon="plug" color="#1C3943">
+    Connect your agents to external applications and services
   </Card>
-  
-  <Card title="Intuitive Interfaces" icon="hand-pointer">
-    User-friendly design focused on simplicity and ease of use
-  </Card>
-  
-  <Card title="Rapid Deployment" icon="bolt">
-    Go from idea to working agent in seconds, not days or weeks
-  </Card>
-  
-  <Card title="Powerful Customization" icon="sliders">
-    Simple by default, but powerful when you need more control
+  <Card title="Advanced Analytics" icon="chart-line" color="#1C3943">
+    Get insights into how users interact with your agents
   </Card>
 </CardGroup>
-
-## Ready to Build Your First Agent?
-
-<Card title="Get Started Now" icon="rocket" href="/quickstart/create">
-  Follow our simple guide to create your first AI agent in under 3 minutes
-</Card>
