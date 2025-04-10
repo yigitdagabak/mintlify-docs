@@ -117,14 +117,15 @@
           "icon": "rocket"
         },
         {
-          "anchor": "Community",
-          "href": "https://discord.gg/demiurg",
-          "icon": "discord"
-        },
-        {
           "anchor": "Mobile App",
           "href": "https://demiurg.ai/download",
           "icon": "mobile"
+
+        },
+        {
+          "anchor": "Community",
+          "href": "https://discord.gg/demiurg",
+          "icon": "discord"
         }
       ]
     }
